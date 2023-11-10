@@ -1,0 +1,738 @@
+[ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 11; ]
+        class shapes extends WatchUi.Drawable{
+            [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 11; ]
+            <init> {
+            }
+            [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 11; ]
+            static
+            <init> {
+            }
+            [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 13; ]
+            function initialize() as Void {
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_13_34_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 14 16 ]
+                %tmp.2 = getv ? :Drawable;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                %tmp.4 = newd 0;
+                invoke %tmp.2 %tmp.3(%tmp.4);
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_13_34_stop:
+            }
+            [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 17; ]
+            function draw(dc as Graphics.Dc) as Void {
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_17_53_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 18 16 ]
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_18_16_if_stmt:
+                %tmp.2 = lgetv %self;
+                %tmp.4 = const :isVisible;
+                %tmp.5 = canhazplz %tmp.2 %tmp.4;
+                bf %tmp.5 @c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_18_16_if_end;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_18_16_if_true:
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_18_41_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 19 20 ]
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_19_20_if_stmt:
+                %tmp.6 = lgetv %self;
+                %tmp.7 = as %tmp.6 { (interface { var isVisible; }) };
+                %tmp.8 = getv %tmp.7 :isVisible;
+                %tmp.9 = not %tmp.8;
+                bf %tmp.9 @c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_19_20_if_end;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_19_20_if_true:
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_19_41_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 20 24 ]
+                ret ?;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_19_41_stop:
+                goto @c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_19_20_if_end;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_19_20_if_end:
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_18_41_stop:
+                goto @c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_18_16_if_end;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_18_16_if_end:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 24 16 ]
+                %tmp.10 = lgetv %dc;
+                %tmp.11 = getv function %tmp.10 :setColor;
+                %tmp.12 = getm $.Toybox.Graphics;
+                %tmp.13 = getv %tmp.12 :COLOR_TRANSPARENT;
+                %tmp.14 = getm $.Toybox.Graphics;
+                %tmp.15 = getv %tmp.14 :COLOR_TRANSPARENT;
+                invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 25 16 ]
+                %tmp.16 = lgetv %dc;
+                %tmp.17 = getv function %tmp.16 :fillRectangle;
+                %tmp.18 = 0;
+                %tmp.19 = 0;
+                %tmp.20 = add %tmp.18 %tmp.19;
+                %tmp.21 = 0;
+                %tmp.22 = 0;
+                %tmp.23 = add %tmp.21 %tmp.22;
+                %tmp.24 = lgetv %dc;
+                %tmp.25 = getv function %tmp.24 :getWidth;
+                %tmp.26 = invoke %tmp.24 %tmp.25();
+                %tmp.27 = 0;
+                %tmp.28 = sub %tmp.26 %tmp.27;
+                %tmp.29 = lgetv %dc;
+                %tmp.30 = getv function %tmp.29 :getHeight;
+                %tmp.31 = invoke %tmp.29 %tmp.30();
+                %tmp.32 = 0;
+                %tmp.33 = sub %tmp.31 %tmp.32;
+                invoke %tmp.16 %tmp.17(%tmp.20, %tmp.23, %tmp.28, %tmp.33);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 26 16 ]
+                %tmp.34 = lgetv %dc;
+                %tmp.35 = getv function %tmp.34 :setColor;
+                %tmp.36 = getm $.Toybox.Graphics;
+                %tmp.37 = getv %tmp.36 :COLOR_TRANSPARENT;
+                %tmp.38 = getm $.Toybox.Graphics;
+                %tmp.39 = getv %tmp.38 :COLOR_TRANSPARENT;
+                invoke %tmp.34 %tmp.35(%tmp.37, %tmp.39);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 28 16 ]
+                %tmp.40 = lgetv %dc;
+                %tmp.41 = getv function %tmp.40 :setColor;
+                %tmp.42 = 0x123456;
+                %tmp.43 = getm $.Toybox.Graphics;
+                %tmp.44 = getv %tmp.43 :COLOR_TRANSPARENT;
+                invoke %tmp.40 %tmp.41(%tmp.42, %tmp.44);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 29 16 ]
+                %tmp.45 = lgetv %dc;
+                %tmp.46 = getv function %tmp.45 :fillRectangle;
+                %tmp.47 = 0;
+                %tmp.48 = 0;
+                %tmp.49 = add %tmp.47 %tmp.48;
+                %tmp.50 = 0;
+                %tmp.51 = add %tmp.49 %tmp.50;
+                %tmp.52 = 0;
+                %tmp.53 = add %tmp.51 %tmp.52;
+                %tmp.54 = 0;
+                %tmp.55 = 0;
+                %tmp.56 = add %tmp.54 %tmp.55;
+                %tmp.57 = 0;
+                %tmp.58 = add %tmp.56 %tmp.57;
+                %tmp.59 = 0;
+                %tmp.60 = add %tmp.58 %tmp.59;
+                %tmp.61 = 75;
+                %tmp.62 = 2;
+                %tmp.63 = 0;
+                %tmp.64 = mul %tmp.62 %tmp.63;
+                %tmp.65 = sub %tmp.61 %tmp.64;
+                %tmp.66 = 120;
+                %tmp.67 = 2;
+                %tmp.68 = 0;
+                %tmp.69 = mul %tmp.67 %tmp.68;
+                %tmp.70 = sub %tmp.66 %tmp.69;
+                invoke %tmp.45 %tmp.46(%tmp.53, %tmp.60, %tmp.65, %tmp.70);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 30 16 ]
+                %tmp.71 = lgetv %dc;
+                %tmp.72 = getv function %tmp.71 :setColor;
+                %tmp.73 = 0xaf1235;
+                %tmp.74 = getm $.Toybox.Graphics;
+                %tmp.75 = getv %tmp.74 :COLOR_TRANSPARENT;
+                invoke %tmp.71 %tmp.72(%tmp.73, %tmp.75);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 31 16 ]
+                %tmp.76 = lgetv %dc;
+                %tmp.77 = getv function %tmp.76 :fillRectangle;
+                %tmp.78 = 0;
+                %tmp.79 = 0;
+                %tmp.80 = add %tmp.78 %tmp.79;
+                %tmp.81 = 80;
+                %tmp.82 = add %tmp.80 %tmp.81;
+                %tmp.83 = 0;
+                %tmp.84 = add %tmp.82 %tmp.83;
+                %tmp.85 = 0;
+                %tmp.86 = 0;
+                %tmp.87 = add %tmp.85 %tmp.86;
+                %tmp.88 = 0;
+                %tmp.89 = add %tmp.87 %tmp.88;
+                %tmp.90 = 0;
+                %tmp.91 = add %tmp.89 %tmp.90;
+                %tmp.92 = 75;
+                %tmp.93 = 2;
+                %tmp.94 = 0;
+                %tmp.95 = mul %tmp.93 %tmp.94;
+                %tmp.96 = sub %tmp.92 %tmp.95;
+                %tmp.97 = 120;
+                %tmp.98 = 2;
+                %tmp.99 = 0;
+                %tmp.100 = mul %tmp.98 %tmp.99;
+                %tmp.101 = sub %tmp.97 %tmp.100;
+                invoke %tmp.76 %tmp.77(%tmp.84, %tmp.91, %tmp.96, %tmp.101);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 32 16 ]
+                %tmp.102 = lgetv %dc;
+                %tmp.103 = getv function %tmp.102 :setColor;
+                %tmp.104 = 0xff99aa;
+                %tmp.105 = getm $.Toybox.Graphics;
+                %tmp.106 = getv %tmp.105 :COLOR_TRANSPARENT;
+                invoke %tmp.102 %tmp.103(%tmp.104, %tmp.106);
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 33 16 ]
+                %tmp.107 = lgetv %dc;
+                %tmp.108 = getv function %tmp.107 :fillRectangle;
+                %tmp.109 = 0;
+                %tmp.110 = 0;
+                %tmp.111 = add %tmp.109 %tmp.110;
+                %tmp.112 = 160;
+                %tmp.113 = add %tmp.111 %tmp.112;
+                %tmp.114 = 0;
+                %tmp.115 = add %tmp.113 %tmp.114;
+                %tmp.116 = 0;
+                %tmp.117 = 0;
+                %tmp.118 = add %tmp.116 %tmp.117;
+                %tmp.119 = 0;
+                %tmp.120 = add %tmp.118 %tmp.119;
+                %tmp.121 = 0;
+                %tmp.122 = add %tmp.120 %tmp.121;
+                %tmp.123 = 75;
+                %tmp.124 = 2;
+                %tmp.125 = 0;
+                %tmp.126 = mul %tmp.124 %tmp.125;
+                %tmp.127 = sub %tmp.123 %tmp.126;
+                %tmp.128 = 120;
+                %tmp.129 = 2;
+                %tmp.130 = 0;
+                %tmp.131 = mul %tmp.129 %tmp.130;
+                %tmp.132 = sub %tmp.128 %tmp.131;
+                invoke %tmp.107 %tmp.108(%tmp.115, %tmp.122, %tmp.127, %tmp.132);
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_17_53_stop:
+            }
+        }
+    }
+    [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 38; ]
+    module Fonts {
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 38; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 41; ]
+    module JsonData {
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 41; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 44; ]
+    module Layouts {
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 44; ]
+        <init> {
+        }
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 45; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 46 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_stop" ]
+            %rez_cmp_local_var_dc_getWidth.1 = local;
+            %tmp.1 = lgetv %dc;
+            %tmp.2 = getv function %tmp.1 :getWidth;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 48 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_stop" ]
+            %rez_cmp_local_custom_drawable_12105603915858479177.2 = local;
+            %tmp.7 = getv ? :Background;
+            %tmp.4 = newc %tmp.7 ();
+            lputv %rez_cmp_local_custom_drawable_12105603915858479177.2 %tmp.4;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 50 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_stop" ]
+            %rez_cmp_local_text_label.3 = local;
+            %tmp.10 = getm $.Toybox.WatchUi;
+            %tmp.11 = getv function ? %tmp.10 :Text;
+            %tmp.12 = newd 6;
+            %tmp.14 = const :identifier;
+            %tmp.15 = "label";
+            %tmp.16 = dup %tmp.12;
+            %tmp.17 = aputv %tmp.16 %tmp.14 %tmp.15;
+            %tmp.19 = const :color;
+            %tmp.20 = getm $.Toybox.Graphics;
+            %tmp.21 = getv %tmp.20 :COLOR_WHITE;
+            %tmp.22 = dup %tmp.17;
+            %tmp.23 = aputv %tmp.22 %tmp.19 %tmp.21;
+            %tmp.25 = const :locX;
+            %tmp.27 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            %tmp.28 = 0.5;
+            %tmp.29 = mul %tmp.27 %tmp.28;
+            %tmp.30 = dup %tmp.23;
+            %tmp.31 = aputv %tmp.30 %tmp.25 %tmp.29;
+            %tmp.33 = const :locY;
+            %tmp.34 = lgetv %dc;
+            %tmp.35 = getv function %tmp.34 :getHeight;
+            %tmp.36 = invoke %tmp.34 %tmp.35();
+            %tmp.37 = lgetv %dc;
+            %tmp.38 = getv function %tmp.37 :getFontHeight;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = invoke %tmp.37 %tmp.38(%tmp.40);
+            %tmp.42 = sub %tmp.36 %tmp.41;
+            %tmp.43 = 0.5;
+            %tmp.44 = mul %tmp.42 %tmp.43;
+            %tmp.45 = dup %tmp.31;
+            %tmp.46 = aputv %tmp.45 %tmp.33 %tmp.44;
+            %tmp.48 = const :justification;
+            %tmp.49 = getm $.Toybox.Graphics;
+            %tmp.50 = getv %tmp.49 :TEXT_JUSTIFY_CENTER;
+            %tmp.51 = dup %tmp.46;
+            %tmp.52 = aputv %tmp.51 %tmp.48 %tmp.50;
+            %tmp.54 = const :font;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :FONT_TINY;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.8 = newc %tmp.11 (%tmp.58);
+            lputv %rez_cmp_local_text_label.3 %tmp.8;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 52 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_stop" ]
+            %rez_cmp_local_text_value.4 = local;
+            %tmp.61 = getm $.Toybox.WatchUi;
+            %tmp.62 = getv function ? %tmp.61 :Text;
+            %tmp.63 = newd 6;
+            %tmp.65 = const :identifier;
+            %tmp.66 = "value";
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :color;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :COLOR_WHITE;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :locX;
+            %tmp.78 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            %tmp.79 = 0.5;
+            %tmp.80 = mul %tmp.78 %tmp.79;
+            %tmp.81 = dup %tmp.74;
+            %tmp.82 = aputv %tmp.81 %tmp.76 %tmp.80;
+            %tmp.84 = const :locY;
+            %tmp.85 = 140;
+            %tmp.86 = dup %tmp.82;
+            %tmp.87 = aputv %tmp.86 %tmp.84 %tmp.85;
+            %tmp.89 = const :justification;
+            %tmp.90 = getm $.Toybox.Graphics;
+            %tmp.91 = getv %tmp.90 :TEXT_JUSTIFY_CENTER;
+            %tmp.92 = dup %tmp.87;
+            %tmp.93 = aputv %tmp.92 %tmp.89 %tmp.91;
+            %tmp.95 = const :font;
+            %tmp.96 = getm $.Toybox.Graphics;
+            %tmp.97 = getv %tmp.96 :FONT_LARGE;
+            %tmp.98 = dup %tmp.93;
+            %tmp.99 = aputv %tmp.98 %tmp.95 %tmp.97;
+            %tmp.59 = newc %tmp.62 (%tmp.99);
+            lputv %rez_cmp_local_text_value.4 %tmp.59;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 54 12 ]
+            %tmp.100 = newa Array<WatchUi.Drawable> 3;
+            %tmp.102 = lgetv %rez_cmp_local_custom_drawable_12105603915858479177.2;
+            %tmp.103 = dup %tmp.100;
+            %tmp.104 = aputv %tmp.103 0 %tmp.102;
+            %tmp.106 = lgetv %rez_cmp_local_text_label.3;
+            %tmp.107 = dup %tmp.104;
+            %tmp.108 = aputv %tmp.107 1 %tmp.106;
+            %tmp.110 = lgetv %rez_cmp_local_text_value.4;
+            %tmp.111 = dup %tmp.108;
+            %tmp.112 = aputv %tmp.111 2 %tmp.110;
+            ret %tmp.112;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_45_74_stop:
+        }
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 57; ]
+        function TopLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 58 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_stop" ]
+            %rez_cmp_local_custom_drawable_59642169319322342531.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_59642169319322342531.1 %tmp.1;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 60 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 95;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 75;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_RIGHT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 62 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 95;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 42;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_RIGHT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 64 12 ]
+            %tmp.81 = newa Array<WatchUi.Drawable> 3;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_59642169319322342531.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_57_77_stop:
+        }
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 67; ]
+        function TopRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 68 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_stop" ]
+            %rez_cmp_local_custom_drawable_16764936587627900301.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_16764936587627900301.1 %tmp.1;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 70 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 14;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 75;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_LEFT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 72 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 14;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 42;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_LEFT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 74 12 ]
+            %tmp.81 = newa Array<WatchUi.Drawable> 3;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_16764936587627900301.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_67_78_stop:
+        }
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 77; ]
+        function BottomLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 78 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_stop" ]
+            %rez_cmp_local_custom_drawable_12152171916801853241.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_12152171916801853241.1 %tmp.1;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 80 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 95;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 10;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_RIGHT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 82 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 95;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 27;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_RIGHT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 84 12 ]
+            %tmp.81 = newa Array<WatchUi.Drawable> 3;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_12152171916801853241.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_77_80_stop:
+        }
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 87; ]
+        function BottomRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_start:
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 88 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_stop" ]
+            %rez_cmp_local_custom_drawable_10209330383197690821.1 = local;
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_10209330383197690821.1 %tmp.1;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 90 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_stop" ]
+            %rez_cmp_local_text_label.2 = local;
+            %tmp.7 = getm $.Toybox.WatchUi;
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            %tmp.12 = "label";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            %tmp.17 = getm $.Toybox.Graphics;
+            %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            %tmp.23 = 14;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :locY;
+            %tmp.28 = 10;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.32 = const :justification;
+            %tmp.33 = getm $.Toybox.Graphics;
+            %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_LEFT;
+            %tmp.35 = dup %tmp.30;
+            %tmp.36 = aputv %tmp.35 %tmp.32 %tmp.34;
+            %tmp.38 = const :font;
+            %tmp.39 = getm $.Toybox.Graphics;
+            %tmp.40 = getv %tmp.39 :FONT_TINY;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.5 = newc %tmp.8 (%tmp.42);
+            lputv %rez_cmp_local_text_label.2 %tmp.5;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 92 12 ]
+            [ "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_start" "c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_stop" ]
+            %rez_cmp_local_text_value.3 = local;
+            %tmp.45 = getm $.Toybox.WatchUi;
+            %tmp.46 = getv function ? %tmp.45 :Text;
+            %tmp.47 = newd 6;
+            %tmp.49 = const :identifier;
+            %tmp.50 = "value";
+            %tmp.51 = dup %tmp.47;
+            %tmp.52 = aputv %tmp.51 %tmp.49 %tmp.50;
+            %tmp.54 = const :color;
+            %tmp.55 = getm $.Toybox.Graphics;
+            %tmp.56 = getv %tmp.55 :COLOR_WHITE;
+            %tmp.57 = dup %tmp.52;
+            %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
+            %tmp.60 = const :locX;
+            %tmp.61 = 14;
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :locY;
+            %tmp.66 = 27;
+            %tmp.67 = dup %tmp.63;
+            %tmp.68 = aputv %tmp.67 %tmp.65 %tmp.66;
+            %tmp.70 = const :justification;
+            %tmp.71 = getm $.Toybox.Graphics;
+            %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_LEFT;
+            %tmp.73 = dup %tmp.68;
+            %tmp.74 = aputv %tmp.73 %tmp.70 %tmp.72;
+            %tmp.76 = const :font;
+            %tmp.77 = getm $.Toybox.Graphics;
+            %tmp.78 = getv %tmp.77 :FONT_LARGE;
+            %tmp.79 = dup %tmp.74;
+            %tmp.80 = aputv %tmp.79 %tmp.76 %tmp.78;
+            %tmp.43 = newc %tmp.46 (%tmp.80);
+            lputv %rez_cmp_local_text_value.3 %tmp.43;
+[ "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen" 94 12 ]
+            %tmp.81 = newa Array<WatchUi.Drawable> 3;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_10209330383197690821.1;
+            %tmp.84 = dup %tmp.81;
+            %tmp.85 = aputv %tmp.84 0 %tmp.83;
+            %tmp.87 = lgetv %rez_cmp_local_text_label.2;
+            %tmp.88 = dup %tmp.85;
+            %tmp.89 = aputv %tmp.88 1 %tmp.87;
+            %tmp.91 = lgetv %rez_cmp_local_text_value.3;
+            %tmp.92 = dup %tmp.89;
+            %tmp.93 = aputv %tmp.92 2 %tmp.91;
+            ret %tmp.93;
+c_Users_Wal_garmin_runThree_build_gen_006_B3077_00_source_Rez_mcgen_87_81_stop:
+        }
+    }
+    [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 98; ]
+    module Menus {
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 98; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 101; ]
+    module Strings {
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 101; ]
+        <init> {
+        }
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 102; @position = 27; initialized = true; ]
+        var label as Symbol;
+        [ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 103; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+[ @file = "c:\Users\Wal\garmin\runThree\build\gen\006-B3077-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

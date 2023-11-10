@@ -1,0 +1,1099 @@
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 1; ]
+import Toybox.Activity;
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 5; ]
+import Toybox.UserProfile;
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 7; @position = 4; ]
+var default_background;
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 8; @position = 4; ]
+var default_foreground;
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 11; ]
+class runThreeView extends WatchUi.DataField{
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 11; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 11; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 13; @position = 15; ]
+    protected
+    var current_hr as Numeric;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 14; @position = 8; ]
+    var xmin;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 15; @position = 8; ]
+    var xmax;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 16; @position = 8; ]
+    var box_width;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 17; @position = 8; ]
+    var box_height;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 18; @position = 8; ]
+    var box_values as Array;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 19; @position = 8; ]
+    var n_boxes;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 20; @position = 8; ]
+    var seconds_per_box;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 21; @position = 8; ]
+    var line_y_offset_above;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 22; @position = 8; ]
+    var line_y_offset_below;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 23; @position = 8; ]
+    var heart_rates as Array<Number>;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 24; @position = 8; ]
+    var current_count as Number;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 25; @position = 8; ]
+    var current_sport as UserProfile.SportHrZone;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 26; @position = 8; ]
+    var hr_zones as Array<Number>;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 27; @position = 8; ]
+    var hr_zone2_start as Number;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 28; @position = 8; ]
+    var hr_zone2_end as Number;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 29; @position = 8; ]
+    var screen_width;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 30; @position = 8; ]
+    var screen_height;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 32; ]
+    function initialize() as Void {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_32_26_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 33 8 ]
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 34 8 ]
+        %tmp.4 = 42.0f;
+        putv self :current_hr %tmp.4;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 35 8 ]
+        %tmp.5 = 7;
+        putv self :n_boxes %tmp.5;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 36 8 ]
+        %tmp.6 = 7;
+        putv self :seconds_per_box %tmp.6;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 37 8 ]
+        %tmp.7 = newa 8;
+        %tmp.8 = 0;
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 0 %tmp.8;
+        %tmp.11 = 0;
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 1 %tmp.11;
+        %tmp.14 = 0;
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 2 %tmp.14;
+        %tmp.17 = 0;
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 3 %tmp.17;
+        %tmp.20 = 0;
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 4 %tmp.20;
+        %tmp.23 = 0;
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 5 %tmp.23;
+        %tmp.26 = 0;
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 6 %tmp.26;
+        %tmp.29 = 0;
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 7 %tmp.29;
+        putv self :box_values %tmp.31;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 38 8 ]
+        %tmp.32 = newa 7;
+        %tmp.33 = 0;
+        %tmp.34 = dup %tmp.32;
+        %tmp.35 = aputv %tmp.34 0 %tmp.33;
+        %tmp.36 = 0;
+        %tmp.37 = dup %tmp.35;
+        %tmp.38 = aputv %tmp.37 1 %tmp.36;
+        %tmp.39 = 0;
+        %tmp.40 = dup %tmp.38;
+        %tmp.41 = aputv %tmp.40 2 %tmp.39;
+        %tmp.42 = 0;
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 3 %tmp.42;
+        %tmp.45 = 0;
+        %tmp.46 = dup %tmp.44;
+        %tmp.47 = aputv %tmp.46 4 %tmp.45;
+        %tmp.48 = 0;
+        %tmp.49 = dup %tmp.47;
+        %tmp.50 = aputv %tmp.49 5 %tmp.48;
+        %tmp.51 = 0;
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 6 %tmp.51;
+        putv self :heart_rates %tmp.53;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 39 8 ]
+        %tmp.54 = 0;
+        putv self :current_count %tmp.54;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 41 8 ]
+        %tmp.55 = getm $.Toybox.UserProfile;
+        %tmp.56 = getv function %tmp.55 :getCurrentSport;
+        %tmp.57 = invoke %tmp.55 %tmp.56();
+        putv self :current_sport %tmp.57;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 42 8 ]
+        %tmp.58 = getm $.Toybox.UserProfile;
+        %tmp.59 = getv function %tmp.58 :getHeartRateZones;
+        %tmp.61 = getv ? :current_sport;
+        %tmp.62 = invoke %tmp.58 %tmp.59(%tmp.61);
+        putv self :hr_zones %tmp.62;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 43 8 ]
+        %tmp.64 = getv ? :hr_zones;
+        %tmp.65 = 2;
+        %tmp.66 = agetv %tmp.64 %tmp.65;
+        %tmp.67 = 4;
+        %tmp.68 = sub %tmp.66 %tmp.67;
+        putv self :hr_zone2_start %tmp.68;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 44 8 ]
+        %tmp.70 = getv ? :hr_zones;
+        %tmp.71 = 3;
+        %tmp.72 = agetv %tmp.70 %tmp.71;
+        %tmp.73 = 1;
+        %tmp.74 = add %tmp.72 %tmp.73;
+        putv self :hr_zone2_end %tmp.74;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_32_26_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 49; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_49_40_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 52 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :setLayout;
+        %tmp.5 = getv ? :Rez;
+        %tmp.6 = getv %tmp.5 :Layouts;
+        %tmp.7 = getv function %tmp.6 :MainLayout;
+        %tmp.9 = lgetv %dc;
+        %tmp.10 = invoke %tmp.6 %tmp.7(%tmp.9);
+        invoke %tmp.2 %tmp.3(%tmp.10);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 53 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_49_40_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_49_40_stop" ]
+        %labelView.1 = local;
+        %tmp.12 = getv ? :View;
+        %tmp.13 = getv function %tmp.12 :findDrawableById;
+        %tmp.14 = "label";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = as %tmp.15 Text;
+        lputv %labelView.1 %tmp.16;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 54 8 ]
+        %tmp.17 = lgetv %labelView.1;
+        %tmp.18 = lgetv %labelView.1;
+        %tmp.19 = getv %tmp.18 :locY;
+        %tmp.20 = 16;
+        %tmp.21 = sub %tmp.19 %tmp.20;
+        putv %tmp.17 :locY %tmp.21;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 55 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_49_40_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_49_40_stop" ]
+        %valueView.2 = local;
+        %tmp.23 = getv ? :View;
+        %tmp.24 = getv function %tmp.23 :findDrawableById;
+        %tmp.25 = "value";
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        %tmp.27 = as %tmp.26 Text;
+        lputv %valueView.2 %tmp.27;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 56 8 ]
+        %tmp.28 = lgetv %valueView.2;
+        %tmp.29 = lgetv %valueView.2;
+        %tmp.30 = getv %tmp.29 :locY;
+        %tmp.31 = 7;
+        %tmp.32 = add %tmp.30 %tmp.31;
+        putv %tmp.28 :locY %tmp.32;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 58 8 ]
+        %tmp.34 = getv ? :View;
+        %tmp.35 = getv function %tmp.34 :findDrawableById;
+        %tmp.36 = "label";
+        %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
+        %tmp.38 = as %tmp.37 Text;
+        %tmp.39 = getv function %tmp.38 :setText;
+        %tmp.41 = getv ? :Rez;
+        %tmp.42 = getv %tmp.41 :Strings;
+        %tmp.43 = getv %tmp.42 :label;
+        invoke %tmp.38 %tmp.39(%tmp.43);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 60 8 ]
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :getWidth;
+        %tmp.46 = invoke %tmp.44 %tmp.45();
+        putv self :screen_width %tmp.46;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 61 8 ]
+        %tmp.47 = lgetv %dc;
+        %tmp.48 = getv function %tmp.47 :getHeight;
+        %tmp.49 = invoke %tmp.47 %tmp.48();
+        putv self :screen_height %tmp.49;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 63 8 ]
+        %tmp.50 = 0;
+        putv self :xmin %tmp.50;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 64 8 ]
+        %tmp.51 = 0.7708;
+        %tmp.53 = getv ? :screen_width;
+        %tmp.54 = mul %tmp.51 %tmp.53;
+        putv self :xmax %tmp.54;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 66 8 ]
+        %tmp.56 = getv ? :xmax;
+        %tmp.58 = getv ? :xmin;
+        %tmp.59 = sub %tmp.56 %tmp.58;
+        %tmp.61 = getv ? :n_boxes;
+        %tmp.62 = div %tmp.59 %tmp.61;
+        %tmp.63 = 1;
+        %tmp.64 = sub %tmp.62 %tmp.63;
+        putv self :box_width %tmp.64;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 67 8 ]
+        %tmp.65 = 0.125;
+        %tmp.67 = getv ? :screen_height;
+        %tmp.68 = mul %tmp.65 %tmp.67;
+        putv self :box_height %tmp.68;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 69 8 ]
+        %tmp.69 = 0.25;
+        %tmp.71 = getv ? :screen_height;
+        %tmp.72 = mul %tmp.69 %tmp.71;
+        putv self :line_y_offset_above %tmp.72;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 70 8 ]
+        %tmp.73 = 0.229167;
+        %tmp.75 = getv ? :screen_height;
+        %tmp.76 = mul %tmp.73 %tmp.75;
+        putv self :line_y_offset_below %tmp.76;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_49_40_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 73; ]
+    function compute(info as Activity.Info) as Void {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_73_52_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 75 8 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_75_8_if_stmt:
+        %tmp.2 = lgetv %info;
+        %tmp.4 = const :currentHeartRate;
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_75_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_75_8_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_75_38_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 76 12 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_12_if_stmt:
+        %tmp.6 = lgetv %info;
+        %tmp.7 = as %tmp.6 { (interface { var currentHeartRate; }) };
+        %tmp.8 = getv %tmp.7 :currentHeartRate;
+        %tmp.9 = null;
+        %tmp.10 = ne %tmp.8 %tmp.9;
+        bf %tmp.10 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_12_if_false;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_12_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_45_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 77 16 ]
+        %tmp.11 = lgetv %info;
+        %tmp.12 = as %tmp.11 { (interface { var currentHeartRate; }) };
+        %tmp.13 = getv %tmp.12 :currentHeartRate;
+        %tmp.14 = as %tmp.13 Number;
+        putv self :current_hr %tmp.14;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 79 16 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_end" ]
+        %i.1 = local;
+        %tmp.15 = 0;
+        lputv %i.1 %tmp.15;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_test:
+        %tmp.17 = lgetv %i.1;
+        %tmp.19 = getv ? :seconds_per_box;
+        %tmp.20 = 1;
+        %tmp.21 = sub %tmp.19 %tmp.20;
+        %tmp.22 = lt %tmp.17 %tmp.21;
+        bf %tmp.22 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_65_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 80 20 ]
+        %tmp.23 = getv self :heart_rates;
+        %tmp.25 = getv ? :heart_rates;
+        %tmp.27 = lgetv %i.1;
+        %tmp.28 = 1;
+        %tmp.29 = add %tmp.27 %tmp.28;
+        %tmp.30 = agetv %tmp.25 %tmp.29;
+        %tmp.32 = lgetv %i.1;
+        aputv %tmp.23 %tmp.32 %tmp.30;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_65_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 79 ]
+        %tmp.33 = lgetv %i.1;
+        %tmp.34 = 1;
+        %tmp.35 = add %tmp.33 %tmp.34;
+        lputv %i.1 %tmp.35;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_79_16_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 82 16 ]
+        %tmp.36 = getv self :heart_rates;
+        %tmp.38 = getv ? :current_hr;
+        %tmp.40 = getv ? :seconds_per_box;
+        %tmp.41 = 1;
+        %tmp.42 = sub %tmp.40 %tmp.41;
+        aputv %tmp.36 %tmp.42 %tmp.38;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 84 16 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_84_16_if_stmt:
+        %tmp.44 = getv ? :current_count;
+        %tmp.46 = getv ? :seconds_per_box;
+        %tmp.47 = mod %tmp.44 %tmp.46;
+        %tmp.48 = 0;
+        %tmp.49 = eq %tmp.47 %tmp.48;
+        bf %tmp.49 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_84_16_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_84_16_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_84_58_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 85 20 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_end" ]
+        %i.2 = local;
+        %tmp.50 = 0;
+        lputv %i.2 %tmp.50;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_test:
+        %tmp.52 = lgetv %i.2;
+        %tmp.54 = getv ? :n_boxes;
+        %tmp.55 = 1;
+        %tmp.56 = sub %tmp.54 %tmp.55;
+        %tmp.57 = lt %tmp.52 %tmp.56;
+        bf %tmp.57 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_61_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 86 24 ]
+        %tmp.58 = getv self :box_values;
+        %tmp.60 = getv ? :box_values;
+        %tmp.62 = lgetv %i.2;
+        %tmp.63 = 1;
+        %tmp.64 = add %tmp.62 %tmp.63;
+        %tmp.65 = agetv %tmp.60 %tmp.64;
+        %tmp.67 = lgetv %i.2;
+        aputv %tmp.58 %tmp.67 %tmp.65;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_61_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 85 ]
+        %tmp.68 = lgetv %i.2;
+        %tmp.69 = 1;
+        %tmp.70 = add %tmp.68 %tmp.69;
+        lputv %i.2 %tmp.70;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_85_20_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 88 20 ]
+        %tmp.71 = getv self :box_values;
+        %tmp.72 = self;
+        %tmp.73 = getv function %tmp.72 :mean;
+        %tmp.75 = getv ? :heart_rates;
+        %tmp.76 = invoke %tmp.72 %tmp.73(%tmp.75);
+        %tmp.78 = getv ? :n_boxes;
+        %tmp.79 = 1;
+        %tmp.80 = sub %tmp.78 %tmp.79;
+        aputv %tmp.71 %tmp.80 %tmp.76;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_84_58_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_84_16_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_84_16_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 91 16 ]
+        %tmp.81 = getv self :current_count;
+        %tmp.82 = 1;
+        %tmp.83 = add %tmp.81 %tmp.82;
+        putv self :current_count dup %tmp.83;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_45_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_12_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_12_if_false:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_92_19_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 93 16 ]
+        %tmp.84 = 0.0f;
+        putv self :current_hr %tmp.84;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_92_19_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_76_12_if_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_75_38_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_75_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_75_8_if_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_73_52_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 100; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_100_40_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 103 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "Background";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :getBackgroundColor;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        invoke %tmp.6 %tmp.7(%tmp.10);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 105 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_100_40_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_100_40_stop" ]
+        %value.1 = local;
+        %tmp.12 = getv ? :View;
+        %tmp.13 = getv function %tmp.12 :findDrawableById;
+        %tmp.14 = "value";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = as %tmp.15 Text;
+        lputv %value.1 %tmp.16;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 106 8 ]
+        %tmp.17 = lgetv %value.1;
+        %tmp.18 = getv function %tmp.17 :setColor;
+        %tmp.20 = getv ? :default_foreground;
+        invoke %tmp.17 %tmp.18(%tmp.20);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 107 8 ]
+        %tmp.21 = lgetv %value.1;
+        %tmp.22 = getv function %tmp.21 :setText;
+        %tmp.23 = "";
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 110 8 ]
+        %tmp.24 = lgetv %dc;
+        %tmp.25 = getv function %tmp.24 :setColor;
+        %tmp.26 = getm $.Toybox.Graphics;
+        %tmp.27 = getv %tmp.26 :COLOR_WHITE;
+        %tmp.29 = getv ? :default_background;
+        invoke %tmp.24 %tmp.25(%tmp.27, %tmp.29);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 111 8 ]
+        %tmp.31 = getv ? :View;
+        %tmp.32 = getv function %tmp.31 :onUpdate;
+        %tmp.34 = lgetv %dc;
+        invoke %tmp.31 %tmp.32(%tmp.34);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 114 8 ]
+        %tmp.35 = self;
+        %tmp.36 = getv function %tmp.35 :draw_dashed_line;
+        %tmp.38 = lgetv %dc;
+        %tmp.39 = 0;
+        %tmp.41 = getv ? :line_y_offset_above;
+        %tmp.43 = getv ? :xmax;
+        %tmp.44 = 1;
+        %tmp.46 = getv ? :default_foreground;
+        invoke %tmp.35 %tmp.36(%tmp.38, %tmp.39, %tmp.41, %tmp.43, %tmp.44, %tmp.46);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 115 8 ]
+        %tmp.47 = self;
+        %tmp.48 = getv function %tmp.47 :draw_dashed_line;
+        %tmp.50 = lgetv %dc;
+        %tmp.51 = 0;
+        %tmp.53 = getv ? :screen_height;
+        %tmp.55 = getv ? :line_y_offset_below;
+        %tmp.56 = sub %tmp.53 %tmp.55;
+        %tmp.58 = getv ? :xmax;
+        %tmp.59 = 1;
+        %tmp.61 = getv ? :default_foreground;
+        invoke %tmp.47 %tmp.48(%tmp.50, %tmp.51, %tmp.56, %tmp.58, %tmp.59, %tmp.61);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 117 8 ]
+        %tmp.62 = lgetv %dc;
+        %tmp.63 = getv function %tmp.62 :drawText;
+        %tmp.65 = getv ? :xmax;
+        %tmp.66 = 3;
+        %tmp.67 = add %tmp.65 %tmp.66;
+        %tmp.69 = getv ? :line_y_offset_above;
+        %tmp.70 = 10;
+        %tmp.71 = sub %tmp.69 %tmp.70;
+        %tmp.72 = getm $.Toybox.Graphics;
+        %tmp.73 = getv %tmp.72 :FONT_XTINY;
+        %tmp.75 = getv ? :hr_zone2_end;
+        %tmp.76 = getv function %tmp.75 :format;
+        %tmp.77 = "%d";
+        %tmp.78 = invoke %tmp.75 %tmp.76(%tmp.77);
+        %tmp.79 = getm $.Toybox.Graphics;
+        %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.62 %tmp.63(%tmp.67, %tmp.71, %tmp.73, %tmp.78, %tmp.80);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 118 8 ]
+        %tmp.81 = lgetv %dc;
+        %tmp.82 = getv function %tmp.81 :drawText;
+        %tmp.84 = getv ? :xmax;
+        %tmp.85 = 3;
+        %tmp.86 = add %tmp.84 %tmp.85;
+        %tmp.88 = getv ? :screen_height;
+        %tmp.90 = getv ? :line_y_offset_below;
+        %tmp.91 = sub %tmp.88 %tmp.90;
+        %tmp.92 = 10;
+        %tmp.93 = sub %tmp.91 %tmp.92;
+        %tmp.94 = getm $.Toybox.Graphics;
+        %tmp.95 = getv %tmp.94 :FONT_XTINY;
+        %tmp.97 = getv ? :hr_zone2_start;
+        %tmp.98 = getv function %tmp.97 :format;
+        %tmp.99 = "%d";
+        %tmp.100 = invoke %tmp.97 %tmp.98(%tmp.99);
+        %tmp.101 = getm $.Toybox.Graphics;
+        %tmp.102 = getv %tmp.101 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.81 %tmp.82(%tmp.86, %tmp.93, %tmp.95, %tmp.100, %tmp.102);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 119 8 ]
+        %tmp.103 = lgetv %dc;
+        %tmp.104 = getv function %tmp.103 :setColor;
+        %tmp.105 = getm $.Toybox.Graphics;
+        %tmp.106 = getv %tmp.105 :COLOR_BLACK;
+        %tmp.108 = getv ? :default_background;
+        invoke %tmp.103 %tmp.104(%tmp.106, %tmp.108);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 120 8 ]
+        %tmp.109 = lgetv %dc;
+        %tmp.110 = getv function %tmp.109 :drawText;
+        %tmp.112 = getv ? :xmax;
+        %tmp.113 = 25;
+        %tmp.114 = add %tmp.112 %tmp.113;
+        %tmp.116 = getv ? :screen_height;
+        %tmp.117 = 2;
+        %tmp.118 = div %tmp.116 %tmp.117;
+        %tmp.119 = 15;
+        %tmp.120 = sub %tmp.118 %tmp.119;
+        %tmp.121 = getm $.Toybox.Graphics;
+        %tmp.122 = getv %tmp.121 :FONT_MEDIUM;
+        %tmp.124 = getv ? :current_hr;
+        %tmp.125 = getv function %tmp.124 :format;
+        %tmp.126 = "%.0f";
+        %tmp.127 = invoke %tmp.124 %tmp.125(%tmp.126);
+        %tmp.128 = getm $.Toybox.Graphics;
+        %tmp.129 = getv %tmp.128 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.109 %tmp.110(%tmp.114, %tmp.120, %tmp.122, %tmp.127, %tmp.129);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 122 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_100_40_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_100_40_stop" ]
+        %k.2 = local;
+        %tmp.131 = getv ? :line_y_offset_above;
+        %tmp.133 = getv ? :screen_height;
+        %tmp.135 = getv ? :line_y_offset_below;
+        %tmp.136 = sub %tmp.133 %tmp.135;
+        %tmp.137 = sub %tmp.131 %tmp.136;
+        %tmp.139 = getv ? :hr_zone2_end;
+        %tmp.141 = getv ? :hr_zone2_start;
+        %tmp.142 = sub %tmp.139 %tmp.141;
+        %tmp.143 = div %tmp.137 %tmp.142;
+        lputv %k.2 %tmp.143;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 124 8 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_end" ]
+        %i.3 = local;
+        %tmp.144 = 0;
+        lputv %i.3 %tmp.144;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_test:
+        %tmp.146 = lgetv %i.3;
+        %tmp.148 = getv ? :n_boxes;
+        %tmp.149 = lt %tmp.146 %tmp.148;
+        bf %tmp.149 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 125 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_stop" ]
+        %box_hr.4 = local;
+        %tmp.151 = getv ? :box_values;
+        %tmp.153 = lgetv %i.3;
+        %tmp.154 = agetv %tmp.151 %tmp.153;
+        lputv %box_hr.4 %tmp.154;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 126 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_stop" ]
+        %x_i.5 = local;
+        %tmp.156 = lgetv %i.3;
+        %tmp.158 = getv ? :box_width;
+        %tmp.159 = 1;
+        %tmp.160 = add %tmp.158 %tmp.159;
+        %tmp.161 = mul %tmp.156 %tmp.160;
+        lputv %x_i.5 %tmp.161;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 127 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_stop" ]
+        %y_i.6 = local;
+        %tmp.163 = getv ? :screen_height;
+        %tmp.165 = getv ? :line_y_offset_below;
+        %tmp.166 = sub %tmp.163 %tmp.165;
+        %tmp.168 = getv ? :hr_zone2_start;
+        %tmp.170 = lgetv %box_hr.4;
+        %tmp.171 = sub %tmp.168 %tmp.170;
+        %tmp.173 = lgetv %k.2;
+        %tmp.174 = mul %tmp.171 %tmp.173;
+        %tmp.175 = sub %tmp.166 %tmp.174;
+        %tmp.177 = getv ? :box_height;
+        %tmp.178 = 2;
+        %tmp.179 = div %tmp.177 %tmp.178;
+        %tmp.180 = sub %tmp.175 %tmp.179;
+        lputv %y_i.6 %tmp.180;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 128 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_stop" ]
+        %color.7 = local;
+        %tmp.181 = self;
+        %tmp.182 = getv function %tmp.181 :get_box_color;
+        %tmp.184 = lgetv %box_hr.4;
+        %tmp.185 = invoke %tmp.181 %tmp.182(%tmp.184);
+        lputv %color.7 %tmp.185;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 130 12 ]
+        %tmp.186 = self;
+        %tmp.187 = getv function %tmp.186 :draw_rect;
+        %tmp.189 = lgetv %dc;
+        %tmp.191 = lgetv %x_i.5;
+        %tmp.193 = lgetv %y_i.6;
+        %tmp.195 = getv ? :box_width;
+        %tmp.197 = getv ? :box_height;
+        %tmp.199 = lgetv %color.7;
+        invoke %tmp.186 %tmp.187(%tmp.189, %tmp.191, %tmp.193, %tmp.195, %tmp.197, %tmp.199);
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_45_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 124 ]
+        %tmp.200 = lgetv %i.3;
+        %tmp.201 = 1;
+        %tmp.202 = add %tmp.200 %tmp.201;
+        lputv %i.3 %tmp.202;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_124_8_for_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_100_40_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 134; ]
+    function get_box_color(hr) {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_134_31_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 135 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_134_31_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_134_31_stop" ]
+        %color.1 = local;
+        %tmp.1 = getm $.Toybox.Graphics;
+        %tmp.2 = getv %tmp.1 :COLOR_RED;
+        lputv %color.1 %tmp.2;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 137 8 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_8_if_stmt:
+        %tmp.4 = lgetv %hr;
+        %tmp.6 = getv ? :hr_zone2_end;
+        %tmp.7 = 1;
+        %tmp.8 = add %tmp.6 %tmp.7;
+        %tmp.9 = gt %tmp.4 %tmp.8;
+        bf %tmp.9 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_8_if_false;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_8_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_35_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 138 12 ]
+        %tmp.10 = getm $.Toybox.Graphics;
+        %tmp.11 = getv %tmp.10 :COLOR_RED;
+        lputv %color.1 %tmp.11;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_35_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_8_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 139 15 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_15_if_stmt:
+        %tmp.13 = lgetv %hr;
+        %tmp.15 = getv ? :hr_zone2_end;
+        %tmp.16 = 2;
+        %tmp.17 = sub %tmp.15 %tmp.16;
+        %tmp.18 = gt %tmp.13 %tmp.17;
+        bf %tmp.18 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_15_if_false;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_15_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_42_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 140 12 ]
+        %tmp.19 = getm $.Toybox.Graphics;
+        %tmp.20 = getv %tmp.19 :COLOR_ORANGE;
+        lputv %color.1 %tmp.20;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_42_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_15_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_15_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 141 15 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_15_if_stmt:
+        %tmp.22 = lgetv %hr;
+        %tmp.24 = getv ? :hr_zone2_end;
+        %tmp.25 = 4;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        %tmp.27 = gt %tmp.22 %tmp.26;
+        bf %tmp.27 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_15_if_false;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_15_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_42_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 142 12 ]
+        %tmp.28 = getm $.Toybox.Graphics;
+        %tmp.29 = getv %tmp.28 :COLOR_GREEN;
+        lputv %color.1 %tmp.29;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_42_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_15_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_15_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 143 15 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_15_if_stmt:
+        %tmp.31 = lgetv %hr;
+        %tmp.33 = getv ? :hr_zone2_start;
+        %tmp.34 = gte %tmp.31 %tmp.33;
+        bf %tmp.34 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_15_if_false;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_15_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_41_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 144 12 ]
+        %tmp.35 = getm $.Toybox.Graphics;
+        %tmp.36 = getv %tmp.35 :COLOR_DK_GREEN;
+        lputv %color.1 %tmp.36;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_41_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_15_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_15_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 145 15 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_15_if_stmt:
+        %tmp.38 = lgetv %hr;
+        %tmp.40 = getv ? :hr_zone2_start;
+        %tmp.41 = 3;
+        %tmp.42 = sub %tmp.40 %tmp.41;
+        %tmp.43 = gte %tmp.38 %tmp.42;
+        bf %tmp.43 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_15_if_false;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_15_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_45_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 146 12 ]
+        %tmp.44 = getm $.Toybox.Graphics;
+        %tmp.45 = getv %tmp.44 :COLOR_GREEN;
+        lputv %color.1 %tmp.45;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_45_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_15_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_15_if_false:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_147_15_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 148 12 ]
+        %tmp.46 = getm $.Toybox.Graphics;
+        %tmp.47 = getv %tmp.46 :COLOR_RED;
+        lputv %color.1 %tmp.47;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_147_15_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_145_15_if_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_143_15_if_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_141_15_if_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_139_15_if_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_137_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 151 8 ]
+        %tmp.49 = lgetv %color.1;
+        ret %tmp.49;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_134_31_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 154; ]
+    function draw_dashed_line(dc, x, y, width, height, color) {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 155 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_stop" ]
+        %dash_length.1 = local;
+        %tmp.1 = 9;
+        lputv %dash_length.1 %tmp.1;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 156 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_stop" ]
+        %gap_length.2 = local;
+        %tmp.2 = 3;
+        lputv %gap_length.2 %tmp.2;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 158 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_stop" ]
+        %line_dimension.3 = local;
+        %tmp.3 = 0;
+        lputv %line_dimension.3 %tmp.3;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 159 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_stop" ]
+        %distance.4 = local;
+        %tmp.5 = lgetv %width;
+        lputv %distance.4 %tmp.5;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 160 8 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_160_8_if_stmt:
+        %tmp.7 = lgetv %height;
+        %tmp.9 = lgetv %width;
+        %tmp.10 = gt %tmp.7 %tmp.9;
+        bf %tmp.10 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_160_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_160_8_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_160_28_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 161 12 ]
+        %tmp.11 = 1;
+        lputv %line_dimension.3 %tmp.11;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 162 12 ]
+        %tmp.13 = lgetv %height;
+        lputv %distance.4 %tmp.13;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_160_28_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_160_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_160_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 165 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_stop" ]
+        %line_length_offset.5 = local;
+        %tmp.14 = 0;
+        lputv %line_length_offset.5 %tmp.14;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 166 8 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_end" ]
+        %z.6 = local;
+        %tmp.15 = 0;
+        lputv %z.6 %tmp.15;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_test:
+        %tmp.17 = lgetv %z.6;
+        %tmp.19 = lgetv %distance.4;
+        %tmp.20 = lt %tmp.17 %tmp.19;
+        bf %tmp.20 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_70_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 167 12 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_167_12_if_stmt:
+        %tmp.22 = lgetv %z.6;
+        %tmp.24 = lgetv %dash_length.1;
+        %tmp.25 = add %tmp.22 %tmp.24;
+        %tmp.27 = lgetv %distance.4;
+        %tmp.28 = gt %tmp.25 %tmp.27;
+        bf %tmp.28 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_167_12_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_167_12_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_167_44_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 168 16 ]
+        %tmp.30 = lgetv %z.6;
+        %tmp.32 = lgetv %dash_length.1;
+        %tmp.33 = add %tmp.30 %tmp.32;
+        %tmp.35 = lgetv %distance.4;
+        %tmp.36 = sub %tmp.33 %tmp.35;
+        lputv %line_length_offset.5 %tmp.36;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_167_44_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_167_12_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_167_12_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 171 12 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_171_12_if_stmt:
+        %tmp.38 = lgetv %line_dimension.3;
+        %tmp.39 = 0;
+        %tmp.40 = eq %tmp.38 %tmp.39;
+        bf %tmp.40 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_171_12_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_171_12_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_171_37_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 172 16 ]
+        %tmp.41 = self;
+        %tmp.42 = getv function %tmp.41 :draw_rect;
+        %tmp.44 = lgetv %dc;
+        %tmp.46 = lgetv %x;
+        %tmp.48 = lgetv %z.6;
+        %tmp.49 = add %tmp.46 %tmp.48;
+        %tmp.51 = lgetv %y;
+        %tmp.53 = lgetv %dash_length.1;
+        %tmp.55 = lgetv %line_length_offset.5;
+        %tmp.56 = sub %tmp.53 %tmp.55;
+        %tmp.58 = lgetv %height;
+        %tmp.60 = lgetv %color;
+        invoke %tmp.41 %tmp.42(%tmp.44, %tmp.49, %tmp.51, %tmp.56, %tmp.58, %tmp.60);
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_171_37_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_171_12_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_171_12_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 174 12 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_174_12_if_stmt:
+        %tmp.62 = lgetv %line_dimension.3;
+        %tmp.63 = 1;
+        %tmp.64 = eq %tmp.62 %tmp.63;
+        bf %tmp.64 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_174_12_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_174_12_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_174_37_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 175 16 ]
+        %tmp.65 = self;
+        %tmp.66 = getv function %tmp.65 :draw_rect;
+        %tmp.68 = lgetv %dc;
+        %tmp.70 = lgetv %x;
+        %tmp.72 = lgetv %y;
+        %tmp.74 = lgetv %z.6;
+        %tmp.75 = add %tmp.72 %tmp.74;
+        %tmp.77 = lgetv %width;
+        %tmp.79 = lgetv %dash_length.1;
+        %tmp.81 = lgetv %line_length_offset.5;
+        %tmp.82 = sub %tmp.79 %tmp.81;
+        %tmp.84 = lgetv %color;
+        invoke %tmp.65 %tmp.66(%tmp.68, %tmp.70, %tmp.75, %tmp.77, %tmp.82, %tmp.84);
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_174_37_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_174_12_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_174_12_if_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_70_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 166 ]
+        %tmp.85 = lgetv %z.6;
+        %tmp.87 = lgetv %dash_length.1;
+        %tmp.89 = lgetv %gap_length.2;
+        %tmp.90 = add %tmp.87 %tmp.89;
+        %tmp.91 = add %tmp.85 %tmp.90;
+        lputv %z.6 %tmp.91;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_166_8_for_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_154_62_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 180; ]
+    function draw_rect(dc, x, y, width, height, color) {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_180_55_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 181 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.4 = lgetv %color;
+        %tmp.6 = getv ? :default_background;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 182 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :fillRectangle;
+        %tmp.10 = lgetv %x;
+        %tmp.12 = lgetv %y;
+        %tmp.14 = lgetv %width;
+        %tmp.16 = lgetv %height;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12, %tmp.14, %tmp.16);
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 183 8 ]
+        %tmp.17 = lgetv %dc;
+        %tmp.18 = getv function %tmp.17 :setColor;
+        %tmp.20 = getv ? :default_foreground;
+        %tmp.22 = getv ? :default_background;
+        invoke %tmp.17 %tmp.18(%tmp.20, %tmp.22);
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_180_55_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 186; ]
+    function get_2d_array(x_dim, y_dim, fill_value) {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_186_52_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 188 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_186_52_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_186_52_stop" ]
+        %array.1 = local;
+        %tmp.3 = lgetv %x_dim;
+        %tmp.1 = newa Array<Array> %tmp.3;
+        lputv %array.1 %tmp.1;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 189 8 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_end" ]
+        %i.2 = local;
+        %tmp.4 = 0;
+        lputv %i.2 %tmp.4;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_test:
+        %tmp.6 = lgetv %i.2;
+        %tmp.8 = lgetv %x_dim;
+        %tmp.9 = lt %tmp.6 %tmp.8;
+        bf %tmp.9 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_43_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 190 12 ]
+        %tmp.10 = lgetv %array.1;
+        %tmp.13 = lgetv %y_dim;
+        %tmp.11 = newa %tmp.13;
+        %tmp.15 = lgetv %i.2;
+        aputv %tmp.10 %tmp.15 %tmp.11;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_43_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 189 ]
+        %tmp.16 = lgetv %i.2;
+        %tmp.17 = 1;
+        %tmp.18 = add %tmp.16 %tmp.17;
+        lputv %i.2 %tmp.18;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_189_8_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 193 8 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_193_8_if_stmt:
+        %tmp.20 = lgetv %fill_value;
+        %tmp.21 = null;
+        %tmp.22 = ne %tmp.20 %tmp.21;
+        bf %tmp.22 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_193_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_193_8_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_193_32_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 194 12 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_end" ]
+        %i.3 = local;
+        %tmp.23 = 0;
+        lputv %i.3 %tmp.23;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_test:
+        %tmp.25 = lgetv %i.3;
+        %tmp.27 = lgetv %x_dim;
+        %tmp.28 = lt %tmp.25 %tmp.27;
+        bf %tmp.28 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_47_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 195 16 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_end" ]
+        %j.4 = local;
+        %tmp.29 = 0;
+        lputv %j.4 %tmp.29;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_test:
+        %tmp.31 = lgetv %j.4;
+        %tmp.33 = lgetv %y_dim;
+        %tmp.34 = lt %tmp.31 %tmp.33;
+        bf %tmp.34 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_51_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 196 20 ]
+        %tmp.35 = lgetv %array.1;
+        %tmp.37 = lgetv %i.3;
+        %tmp.38 = agetv %tmp.35 %tmp.37;
+        %tmp.40 = lgetv %fill_value;
+        %tmp.41 = as %tmp.40 { (!Null) };
+        %tmp.43 = lgetv %j.4;
+        aputv %tmp.38 %tmp.43 %tmp.41;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_51_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 195 ]
+        %tmp.44 = lgetv %j.4;
+        %tmp.45 = 1;
+        %tmp.46 = add %tmp.44 %tmp.45;
+        lputv %j.4 %tmp.46;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_195_16_for_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_47_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 194 ]
+        %tmp.47 = lgetv %i.3;
+        %tmp.48 = 1;
+        %tmp.49 = add %tmp.47 %tmp.48;
+        lputv %i.3 %tmp.49;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_194_12_for_end:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_193_32_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_193_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_193_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 201 8 ]
+        %tmp.51 = lgetv %array.1;
+        ret %tmp.51;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_186_52_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 204; ]
+    function mean(array as Array) {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_204_34_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 205 8 ]
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_205_8_if_stmt:
+        %tmp.1 = lgetv %array;
+        %tmp.2 = getv function %tmp.1 :size;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 0;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        bf %tmp.5 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_205_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_205_8_if_true:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_205_31_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 206 12 ]
+        %tmp.6 = null;
+        ret %tmp.6;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_205_31_stop:
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_205_8_if_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_205_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 209 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_204_34_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_204_34_stop" ]
+        %sum.1 = local;
+        %tmp.7 = 0;
+        lputv %sum.1 %tmp.7;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 210 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_204_34_start" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_204_34_stop" ]
+        %avg.2 = local;
+        %tmp.8 = 0;
+        lputv %avg.2 %tmp.8;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 211 8 ]
+        for @C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_test @C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_incr @C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_begin" "C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_end" ]
+        %i.3 = local;
+        %tmp.9 = 0;
+        lputv %i.3 %tmp.9;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_test:
+        %tmp.11 = lgetv %i.3;
+        %tmp.12 = lgetv %array;
+        %tmp.13 = getv function %tmp.12 :size;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = lt %tmp.11 %tmp.14;
+        bf %tmp.15 @C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_end;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_begin:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_50_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 212 12 ]
+        %tmp.16 = lgetv %sum.1;
+        %tmp.18 = lgetv %array;
+        %tmp.20 = lgetv %i.3;
+        %tmp.21 = agetv %tmp.18 %tmp.20;
+        %tmp.22 = add %tmp.16 %tmp.21;
+        lputv %sum.1 %tmp.22;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_50_stop:
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 211 ]
+        %tmp.23 = lgetv %i.3;
+        %tmp.24 = 1;
+        %tmp.25 = add %tmp.23 %tmp.24;
+        lputv %i.3 %tmp.25;
+        goto @C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_test;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_211_8_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 214 8 ]
+        %tmp.27 = lgetv %sum.1;
+        %tmp.28 = lgetv %array;
+        %tmp.29 = getv function %tmp.28 :size;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        %tmp.31 = div %tmp.27 %tmp.30;
+        lputv %avg.2 %tmp.31;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 215 8 ]
+        %tmp.33 = lgetv %avg.2;
+        ret %tmp.33;
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_204_34_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 218; ]
+    function print(str) as Void {
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_218_32_start:
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 219 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.5 = lgetv %str;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+C_Users_Wal_garmin_runThree_source_runThreeView_mc_218_32_stop:
+    }
+}
+[ @file = "C:\Users\Wal\garmin\runThree\source\runThreeView.mc"; @line = 1; ]
+<init> {
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 7 4 ]
+    %tmp.6 = getm $.Toybox.Graphics;
+    %tmp.7 = getv %tmp.6 :COLOR_WHITE;
+    putv self :default_background %tmp.7;
+[ "C:\Users\Wal\garmin\runThree\source\runThreeView.mc" 8 4 ]
+    %tmp.8 = getm $.Toybox.Graphics;
+    %tmp.9 = getv %tmp.8 :COLOR_PURPLE;
+    putv self :default_foreground %tmp.9;
+}
