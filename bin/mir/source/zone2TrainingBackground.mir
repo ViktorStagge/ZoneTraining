@@ -1,0 +1,71 @@
+[ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 5; ]
+class Background extends WatchUi.Drawable{
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 7; @position = 15; ]
+    protected
+    var mColor as ColorValue;
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 9; ]
+    function initialize() as Void {
+C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_9_26_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc" 10 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_9_26_start" "C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_9_26_stop" ]
+        %dictionary.1 = local;
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        %tmp.4 = "Background";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+[ "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc" 14 8 ]
+        %tmp.8 = getv ? :Drawable;
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.11 = lgetv %dictionary.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+[ "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc" 16 8 ]
+        %tmp.12 = getm $.Toybox.Graphics;
+        %tmp.13 = getv %tmp.12 :COLOR_PURPLE;
+        putv self :mColor %tmp.13;
+C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_9_26_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 19; ]
+    function setColor(color as ColorValue) as Void {
+C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_19_51_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc" 20 8 ]
+        %tmp.1 = getm $.Toybox.Graphics;
+        %tmp.2 = getv %tmp.1 :COLOR_PURPLE;
+        putv self :mColor %tmp.2;
+C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_19_51_stop:
+    }
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 23; ]
+    function draw(dc as Dc) as Void {
+C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_23_36_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc" 24 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_TRANSPARENT;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_WHITE;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc" 25 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+C_Users_Wal_garmin_runThree_source_zone2TrainingBackground_mc_23_36_stop:
+    }
+}
+[ @file = "C:\Users\Wal\garmin\runThree\source\zone2TrainingBackground.mc"; @line = 1; ]
+<init> {
+}

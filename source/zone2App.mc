@@ -2,7 +2,7 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-class runThreeApp extends Application.AppBase {
+class zone2App extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
@@ -18,11 +18,11 @@ class runThreeApp extends Application.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new runThreeView() ] as Array<Views or InputDelegates>;
+        return [ new zone2View() ] as Array<Views or InputDelegates>;
     }
 
 }
 
-function getApp() as runThreeApp {
-    return Application.getApp() as runThreeApp;
+function getApp() as zone2App {
+    return Application.getApp() as zone2App;
 }

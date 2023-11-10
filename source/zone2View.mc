@@ -8,7 +8,7 @@ var default_background = Graphics.COLOR_WHITE;
 var default_foreground = Graphics.COLOR_PURPLE;
 
 
-class runThreeView extends WatchUi.DataField {
+class zone2View extends WatchUi.DataField {
 
     hidden var current_hr as Numeric;
     var xmin;
@@ -34,7 +34,7 @@ class runThreeView extends WatchUi.DataField {
         current_hr = 42.0f;
         n_boxes = 7;
         seconds_per_box = 7;
-        box_values = [0, 0, 0, 0, 0, 0, 0, 0];
+        box_values = [150, 151, 154, 154, 154, 152, 151, 0];
         heart_rates = [0, 0, 0, 0, 0, 0, 0];
         current_count = 0;
         
