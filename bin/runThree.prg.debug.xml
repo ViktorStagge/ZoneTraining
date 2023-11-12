@@ -14,259 +14,291 @@
 <entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="7" lineNum="5" parent="globals/Background" pc="268435575" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="8" lineNum="19" parent="globals/Background" pc="268435594" symbol="setColor"/>
 <entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="8" lineNum="20" parent="globals/Background" pc="268435596" symbol="setColor"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="9" parent="globals/Background" pc="268435610" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="10" parent="globals/Background" pc="268435614" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="14" parent="globals/Background" pc="268435635" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="16" parent="globals/Background" pc="268435655" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="10" lineNum="23" parent="globals/Background" pc="268435669" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="10" lineNum="24" parent="globals/Background" pc="268435671" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="9" parent="globals/Background" pc="268435607" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="10" parent="globals/Background" pc="268435611" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="14" parent="globals/Background" pc="268435632" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="9" lineNum="16" parent="globals/Background" pc="268435652" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="10" lineNum="23" parent="globals/Background" pc="268435666" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="10" lineNum="24" parent="globals/Background" pc="268435668" symbol="draw"/>
 <entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2Background.mc" id="10" lineNum="25" parent="globals/Background" pc="268435693" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="11" lineNum="11" parent="globals/zone2View" pc="268435706" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="180" parent="globals/zone2View" pc="268435725" symbol="draw_rect"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="181" parent="globals/zone2View" pc="268435727" symbol="draw_rect"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="182" parent="globals/zone2View" pc="268435749" symbol="draw_rect"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="183" parent="globals/zone2View" pc="268435769" symbol="draw_rect"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="73" parent="globals/zone2View" pc="268435798" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="75" parent="globals/zone2View" pc="268435802" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="76" parent="globals/zone2View" pc="268435813" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="77" parent="globals/zone2View" pc="268435826" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="79" parent="globals/zone2View" pc="268435842" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="80" parent="globals/zone2View" pc="268435869" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="82" parent="globals/zone2View" pc="268435910" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="84" parent="globals/zone2View" pc="268435941" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="85" parent="globals/zone2View" pc="268435967" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="86" parent="globals/zone2View" pc="268435994" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="88" parent="globals/zone2View" pc="268436035" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="91" parent="globals/zone2View" pc="268436080" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="93" parent="globals/zone2View" pc="268436102" symbol="compute"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="154" parent="globals/zone2View" pc="268436119" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="155" parent="globals/zone2View" pc="268436123" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="156" parent="globals/zone2View" pc="268436130" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="158" parent="globals/zone2View" pc="268436137" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="159" parent="globals/zone2View" pc="268436144" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="160" parent="globals/zone2View" pc="268436148" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="161" parent="globals/zone2View" pc="268436156" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="162" parent="globals/zone2View" pc="268436163" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="165" parent="globals/zone2View" pc="268436170" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="166" parent="globals/zone2View" pc="268436177" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="167" parent="globals/zone2View" pc="268436192" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="168" parent="globals/zone2View" pc="268436203" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="171" parent="globals/zone2View" pc="268436216" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="172" parent="globals/zone2View" pc="268436227" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="174" parent="globals/zone2View" pc="268436260" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="175" parent="globals/zone2View" pc="268436271" symbol="draw_dashed_line"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="49" parent="globals/zone2View" pc="268436318" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="52" parent="globals/zone2View" pc="268436322" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="53" parent="globals/zone2View" pc="268436373" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="54" parent="globals/zone2View" pc="268436401" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="55" parent="globals/zone2View" pc="268436423" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="56" parent="globals/zone2View" pc="268436451" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="58" parent="globals/zone2View" pc="268436473" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="60" parent="globals/zone2View" pc="268436533" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="61" parent="globals/zone2View" pc="268436552" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="63" parent="globals/zone2View" pc="268436571" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="64" parent="globals/zone2View" pc="268436584" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="66" parent="globals/zone2View" pc="268436606" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="67" parent="globals/zone2View" pc="268436646" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="69" parent="globals/zone2View" pc="268436668" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="70" parent="globals/zone2View" pc="268436690" symbol="onLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="186" parent="globals/zone2View" pc="268436713" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="188" parent="globals/zone2View" pc="268436717" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="189" parent="globals/zone2View" pc="268436722" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="190" parent="globals/zone2View" pc="268436737" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="193" parent="globals/zone2View" pc="268436758" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="194" parent="globals/zone2View" pc="268436765" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="195" parent="globals/zone2View" pc="268436780" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="196" parent="globals/zone2View" pc="268436795" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="201" parent="globals/zone2View" pc="268436834" symbol="get_2d_array"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="134" parent="globals/zone2View" pc="268436837" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="135" parent="globals/zone2View" pc="268436841" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="137" parent="globals/zone2View" pc="268436848" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="138" parent="globals/zone2View" pc="268436868" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="139" parent="globals/zone2View" pc="268436878" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="140" parent="globals/zone2View" pc="268436898" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="141" parent="globals/zone2View" pc="268436908" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="142" parent="globals/zone2View" pc="268436928" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="143" parent="globals/zone2View" pc="268436938" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="144" parent="globals/zone2View" pc="268436952" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="145" parent="globals/zone2View" pc="268436962" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="146" parent="globals/zone2View" pc="268436982" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="148" parent="globals/zone2View" pc="268436992" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="151" parent="globals/zone2View" pc="268436999" symbol="get_box_color"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="218" parent="globals/zone2View" pc="268437002" symbol="print"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="219" parent="globals/zone2View" pc="268437004" symbol="print"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="204" parent="globals/zone2View" pc="268437025" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="205" parent="globals/zone2View" pc="268437029" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="206" parent="globals/zone2View" pc="268437049" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="209" parent="globals/zone2View" pc="268437054" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="210" parent="globals/zone2View" pc="268437061" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="211" parent="globals/zone2View" pc="268437068" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="212" parent="globals/zone2View" pc="268437092" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="214" parent="globals/zone2View" pc="268437115" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="215" parent="globals/zone2View" pc="268437131" symbol="mean"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="32" parent="globals/zone2View" pc="268437134" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="33" parent="globals/zone2View" pc="268437136" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="34" parent="globals/zone2View" pc="268437154" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="35" parent="globals/zone2View" pc="268437167" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="36" parent="globals/zone2View" pc="268437180" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="37" parent="globals/zone2View" pc="268437193" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="38" parent="globals/zone2View" pc="268437311" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="39" parent="globals/zone2View" pc="268437416" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="41" parent="globals/zone2View" pc="268437429" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="42" parent="globals/zone2View" pc="268437452" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="43" parent="globals/zone2View" pc="268437483" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="44" parent="globals/zone2View" pc="268437511" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="100" parent="globals/zone2View" pc="268437540" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="103" parent="globals/zone2View" pc="268437544" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="105" parent="globals/zone2View" pc="268437591" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="106" parent="globals/zone2View" pc="268437619" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="107" parent="globals/zone2View" pc="268437639" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="110" parent="globals/zone2View" pc="268437656" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="111" parent="globals/zone2View" pc="268437681" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="114" parent="globals/zone2View" pc="268437705" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="115" parent="globals/zone2View" pc="268437753" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="117" parent="globals/zone2View" pc="268437810" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="118" parent="globals/zone2View" pc="268437882" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="119" parent="globals/zone2View" pc="268437963" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="120" parent="globals/zone2View" pc="268437988" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="122" parent="globals/zone2View" pc="268438066" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="124" parent="globals/zone2View" pc="268438112" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="125" parent="globals/zone2View" pc="268438133" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="126" parent="globals/zone2View" pc="268438146" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="127" parent="globals/zone2View" pc="268438165" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="128" parent="globals/zone2View" pc="268438214" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="130" parent="globals/zone2View" pc="268438229" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="22" lineNum="7" parent="globals/Rez" pc="268438279" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="23" lineNum="11" parent="globals/Rez/Drawables/shapes" pc="268438303" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="24" lineNum="13" parent="globals/Rez/Drawables/shapes" pc="268438322" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="24" lineNum="14" parent="globals/Rez/Drawables/shapes" pc="268438324" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="17" parent="globals/Rez/Drawables/shapes" pc="268438349" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="18" parent="globals/Rez/Drawables/shapes" pc="268438351" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="19" parent="globals/Rez/Drawables/shapes" pc="268438362" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="20" parent="globals/Rez/Drawables/shapes" pc="268438374" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="24" parent="globals/Rez/Drawables/shapes" pc="268438381" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="25" parent="globals/Rez/Drawables/shapes" pc="268438403" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="26" parent="globals/Rez/Drawables/shapes" pc="268438459" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="28" parent="globals/Rez/Drawables/shapes" pc="268438481" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="29" parent="globals/Rez/Drawables/shapes" pc="268438503" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="30" parent="globals/Rez/Drawables/shapes" pc="268438535" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="31" parent="globals/Rez/Drawables/shapes" pc="268438557" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="32" parent="globals/Rez/Drawables/shapes" pc="268438589" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="33" parent="globals/Rez/Drawables/shapes" pc="268438611" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="87" parent="globals/Rez/Layouts" pc="268438644" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="88" parent="globals/Rez/Layouts" pc="268438656" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="90" parent="globals/Rez/Layouts" pc="268438684" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="92" parent="globals/Rez/Layouts" pc="268438796" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="94" parent="globals/Rez/Layouts" pc="268438908" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="67" parent="globals/Rez/Layouts" pc="268438945" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="68" parent="globals/Rez/Layouts" pc="268438957" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="70" parent="globals/Rez/Layouts" pc="268438985" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="72" parent="globals/Rez/Layouts" pc="268439097" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="74" parent="globals/Rez/Layouts" pc="268439209" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="77" parent="globals/Rez/Layouts" pc="268439246" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="78" parent="globals/Rez/Layouts" pc="268439258" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="80" parent="globals/Rez/Layouts" pc="268439286" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="82" parent="globals/Rez/Layouts" pc="268439398" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="84" parent="globals/Rez/Layouts" pc="268439510" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="57" parent="globals/Rez/Layouts" pc="268439547" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="58" parent="globals/Rez/Layouts" pc="268439559" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="60" parent="globals/Rez/Layouts" pc="268439587" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="62" parent="globals/Rez/Layouts" pc="268439699" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="64" parent="globals/Rez/Layouts" pc="268439811" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="45" parent="globals/Rez/Layouts" pc="268439848" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="46" parent="globals/Rez/Layouts" pc="268439860" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="48" parent="globals/Rez/Layouts" pc="268439873" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="50" parent="globals/Rez/Layouts" pc="268439901" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="52" parent="globals/Rez/Layouts" pc="268440045" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="54" parent="globals/Rez/Layouts" pc="268440160" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="11" lineNum="10" parent="globals/zone2View" pc="268435706" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="217" parent="globals/zone2View" pc="268435725" symbol="draw_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="218" parent="globals/zone2View" pc="268435727" symbol="draw_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="219" parent="globals/zone2View" pc="268435749" symbol="draw_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="12" lineNum="220" parent="globals/zone2View" pc="268435769" symbol="draw_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="101" parent="globals/zone2View" pc="268435798" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="103" parent="globals/zone2View" pc="268435802" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="104" parent="globals/zone2View" pc="268435813" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="105" parent="globals/zone2View" pc="268435826" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="107" parent="globals/zone2View" pc="268435842" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="108" parent="globals/zone2View" pc="268435869" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="110" parent="globals/zone2View" pc="268435910" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="112" parent="globals/zone2View" pc="268435941" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="113" parent="globals/zone2View" pc="268435967" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="114" parent="globals/zone2View" pc="268435994" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="116" parent="globals/zone2View" pc="268436035" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="119" parent="globals/zone2View" pc="268436080" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="13" lineNum="121" parent="globals/zone2View" pc="268436102" symbol="compute"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="191" parent="globals/zone2View" pc="268436119" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="192" parent="globals/zone2View" pc="268436123" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="193" parent="globals/zone2View" pc="268436130" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="195" parent="globals/zone2View" pc="268436137" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="196" parent="globals/zone2View" pc="268436144" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="197" parent="globals/zone2View" pc="268436148" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="198" parent="globals/zone2View" pc="268436156" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="199" parent="globals/zone2View" pc="268436163" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="202" parent="globals/zone2View" pc="268436170" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="203" parent="globals/zone2View" pc="268436177" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="204" parent="globals/zone2View" pc="268436192" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="205" parent="globals/zone2View" pc="268436203" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="208" parent="globals/zone2View" pc="268436216" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="209" parent="globals/zone2View" pc="268436227" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="211" parent="globals/zone2View" pc="268436260" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="14" lineNum="212" parent="globals/zone2View" pc="268436271" symbol="draw_dashed_line"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="223" parent="globals/zone2View" pc="268436318" symbol="draw_rounded_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="224" parent="globals/zone2View" pc="268436320" symbol="draw_rounded_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="225" parent="globals/zone2View" pc="268436342" symbol="draw_rounded_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="15" lineNum="226" parent="globals/zone2View" pc="268436364" symbol="draw_rounded_rect"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="57" parent="globals/zone2View" pc="268436393" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="60" parent="globals/zone2View" pc="268436397" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="61" parent="globals/zone2View" pc="268436448" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="62" parent="globals/zone2View" pc="268436476" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="63" parent="globals/zone2View" pc="268436498" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="64" parent="globals/zone2View" pc="268436526" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="66" parent="globals/zone2View" pc="268436548" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="68" parent="globals/zone2View" pc="268436608" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="69" parent="globals/zone2View" pc="268436627" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="71" parent="globals/zone2View" pc="268436646" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="72" parent="globals/zone2View" pc="268436659" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="74" parent="globals/zone2View" pc="268436681" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="76" parent="globals/zone2View" pc="268436721" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="77" parent="globals/zone2View" pc="268436743" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="78" parent="globals/zone2View" pc="268436769" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="81" parent="globals/zone2View" pc="268436794" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="82" parent="globals/zone2View" pc="268436816" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="84" parent="globals/zone2View" pc="268436838" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="85" parent="globals/zone2View" pc="268436851" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="86" parent="globals/zone2View" pc="268436864" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="87" parent="globals/zone2View" pc="268436877" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="88" parent="globals/zone2View" pc="268436887" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="89" parent="globals/zone2View" pc="268436904" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="90" parent="globals/zone2View" pc="268436917" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="92" parent="globals/zone2View" pc="268436930" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="93" parent="globals/zone2View" pc="268436947" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="94" parent="globals/zone2View" pc="268436960" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="95" parent="globals/zone2View" pc="268436973" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="16" lineNum="98" parent="globals/zone2View" pc="268436986" symbol="onLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="229" parent="globals/zone2View" pc="268437006" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="231" parent="globals/zone2View" pc="268437010" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="232" parent="globals/zone2View" pc="268437015" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="233" parent="globals/zone2View" pc="268437030" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="236" parent="globals/zone2View" pc="268437051" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="237" parent="globals/zone2View" pc="268437058" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="238" parent="globals/zone2View" pc="268437073" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="239" parent="globals/zone2View" pc="268437088" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="17" lineNum="244" parent="globals/zone2View" pc="268437127" symbol="get_2d_array"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="171" parent="globals/zone2View" pc="268437130" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="172" parent="globals/zone2View" pc="268437134" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="174" parent="globals/zone2View" pc="268437141" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="175" parent="globals/zone2View" pc="268437161" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="176" parent="globals/zone2View" pc="268437171" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="177" parent="globals/zone2View" pc="268437191" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="178" parent="globals/zone2View" pc="268437201" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="179" parent="globals/zone2View" pc="268437221" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="180" parent="globals/zone2View" pc="268437231" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="181" parent="globals/zone2View" pc="268437245" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="182" parent="globals/zone2View" pc="268437255" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="183" parent="globals/zone2View" pc="268437275" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="185" parent="globals/zone2View" pc="268437285" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="18" lineNum="188" parent="globals/zone2View" pc="268437292" symbol="get_box_color"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="261" parent="globals/zone2View" pc="268437295" symbol="print"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="19" lineNum="262" parent="globals/zone2View" pc="268437297" symbol="print"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="247" parent="globals/zone2View" pc="268437318" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="248" parent="globals/zone2View" pc="268437322" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="249" parent="globals/zone2View" pc="268437342" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="252" parent="globals/zone2View" pc="268437347" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="253" parent="globals/zone2View" pc="268437354" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="254" parent="globals/zone2View" pc="268437361" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="255" parent="globals/zone2View" pc="268437385" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="257" parent="globals/zone2View" pc="268437408" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="20" lineNum="258" parent="globals/zone2View" pc="268437424" symbol="mean"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="38" parent="globals/zone2View" pc="268437427" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="39" parent="globals/zone2View" pc="268437429" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="40" parent="globals/zone2View" pc="268437447" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="41" parent="globals/zone2View" pc="268437460" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="42" parent="globals/zone2View" pc="268437473" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="43" parent="globals/zone2View" pc="268437486" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="44" parent="globals/zone2View" pc="268437604" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="45" parent="globals/zone2View" pc="268437709" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="47" parent="globals/zone2View" pc="268437722" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="48" parent="globals/zone2View" pc="268437745" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="49" parent="globals/zone2View" pc="268437776" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="50" parent="globals/zone2View" pc="268437804" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="21" lineNum="52" parent="globals/zone2View" pc="268437832" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="128" parent="globals/zone2View" pc="268437846" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="129" parent="globals/zone2View" pc="268437850" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="130" parent="globals/zone2View" pc="268437869" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="133" parent="globals/zone2View" pc="268437907" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="135" parent="globals/zone2View" pc="268437951" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="136" parent="globals/zone2View" pc="268437979" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="137" parent="globals/zone2View" pc="268437999" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="140" parent="globals/zone2View" pc="268438016" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="141" parent="globals/zone2View" pc="268438041" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="144" parent="globals/zone2View" pc="268438065" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="145" parent="globals/zone2View" pc="268438113" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="147" parent="globals/zone2View" pc="268438170" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="148" parent="globals/zone2View" pc="268438181" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="149" parent="globals/zone2View" pc="268438256" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="151" parent="globals/zone2View" pc="268438343" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="152" parent="globals/zone2View" pc="268438371" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="154" parent="globals/zone2View" pc="268438455" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="156" parent="globals/zone2View" pc="268438501" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="157" parent="globals/zone2View" pc="268438522" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="158" parent="globals/zone2View" pc="268438535" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="159" parent="globals/zone2View" pc="268438554" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="160" parent="globals/zone2View" pc="268438603" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="162" parent="globals/zone2View" pc="268438618" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="165" parent="globals/zone2View" pc="268438672" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="166" parent="globals/zone2View" pc="268438682" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="167" parent="globals/zone2View" pc="268438728" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="168" parent="globals/zone2View" pc="268438749" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="23" lineNum="7" parent="globals/Rez" pc="268438780" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="24" lineNum="11" parent="globals/Rez/Drawables/shapes" pc="268438804" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="13" parent="globals/Rez/Drawables/shapes" pc="268438823" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="14" parent="globals/Rez/Drawables/shapes" pc="268438825" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="17" parent="globals/Rez/Drawables/shapes" pc="268438850" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="18" parent="globals/Rez/Drawables/shapes" pc="268438852" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="19" parent="globals/Rez/Drawables/shapes" pc="268438863" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="20" parent="globals/Rez/Drawables/shapes" pc="268438875" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Drawables/shapes" pc="268438882" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="25" parent="globals/Rez/Drawables/shapes" pc="268438904" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="26" parent="globals/Rez/Drawables/shapes" pc="268438960" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="28" parent="globals/Rez/Drawables/shapes" pc="268438982" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="29" parent="globals/Rez/Drawables/shapes" pc="268439004" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="30" parent="globals/Rez/Drawables/shapes" pc="268439036" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="31" parent="globals/Rez/Drawables/shapes" pc="268439058" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="32" parent="globals/Rez/Drawables/shapes" pc="268439090" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="33" parent="globals/Rez/Drawables/shapes" pc="268439112" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="87" parent="globals/Rez/Layouts" pc="268439145" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="88" parent="globals/Rez/Layouts" pc="268439157" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="90" parent="globals/Rez/Layouts" pc="268439185" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="92" parent="globals/Rez/Layouts" pc="268439297" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="94" parent="globals/Rez/Layouts" pc="268439409" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="67" parent="globals/Rez/Layouts" pc="268439446" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="68" parent="globals/Rez/Layouts" pc="268439458" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="70" parent="globals/Rez/Layouts" pc="268439486" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="72" parent="globals/Rez/Layouts" pc="268439598" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="74" parent="globals/Rez/Layouts" pc="268439710" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="77" parent="globals/Rez/Layouts" pc="268439747" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="78" parent="globals/Rez/Layouts" pc="268439759" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="80" parent="globals/Rez/Layouts" pc="268439787" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="82" parent="globals/Rez/Layouts" pc="268439899" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="84" parent="globals/Rez/Layouts" pc="268440011" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="57" parent="globals/Rez/Layouts" pc="268440048" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="58" parent="globals/Rez/Layouts" pc="268440060" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="60" parent="globals/Rez/Layouts" pc="268440088" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="62" parent="globals/Rez/Layouts" pc="268440200" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="64" parent="globals/Rez/Layouts" pc="268440312" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="45" parent="globals/Rez/Layouts" pc="268440349" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="46" parent="globals/Rez/Layouts" pc="268440361" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="48" parent="globals/Rez/Layouts" pc="268440374" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="50" parent="globals/Rez/Layouts" pc="268440402" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="52" parent="globals/Rez/Layouts" pc="268440546" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="54" parent="globals/Rez/Layouts" pc="268440661" symbol="MainLayout"/>
 </pcToLineNum>
 <symbolTable>
-<entry field="true" id="32" symbol="seconds_per_box"/>
+<entry field="true" id="39" symbol="seconds_per_box"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
-<entry field="true" id="27" symbol="line_y_offset_above"/>
+<entry field="true" id="34" symbol="line_y_offset_above"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry id="7" module="true" symbol="globals/Rez/Menus"/>
 <entry field="true" id="15" symbol="box_width"/>
 <entry id="8391212" method="true" symbol="mean"/>
-<entry id="41" method="true" symbol="MainLayout"/>
+<entry id="48" method="true" symbol="MainLayout"/>
 <entry id="20" method="true" symbol="draw_rect"/>
 <entry id="19" method="true" symbol="draw_dashed_line"/>
 <entry id="8388647" module="true" symbol="UserProfile"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry id="22" method="true" symbol="get_box_color"/>
-<entry field="true" id="44" symbol="AppName"/>
+<entry id="24" method="true" symbol="get_box_color"/>
+<entry field="true" id="51" symbol="AppName"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8388631" module="true" symbol="Activity"/>
-<entry field="true" id="26" symbol="hr_zones"/>
+<entry field="true" id="31" symbol="hr_zones"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry field="true" id="8389138" symbol="label"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
 <entry field="true" id="18" symbol="current_sport"/>
-<entry field="true" id="24" symbol="hr_zone2_end"/>
+<entry field="true" id="29" symbol="hr_zone2_end"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
+<entry field="true" id="32" symbol="line_text_size"/>
 <entry id="8388712" method="true" symbol="print"/>
 <entry field="true" id="17" symbol="current_hr"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-<entry field="true" id="31" symbol="screen_width"/>
+<entry field="true" id="38" symbol="screen_width"/>
 <entry id="8389348" symbol="font"/>
-<entry field="true" id="23" symbol="heart_rates"/>
-<entry id="36" module="true" symbol="Menus"/>
+<entry field="true" id="25" symbol="heart_rates"/>
+<entry id="43" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
-<entry id="21" method="true" symbol="get_2d_array"/>
-<entry field="true" id="9" symbol="default_background"/>
+<entry id="23" method="true" symbol="get_2d_array"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
 <entry field="true" id="8391300" method="true" symbol="isVisible"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
-<entry field="true" id="34" symbol="xmin"/>
+<entry id="21" method="true" symbol="draw_rounded_rect"/>
+<entry field="true" id="41" symbol="xmin"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="8389349" symbol="justification"/>
+<entry field="true" id="28" symbol="hr_text_x_offset"/>
 <entry id="8389137" method="true" symbol="compute"/>
-<entry field="true" id="33" symbol="xmax"/>
-<entry field="true" id="10" symbol="default_foreground"/>
+<entry field="true" id="40" symbol="xmax"/>
+<entry field="true" id="9" symbol="default_foreground"/>
 <entry id="8389131" method="true" symbol="setColor"/>
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-<entry id="42" method="true" symbol="TopLeftLayout"/>
+<entry id="49" method="true" symbol="TopLeftLayout"/>
+<entry field="true" id="26" symbol="hr_text_color"/>
+<entry field="true" id="22" symbol="foreground_color"/>
 <entry field="true" id="13" symbol="box_height"/>
-<entry field="true" id="28" symbol="line_y_offset_below"/>
+<entry field="true" id="35" symbol="line_y_offset_below"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry field="true" id="16" symbol="current_count"/>
-<entry id="39" method="true" symbol="BottomLeftLayout"/>
-<entry id="12" object="true" symbol="zone2View"/>
-<entry id="40" method="true" symbol="BottomRightLayout"/>
+<entry id="46" method="true" symbol="BottomLeftLayout"/>
+<entry field="true" id="33" symbol="line_text_visible"/>
+<entry id="11" object="true" symbol="zone2View"/>
+<entry id="47" method="true" symbol="BottomRightLayout"/>
 <entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="27" symbol="hr_text_size"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry field="true" id="8389130" symbol="mColor"/>
 <entry id="8389068" method="true" symbol="draw"/>
-<entry field="true" id="37" symbol="LauncherIcon"/>
+<entry field="true" id="44" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="8389350" module="true" symbol="globals"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry id="11" object="true" symbol="zone2App"/>
+<entry id="10" object="true" symbol="zone2App"/>
 <entry field="true" id="8388747" symbol="currentHeartRate"/>
+<entry field="true" id="12" symbol="background_color"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
-<entry id="38" object="true" symbol="shapes"/>
+<entry id="45" object="true" symbol="shapes"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="8389347" symbol="color"/>
-<entry id="35" module="true" symbol="Layouts"/>
-<entry field="true" id="30" symbol="screen_height"/>
-<entry field="true" id="25" symbol="hr_zone2_start"/>
+<entry id="42" module="true" symbol="Layouts"/>
+<entry field="true" id="37" symbol="screen_height"/>
+<entry field="true" id="30" symbol="hr_zone2_start"/>
 <entry field="true" id="14" symbol="box_values"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
-<entry field="true" id="29" symbol="n_boxes"/>
+<entry field="true" id="36" symbol="n_boxes"/>
 <entry id="8388635" module="true" symbol="Application"/>
-<entry id="43" method="true" symbol="TopRightLayout"/>
+<entry id="50" method="true" symbol="TopRightLayout"/>
 </symbolTable>
 <localVars>
-<entry arg="true" endPc="268435609" name="color" stackId="1" startPc="268435594"/>
-<entry endPc="268435667" name="dictionary" stackId="1" startPc="268435614"/>
-<entry arg="true" endPc="268435705" name="dc" stackId="1" startPc="268435669"/>
+<entry arg="true" endPc="268435606" name="color" stackId="1" startPc="268435594"/>
+<entry endPc="268435664" name="dictionary" stackId="1" startPc="268435611"/>
+<entry arg="true" endPc="268435705" name="dc" stackId="1" startPc="268435666"/>
 <entry arg="true" endPc="268435797" name="dc" stackId="1" startPc="268435725"/>
 <entry arg="true" endPc="268435797" name="x" stackId="2" startPc="268435725"/>
 <entry arg="true" endPc="268435797" name="y" stackId="3" startPc="268435725"/>
@@ -288,53 +320,63 @@
 <entry endPc="268436316" name="distance" stackId="10" startPc="268436123"/>
 <entry endPc="268436316" name="line_length_offset" stackId="11" startPc="268436123"/>
 <entry endPc="268436316" name="z" stackId="12" startPc="268436192"/>
-<entry arg="true" endPc="268436712" name="dc" stackId="1" startPc="268436318"/>
-<entry endPc="268436711" name="labelView" stackId="2" startPc="268436322"/>
-<entry endPc="268436711" name="valueView" stackId="3" startPc="268436322"/>
-<entry arg="true" endPc="268436836" name="x_dim" stackId="1" startPc="268436713"/>
-<entry arg="true" endPc="268436836" name="y_dim" stackId="2" startPc="268436713"/>
-<entry arg="true" endPc="268436836" name="fill_value" stackId="3" startPc="268436713"/>
-<entry endPc="268436836" name="array" stackId="4" startPc="268436717"/>
-<entry endPc="268436757" name="i" stackId="5" startPc="268436737"/>
-<entry endPc="268436830" name="i" stackId="6" startPc="268436780"/>
-<entry endPc="268436817" name="j" stackId="7" startPc="268436795"/>
-<entry arg="true" endPc="268437001" name="hr" stackId="1" startPc="268436837"/>
-<entry endPc="268437001" name="color" stackId="2" startPc="268436841"/>
-<entry arg="true" endPc="268437024" name="str" stackId="1" startPc="268437002"/>
-<entry arg="true" endPc="268437133" name="array" stackId="1" startPc="268437025"/>
-<entry endPc="268437133" name="sum" stackId="2" startPc="268437029"/>
-<entry endPc="268437133" name="avg" stackId="3" startPc="268437029"/>
-<entry endPc="268437114" name="i" stackId="4" startPc="268437092"/>
-<entry arg="true" endPc="268438278" name="dc" stackId="1" startPc="268437540"/>
-<entry endPc="268438277" name="value" stackId="2" startPc="268437544"/>
-<entry endPc="268438277" name="k" stackId="3" startPc="268437544"/>
-<entry endPc="268438277" name="i" stackId="4" startPc="268438133"/>
-<entry endPc="268438264" name="box_hr" stackId="5" startPc="268438133"/>
-<entry endPc="268438264" name="x_i" stackId="6" startPc="268438133"/>
-<entry endPc="268438264" name="y_i" stackId="7" startPc="268438133"/>
-<entry endPc="268438264" name="color" stackId="8" startPc="268438133"/>
-<entry arg="true" endPc="268438643" name="dc" stackId="1" startPc="268438349"/>
-<entry arg="true" endPc="268438944" name="dc" stackId="1" startPc="268438644"/>
-<entry endPc="268438944" name="rez_cmp_local_custom_drawable_21496067581304965619" stackId="2" startPc="268438656"/>
-<entry endPc="268438944" name="rez_cmp_local_text_label" stackId="3" startPc="268438656"/>
-<entry endPc="268438944" name="rez_cmp_local_text_value" stackId="4" startPc="268438656"/>
-<entry arg="true" endPc="268439245" name="dc" stackId="1" startPc="268438945"/>
-<entry endPc="268439245" name="rez_cmp_local_custom_drawable_13506251861679184438" stackId="2" startPc="268438957"/>
-<entry endPc="268439245" name="rez_cmp_local_text_label" stackId="3" startPc="268438957"/>
-<entry endPc="268439245" name="rez_cmp_local_text_value" stackId="4" startPc="268438957"/>
-<entry arg="true" endPc="268439546" name="dc" stackId="1" startPc="268439246"/>
-<entry endPc="268439546" name="rez_cmp_local_custom_drawable_10583914834665482152" stackId="2" startPc="268439258"/>
-<entry endPc="268439546" name="rez_cmp_local_text_label" stackId="3" startPc="268439258"/>
-<entry endPc="268439546" name="rez_cmp_local_text_value" stackId="4" startPc="268439258"/>
-<entry arg="true" endPc="268439847" name="dc" stackId="1" startPc="268439547"/>
-<entry endPc="268439847" name="rez_cmp_local_custom_drawable_21289730751297885675" stackId="2" startPc="268439559"/>
-<entry endPc="268439847" name="rez_cmp_local_text_label" stackId="3" startPc="268439559"/>
-<entry endPc="268439847" name="rez_cmp_local_text_value" stackId="4" startPc="268439559"/>
-<entry arg="true" endPc="268440196" name="dc" stackId="1" startPc="268439848"/>
-<entry endPc="268440196" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268439860"/>
-<entry endPc="268440196" name="rez_cmp_local_custom_drawable_13504641241378036931" stackId="3" startPc="268439860"/>
-<entry endPc="268440196" name="rez_cmp_local_text_label" stackId="4" startPc="268439860"/>
-<entry endPc="268440196" name="rez_cmp_local_text_value" stackId="5" startPc="268439860"/>
+<entry arg="true" endPc="268436392" name="dc" stackId="1" startPc="268436318"/>
+<entry arg="true" endPc="268436392" name="x" stackId="2" startPc="268436318"/>
+<entry arg="true" endPc="268436392" name="y" stackId="3" startPc="268436318"/>
+<entry arg="true" endPc="268436392" name="width" stackId="4" startPc="268436318"/>
+<entry arg="true" endPc="268436392" name="height" stackId="5" startPc="268436318"/>
+<entry arg="true" endPc="268436392" name="radius" stackId="6" startPc="268436318"/>
+<entry arg="true" endPc="268436392" name="color" stackId="7" startPc="268436318"/>
+<entry arg="true" endPc="268437005" name="dc" stackId="1" startPc="268436393"/>
+<entry endPc="268437004" name="labelView" stackId="2" startPc="268436397"/>
+<entry endPc="268437004" name="valueView" stackId="3" startPc="268436397"/>
+<entry arg="true" endPc="268437129" name="x_dim" stackId="1" startPc="268437006"/>
+<entry arg="true" endPc="268437129" name="y_dim" stackId="2" startPc="268437006"/>
+<entry arg="true" endPc="268437129" name="fill_value" stackId="3" startPc="268437006"/>
+<entry endPc="268437129" name="array" stackId="4" startPc="268437010"/>
+<entry endPc="268437050" name="i" stackId="5" startPc="268437030"/>
+<entry endPc="268437123" name="i" stackId="6" startPc="268437073"/>
+<entry endPc="268437110" name="j" stackId="7" startPc="268437088"/>
+<entry arg="true" endPc="268437294" name="hr" stackId="1" startPc="268437130"/>
+<entry endPc="268437294" name="color" stackId="2" startPc="268437134"/>
+<entry arg="true" endPc="268437317" name="str" stackId="1" startPc="268437295"/>
+<entry arg="true" endPc="268437426" name="array" stackId="1" startPc="268437318"/>
+<entry endPc="268437426" name="sum" stackId="2" startPc="268437322"/>
+<entry endPc="268437426" name="avg" stackId="3" startPc="268437322"/>
+<entry endPc="268437407" name="i" stackId="4" startPc="268437385"/>
+<entry arg="true" endPc="268438779" name="dc" stackId="1" startPc="268437846"/>
+<entry endPc="268438778" name="value" stackId="2" startPc="268437850"/>
+<entry endPc="268438778" name="k" stackId="3" startPc="268437850"/>
+<entry endPc="268438671" name="i" stackId="4" startPc="268438522"/>
+<entry endPc="268438658" name="box_hr" stackId="5" startPc="268438522"/>
+<entry endPc="268438658" name="x_i" stackId="6" startPc="268438522"/>
+<entry endPc="268438658" name="y_i" stackId="7" startPc="268438522"/>
+<entry endPc="268438658" name="color" stackId="8" startPc="268438522"/>
+<entry endPc="268438778" name="x_i" stackId="9" startPc="268437850"/>
+<entry endPc="268438778" name="y_i" stackId="10" startPc="268437850"/>
+<entry endPc="268438778" name="color" stackId="11" startPc="268437850"/>
+<entry arg="true" endPc="268439144" name="dc" stackId="1" startPc="268438850"/>
+<entry arg="true" endPc="268439445" name="dc" stackId="1" startPc="268439145"/>
+<entry endPc="268439445" name="rez_cmp_local_custom_drawable_13845243622078386396" stackId="2" startPc="268439157"/>
+<entry endPc="268439445" name="rez_cmp_local_text_label" stackId="3" startPc="268439157"/>
+<entry endPc="268439445" name="rez_cmp_local_text_value" stackId="4" startPc="268439157"/>
+<entry arg="true" endPc="268439746" name="dc" stackId="1" startPc="268439446"/>
+<entry endPc="268439746" name="rez_cmp_local_custom_drawable_15381891541473359542" stackId="2" startPc="268439458"/>
+<entry endPc="268439746" name="rez_cmp_local_text_label" stackId="3" startPc="268439458"/>
+<entry endPc="268439746" name="rez_cmp_local_text_value" stackId="4" startPc="268439458"/>
+<entry arg="true" endPc="268440047" name="dc" stackId="1" startPc="268439747"/>
+<entry endPc="268440047" name="rez_cmp_local_custom_drawable_84271988010986730314" stackId="2" startPc="268439759"/>
+<entry endPc="268440047" name="rez_cmp_local_text_label" stackId="3" startPc="268439759"/>
+<entry endPc="268440047" name="rez_cmp_local_text_value" stackId="4" startPc="268439759"/>
+<entry arg="true" endPc="268440348" name="dc" stackId="1" startPc="268440048"/>
+<entry endPc="268440348" name="rez_cmp_local_custom_drawable_17064564201260747694" stackId="2" startPc="268440060"/>
+<entry endPc="268440348" name="rez_cmp_local_text_label" stackId="3" startPc="268440060"/>
+<entry endPc="268440348" name="rez_cmp_local_text_value" stackId="4" startPc="268440060"/>
+<entry arg="true" endPc="268440697" name="dc" stackId="1" startPc="268440349"/>
+<entry endPc="268440697" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268440361"/>
+<entry endPc="268440697" name="rez_cmp_local_custom_drawable_14764952313529120994" stackId="3" startPc="268440361"/>
+<entry endPc="268440697" name="rez_cmp_local_text_label" stackId="4" startPc="268440361"/>
+<entry endPc="268440697" name="rez_cmp_local_text_value" stackId="5" startPc="268440361"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -343,17 +385,17 @@
 </annotations>
 <dataEntryOffsetMappings>
 <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-<dataEntry label="globals/zone2App" offset="182" parentId="globals" symbolId="zone2App" type="class"/>
-<dataEntry label="globals/Background" offset="253" parentId="globals" symbolId="Background" type="class"/>
-<dataEntry label="globals/zone2View" offset="324" parentId="globals" symbolId="zone2View" type="class"/>
-<dataEntry label="globals/Rez" offset="587" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry label="globals/Rez/Drawables" offset="666" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="713" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="784" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="815" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="846" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="893" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry label="globals/Rez/Drawables/shapes" offset="924" parentId="Drawables" symbolId="shapes" type="class"/>
+<dataEntry label="globals/zone2App" offset="174" parentId="globals" symbolId="zone2App" type="class"/>
+<dataEntry label="globals/Background" offset="245" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry label="globals/zone2View" offset="316" parentId="globals" symbolId="zone2View" type="class"/>
+<dataEntry label="globals/Rez" offset="643" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="722" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="769" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="840" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="871" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="902" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="949" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Drawables/shapes" offset="980" parentId="Drawables" symbolId="shapes" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
@@ -379,14 +421,14 @@
 <functionEntry accessMode="public" endPc="268435593" name="&lt;init&gt;" parent="Background" startPc="268435575">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435609" name="setColor" parent="Background" startPc="268435594">
+<functionEntry accessMode="public" endPc="268435606" name="setColor" parent="Background" startPc="268435594">
 <param id="color"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435668" name="initialize" parent="Background" startPc="268435610">
+<functionEntry accessMode="public" endPc="268435665" name="initialize" parent="Background" startPc="268435607">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435705" name="draw" parent="Background" startPc="268435669">
+<functionEntry accessMode="public" endPc="268435705" name="draw" parent="Background" startPc="268435666">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
@@ -415,36 +457,46 @@
 <param id="color"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436712" name="onLayout" parent="zone2View" startPc="268436318">
+<functionEntry accessMode="public" endPc="268436392" name="draw_rounded_rect" parent="zone2View" startPc="268436318">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="width"/>
+<param id="height"/>
+<param id="radius"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437005" name="onLayout" parent="zone2View" startPc="268436393">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436836" name="get_2d_array" parent="zone2View" startPc="268436713">
+<functionEntry accessMode="public" endPc="268437129" name="get_2d_array" parent="zone2View" startPc="268437006">
 <param id="x_dim"/>
 <param id="y_dim"/>
 <param id="fill_value"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437001" name="get_box_color" parent="zone2View" startPc="268436837">
+<functionEntry accessMode="public" endPc="268437294" name="get_box_color" parent="zone2View" startPc="268437130">
 <param id="hr"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437024" name="print" parent="zone2View" startPc="268437002">
+<functionEntry accessMode="public" endPc="268437317" name="print" parent="zone2View" startPc="268437295">
 <param id="str"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437133" name="mean" parent="zone2View" startPc="268437025">
+<functionEntry accessMode="public" endPc="268437426" name="mean" parent="zone2View" startPc="268437318">
 <param id="array"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437539" name="initialize" parent="zone2View" startPc="268437134">
+<functionEntry accessMode="public" endPc="268437845" name="initialize" parent="zone2View" startPc="268437427">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438278" name="onUpdate" parent="zone2View" startPc="268437540">
+<functionEntry accessMode="public" endPc="268438779" name="onUpdate" parent="zone2View" startPc="268437846">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438302" name="&lt;init&gt;" parent="Rez" startPc="268438279">
+<functionEntry accessMode="public" endPc="268438803" name="&lt;init&gt;" parent="Rez" startPc="268438780">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -465,33 +517,33 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438321" name="&lt;init&gt;" parent="shapes" startPc="268438303">
+<functionEntry accessMode="public" endPc="268438822" name="&lt;init&gt;" parent="shapes" startPc="268438804">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438348" name="initialize" parent="shapes" startPc="268438322">
+<functionEntry accessMode="public" endPc="268438849" name="initialize" parent="shapes" startPc="268438823">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438643" name="draw" parent="shapes" startPc="268438349">
+<functionEntry accessMode="public" endPc="268439144" name="draw" parent="shapes" startPc="268438850">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438944" name="BottomRightLayout" parent="Layouts" startPc="268438644">
+<functionEntry accessMode="public" endPc="268439445" name="BottomRightLayout" parent="Layouts" startPc="268439145">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439245" name="TopRightLayout" parent="Layouts" startPc="268438945">
+<functionEntry accessMode="public" endPc="268439746" name="TopRightLayout" parent="Layouts" startPc="268439446">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439546" name="BottomLeftLayout" parent="Layouts" startPc="268439246">
+<functionEntry accessMode="public" endPc="268440047" name="BottomLeftLayout" parent="Layouts" startPc="268439747">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439847" name="TopLeftLayout" parent="Layouts" startPc="268439547">
+<functionEntry accessMode="public" endPc="268440348" name="TopLeftLayout" parent="Layouts" startPc="268440048">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440196" name="MainLayout" parent="Layouts" startPc="268439848">
+<functionEntry accessMode="public" endPc="268440697" name="MainLayout" parent="Layouts" startPc="268440349">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
