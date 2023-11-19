@@ -155,20 +155,18 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_38_26_start:
         %tmp.64 = getv ? :hr_zones;
         %tmp.65 = 2;
         %tmp.66 = agetv %tmp.64 %tmp.65;
-        %tmp.67 = 4;
+        %tmp.67 = 5;
         %tmp.68 = sub %tmp.66 %tmp.67;
         putv self :hr_zone2_start %tmp.68;
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 50 8 ]
         %tmp.70 = getv ? :hr_zones;
         %tmp.71 = 3;
         %tmp.72 = agetv %tmp.70 %tmp.71;
-        %tmp.73 = 1;
-        %tmp.74 = add %tmp.72 %tmp.73;
-        putv self :hr_zone2_end %tmp.74;
+        putv self :hr_zone2_end %tmp.72;
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 52 8 ]
-        %tmp.75 = getm $.Toybox.Graphics;
-        %tmp.76 = getv %tmp.75 :COLOR_PURPLE;
-        putv self :foreground_color %tmp.76;
+        %tmp.73 = getm $.Toybox.Graphics;
+        %tmp.74 = getv %tmp.73 :COLOR_PURPLE;
+        putv self :foreground_color %tmp.74;
 C_Users_Wal_garmin_runThree_source_zone2View_mc_38_26_stop:
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 57; ]
@@ -253,143 +251,125 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_57_40_start:
         %tmp.63 = 1;
         %tmp.64 = sub %tmp.62 %tmp.63;
         putv self :box_width %tmp.64;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 76 8 ]
-        %tmp.65 = 1.1;
-        %tmp.67 = getv ? :box_width;
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 75 8 ]
+        %tmp.65 = 0.125;
+        %tmp.67 = getv ? :screen_height;
         %tmp.68 = mul %tmp.65 %tmp.67;
         putv self :box_height %tmp.68;
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 77 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_77_8_if_stmt:
-        %tmp.70 = getv ? :box_height;
-        %tmp.71 = 0.125;
-        %tmp.73 = getv ? :screen_height;
-        %tmp.74 = mul %tmp.71 %tmp.73;
-        %tmp.75 = gt %tmp.70 %tmp.74;
-        bf %tmp.75 @C_Users_Wal_garmin_runThree_source_zone2View_mc_77_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_77_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_77_48_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 78 12 ]
-        %tmp.76 = 0.125;
-        %tmp.78 = getv ? :screen_height;
-        %tmp.79 = mul %tmp.76 %tmp.78;
-        putv self :box_height %tmp.79;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_77_48_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_77_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_77_8_if_end:
+        %tmp.69 = 0.25;
+        %tmp.71 = getv ? :screen_height;
+        %tmp.72 = mul %tmp.69 %tmp.71;
+        putv self :line_y_offset_above %tmp.72;
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 78 8 ]
+        %tmp.73 = 0.229167;
+        %tmp.75 = getv ? :screen_height;
+        %tmp.76 = mul %tmp.73 %tmp.75;
+        putv self :line_y_offset_below %tmp.76;
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 80 8 ]
+        %tmp.77 = getm $.Toybox.Graphics;
+        %tmp.78 = getv %tmp.77 :FONT_MEDIUM;
+        putv self :hr_text_size %tmp.78;
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 81 8 ]
-        %tmp.80 = 0.25;
-        %tmp.82 = getv ? :screen_height;
-        %tmp.83 = mul %tmp.80 %tmp.82;
-        putv self :line_y_offset_above %tmp.83;
+        %tmp.79 = 25;
+        putv self :hr_text_x_offset %tmp.79;
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 82 8 ]
-        %tmp.84 = 0.229167;
-        %tmp.86 = getv ? :screen_height;
-        %tmp.87 = mul %tmp.84 %tmp.86;
-        putv self :line_y_offset_below %tmp.87;
+        %tmp.80 = getm $.Toybox.Graphics;
+        %tmp.81 = getv %tmp.80 :FONT_XTINY;
+        putv self :line_text_size %tmp.81;
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 83 8 ]
+        %tmp.82 = true;
+        putv self :line_text_visible %tmp.82;
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 84 8 ]
-        %tmp.88 = getm $.Toybox.Graphics;
-        %tmp.89 = getv %tmp.88 :FONT_MEDIUM;
-        putv self :hr_text_size %tmp.89;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 85 8 ]
-        %tmp.90 = 25;
-        putv self :hr_text_x_offset %tmp.90;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 86 8 ]
-        %tmp.91 = getm $.Toybox.Graphics;
-        %tmp.92 = getv %tmp.91 :FONT_XTINY;
-        putv self :line_text_size %tmp.92;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 87 8 ]
-        %tmp.93 = true;
-        putv self :line_text_visible %tmp.93;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_84_8_if_stmt:
+        %tmp.84 = getv ? :screen_height;
+        %tmp.85 = 120;
+        %tmp.86 = lt %tmp.84 %tmp.85;
+        bf %tmp.86 @C_Users_Wal_garmin_runThree_source_zone2View_mc_84_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_84_8_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_84_33_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 85 12 ]
+        %tmp.87 = getm $.Toybox.Graphics;
+        %tmp.88 = getv %tmp.87 :FONT_SMALL;
+        putv self :hr_text_size %tmp.88;
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 86 12 ]
+        %tmp.89 = false;
+        putv self :line_text_visible %tmp.89;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_84_33_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_84_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_84_8_if_end:
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 88 8 ]
 C_Users_Wal_garmin_runThree_source_zone2View_mc_88_8_if_stmt:
-        %tmp.95 = getv ? :screen_height;
-        %tmp.96 = 120;
-        %tmp.97 = lt %tmp.95 %tmp.96;
-        bf %tmp.97 @C_Users_Wal_garmin_runThree_source_zone2View_mc_88_8_if_end;
+        %tmp.91 = getv ? :screen_width;
+        %tmp.92 = 190;
+        %tmp.93 = lt %tmp.91 %tmp.92;
+        bf %tmp.93 @C_Users_Wal_garmin_runThree_source_zone2View_mc_88_8_if_end;
 C_Users_Wal_garmin_runThree_source_zone2View_mc_88_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_88_33_start:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_88_32_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 89 12 ]
-        %tmp.98 = getm $.Toybox.Graphics;
-        %tmp.99 = getv %tmp.98 :FONT_SMALL;
-        putv self :hr_text_size %tmp.99;
+        %tmp.94 = getm $.Toybox.Graphics;
+        %tmp.95 = getv %tmp.94 :FONT_XTINY;
+        putv self :hr_text_size %tmp.95;
 [ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 90 12 ]
-        %tmp.100 = false;
-        putv self :line_text_visible %tmp.100;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_88_33_stop:
+        %tmp.96 = 15;
+        putv self :hr_text_x_offset %tmp.96;
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 91 12 ]
+        %tmp.97 = false;
+        putv self :line_text_visible %tmp.97;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_88_32_stop:
         goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_88_8_if_end;
 C_Users_Wal_garmin_runThree_source_zone2View_mc_88_8_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 92 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_92_8_if_stmt:
-        %tmp.102 = getv ? :screen_width;
-        %tmp.103 = 190;
-        %tmp.104 = lt %tmp.102 %tmp.103;
-        bf %tmp.104 @C_Users_Wal_garmin_runThree_source_zone2View_mc_92_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_92_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_92_32_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 93 12 ]
-        %tmp.105 = getm $.Toybox.Graphics;
-        %tmp.106 = getv %tmp.105 :FONT_XTINY;
-        putv self :hr_text_size %tmp.106;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 94 12 ]
-        %tmp.107 = 15;
-        putv self :hr_text_x_offset %tmp.107;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 95 12 ]
-        %tmp.108 = false;
-        putv self :line_text_visible %tmp.108;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_92_32_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_92_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_92_8_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 98 8 ]
-        %tmp.109 = self;
-        %tmp.110 = getv function %tmp.109 :getBackgroundColor;
-        %tmp.111 = invoke %tmp.109 %tmp.110();
-        putv self :background_color %tmp.111;
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 94 8 ]
+        %tmp.98 = self;
+        %tmp.99 = getv function %tmp.98 :getBackgroundColor;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        putv self :background_color %tmp.100;
 C_Users_Wal_garmin_runThree_source_zone2View_mc_57_40_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 101; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 97; ]
     function compute(info as Activity.Info) as Void {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_101_52_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 103 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_103_8_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_97_52_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 99 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_99_8_if_stmt:
         %tmp.2 = lgetv %info;
         %tmp.4 = const :currentHeartRate;
         %tmp.5 = canhazplz %tmp.2 %tmp.4;
-        bf %tmp.5 @C_Users_Wal_garmin_runThree_source_zone2View_mc_103_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_103_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_103_38_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 104 12 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_104_12_if_stmt:
+        bf %tmp.5 @C_Users_Wal_garmin_runThree_source_zone2View_mc_99_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_99_8_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_99_38_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 100 12 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_100_12_if_stmt:
         %tmp.6 = lgetv %info;
         %tmp.7 = as %tmp.6 { (interface { var currentHeartRate; }) };
         %tmp.8 = getv %tmp.7 :currentHeartRate;
         %tmp.9 = null;
         %tmp.10 = ne %tmp.8 %tmp.9;
-        bf %tmp.10 @C_Users_Wal_garmin_runThree_source_zone2View_mc_104_12_if_false;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_104_12_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_104_45_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 105 16 ]
+        bf %tmp.10 @C_Users_Wal_garmin_runThree_source_zone2View_mc_100_12_if_false;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_100_12_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_100_45_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 101 16 ]
         %tmp.11 = lgetv %info;
         %tmp.12 = as %tmp.11 { (interface { var currentHeartRate; }) };
         %tmp.13 = getv %tmp.12 :currentHeartRate;
         %tmp.14 = as %tmp.13 Number;
         putv self :current_hr %tmp.14;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 107 16 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_end" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 103 16 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_end" ]
         %i.1 = local;
         %tmp.15 = 0;
         lputv %i.1 %tmp.15;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_test:
         %tmp.17 = lgetv %i.1;
         %tmp.19 = getv ? :seconds_per_box;
         %tmp.20 = 1;
         %tmp.21 = sub %tmp.19 %tmp.20;
         %tmp.22 = lt %tmp.17 %tmp.21;
-        bf %tmp.22 @C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_107_65_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 108 20 ]
+        bf %tmp.22 @C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_103_65_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 104 20 ]
         %tmp.23 = getv self :heart_rates;
         %tmp.25 = getv ? :heart_rates;
         %tmp.27 = lgetv %i.1;
@@ -398,49 +378,49 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_107_65_start:
         %tmp.30 = agetv %tmp.25 %tmp.29;
         %tmp.32 = lgetv %i.1;
         aputv %tmp.23 %tmp.32 %tmp.30;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_107_65_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 107 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_103_65_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 103 ]
         %tmp.33 = lgetv %i.1;
         %tmp.34 = 1;
         %tmp.35 = add %tmp.33 %tmp.34;
         lputv %i.1 %tmp.35;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_107_16_for_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 110 16 ]
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_103_16_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 106 16 ]
         %tmp.36 = getv self :heart_rates;
         %tmp.38 = getv ? :current_hr;
         %tmp.40 = getv ? :seconds_per_box;
         %tmp.41 = 1;
         %tmp.42 = sub %tmp.40 %tmp.41;
         aputv %tmp.36 %tmp.42 %tmp.38;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 112 16 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_112_16_if_stmt:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 108 16 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_108_16_if_stmt:
         %tmp.44 = getv ? :current_count;
         %tmp.46 = getv ? :seconds_per_box;
         %tmp.47 = mod %tmp.44 %tmp.46;
         %tmp.48 = 0;
         %tmp.49 = eq %tmp.47 %tmp.48;
-        bf %tmp.49 @C_Users_Wal_garmin_runThree_source_zone2View_mc_112_16_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_112_16_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_112_58_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 113 20 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_end" ]
+        bf %tmp.49 @C_Users_Wal_garmin_runThree_source_zone2View_mc_108_16_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_108_16_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_108_58_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 109 20 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_end" ]
         %i.2 = local;
         %tmp.50 = 0;
         lputv %i.2 %tmp.50;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_test:
         %tmp.52 = lgetv %i.2;
         %tmp.54 = getv ? :n_boxes;
         %tmp.55 = 1;
         %tmp.56 = sub %tmp.54 %tmp.55;
         %tmp.57 = lt %tmp.52 %tmp.56;
-        bf %tmp.57 @C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_113_61_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 114 24 ]
+        bf %tmp.57 @C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_109_61_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 110 24 ]
         %tmp.58 = getv self :box_values;
         %tmp.60 = getv ? :box_values;
         %tmp.62 = lgetv %i.2;
@@ -449,16 +429,16 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_113_61_start:
         %tmp.65 = agetv %tmp.60 %tmp.64;
         %tmp.67 = lgetv %i.2;
         aputv %tmp.58 %tmp.67 %tmp.65;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_113_61_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 113 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_109_61_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 109 ]
         %tmp.68 = lgetv %i.2;
         %tmp.69 = 1;
         %tmp.70 = add %tmp.68 %tmp.69;
         lputv %i.2 %tmp.70;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 116 20 ]
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_109_20_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 112 20 ]
         %tmp.71 = getv self :box_values;
         %tmp.72 = self;
         %tmp.73 = getv function %tmp.72 :mean;
@@ -468,56 +448,56 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_113_20_for_end:
         %tmp.79 = 1;
         %tmp.80 = sub %tmp.78 %tmp.79;
         aputv %tmp.71 %tmp.80 %tmp.76;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_112_58_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_112_16_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_112_16_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 119 16 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_108_58_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_108_16_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_108_16_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 115 16 ]
         %tmp.81 = getv self :current_count;
         %tmp.82 = 1;
         %tmp.83 = add %tmp.81 %tmp.82;
         putv self :current_count dup %tmp.83;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_104_45_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_104_12_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_104_12_if_false:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_120_19_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 121 16 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_100_45_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_100_12_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_100_12_if_false:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_116_19_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 117 16 ]
         %tmp.84 = 0.0f;
         putv self :current_hr %tmp.84;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_120_19_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_104_12_if_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_103_38_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_103_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_103_8_if_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_101_52_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_116_19_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_100_12_if_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_99_38_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_99_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_99_8_if_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_97_52_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 128; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 124; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 129 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_124_40_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 125 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getBackgroundColor;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         putv self :background_color %tmp.3;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 130 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_begin:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 126 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_begin:
         %tmp.5 = getv ? :background_color;
         %tmp.6 = getm $.Toybox.Graphics;
         %tmp.7 = getv %tmp.6 :COLOR_BLACK;
         %tmp.8 = eq %tmp.5 %tmp.7;
-        bf %tmp.8 @C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_false;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_true:
+        bf %tmp.8 @C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_false;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_true:
         %tmp.9 = getm $.Toybox.Graphics;
         %tmp.10 = getv %tmp.9 :COLOR_WHITE;
         push %tmp.10;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_false:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_false:
         %tmp.11 = getm $.Toybox.Graphics;
         %tmp.12 = getv %tmp.11 :COLOR_BLACK;
         push %tmp.12;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_end:
-        %tmp.13 = phi [%tmp.8 @C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_begin] [%tmp.10 @C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_true] [%tmp.12 @C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_false] [%tmp.13 @C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_end];
+C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_end:
+        %tmp.13 = phi [%tmp.8 @C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_begin] [%tmp.10 @C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_true] [%tmp.12 @C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_false] [%tmp.13 @C_Users_Wal_garmin_runThree_source_zone2View_mc_126_24_end];
         putv self :hr_text_color %tmp.13;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 133 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 129 8 ]
         %tmp.15 = getv ? :View;
         %tmp.16 = getv function %tmp.15 :findDrawableById;
         %tmp.17 = "Background";
@@ -526,8 +506,8 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_end:
         %tmp.20 = getv function %tmp.19 :setColor;
         %tmp.22 = getv ? :background_color;
         invoke %tmp.19 %tmp.20(%tmp.22);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 135 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 131 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_124_40_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_124_40_stop" ]
         %value.1 = local;
         %tmp.24 = getv ? :View;
         %tmp.25 = getv function %tmp.24 :findDrawableById;
@@ -535,29 +515,29 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_end:
         %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
         %tmp.28 = as %tmp.27 Text;
         lputv %value.1 %tmp.28;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 136 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 132 8 ]
         %tmp.29 = lgetv %value.1;
         %tmp.30 = getv function %tmp.29 :setColor;
         %tmp.32 = getv ? :default_foreground;
         invoke %tmp.29 %tmp.30(%tmp.32);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 137 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 133 8 ]
         %tmp.33 = lgetv %value.1;
         %tmp.34 = getv function %tmp.33 :setText;
         %tmp.35 = "";
         invoke %tmp.33 %tmp.34(%tmp.35);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 140 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 136 8 ]
         %tmp.36 = lgetv %dc;
         %tmp.37 = getv function %tmp.36 :setColor;
         %tmp.38 = getm $.Toybox.Graphics;
         %tmp.39 = getv %tmp.38 :COLOR_WHITE;
         %tmp.41 = getv ? :background_color;
         invoke %tmp.36 %tmp.37(%tmp.39, %tmp.41);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 141 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 137 8 ]
         %tmp.43 = getv ? :View;
         %tmp.44 = getv function %tmp.43 :onUpdate;
         %tmp.46 = lgetv %dc;
         invoke %tmp.43 %tmp.44(%tmp.46);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 144 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 139 8 ]
         %tmp.47 = self;
         %tmp.48 = getv function %tmp.47 :draw_dashed_line;
         %tmp.50 = lgetv %dc;
@@ -567,7 +547,7 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_end:
         %tmp.56 = 1;
         %tmp.58 = getv ? :default_foreground;
         invoke %tmp.47 %tmp.48(%tmp.50, %tmp.51, %tmp.53, %tmp.55, %tmp.56, %tmp.58);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 145 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 140 8 ]
         %tmp.59 = self;
         %tmp.60 = getv function %tmp.59 :draw_dashed_line;
         %tmp.62 = lgetv %dc;
@@ -579,13 +559,13 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_130_24_end:
         %tmp.71 = 1;
         %tmp.73 = getv ? :default_foreground;
         invoke %tmp.59 %tmp.60(%tmp.62, %tmp.63, %tmp.68, %tmp.70, %tmp.71, %tmp.73);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 147 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_147_8_if_stmt:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 142 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_142_8_if_stmt:
         %tmp.75 = getv ? :line_text_visible;
-        bf %tmp.75 @C_Users_Wal_garmin_runThree_source_zone2View_mc_147_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_147_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_147_31_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 148 12 ]
+        bf %tmp.75 @C_Users_Wal_garmin_runThree_source_zone2View_mc_142_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_142_8_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_142_31_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 143 12 ]
         %tmp.76 = lgetv %dc;
         %tmp.77 = getv function %tmp.76 :drawText;
         %tmp.79 = getv ? :xmax;
@@ -602,7 +582,7 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_147_31_start:
         %tmp.93 = getm $.Toybox.Graphics;
         %tmp.94 = getv %tmp.93 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.76 %tmp.77(%tmp.81, %tmp.85, %tmp.87, %tmp.92, %tmp.94);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 149 12 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 144 12 ]
         %tmp.95 = lgetv %dc;
         %tmp.96 = getv function %tmp.95 :drawText;
         %tmp.98 = getv ? :xmax;
@@ -621,16 +601,16 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_147_31_start:
         %tmp.115 = getm $.Toybox.Graphics;
         %tmp.116 = getv %tmp.115 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.95 %tmp.96(%tmp.100, %tmp.107, %tmp.109, %tmp.114, %tmp.116);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_147_31_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_147_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_147_8_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 151 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_142_31_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_142_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_142_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 146 8 ]
         %tmp.117 = lgetv %dc;
         %tmp.118 = getv function %tmp.117 :setColor;
         %tmp.120 = getv ? :hr_text_color;
         %tmp.122 = getv ? :background_color;
         invoke %tmp.117 %tmp.118(%tmp.120, %tmp.122);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 152 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 147 8 ]
         %tmp.123 = lgetv %dc;
         %tmp.124 = getv function %tmp.123 :drawText;
         %tmp.126 = getv ? :xmax;
@@ -649,8 +629,8 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_147_8_if_end:
         %tmp.143 = getm $.Toybox.Graphics;
         %tmp.144 = getv %tmp.143 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.123 %tmp.124(%tmp.129, %tmp.135, %tmp.137, %tmp.142, %tmp.144);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 154 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 149 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_124_40_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_124_40_stop" ]
         %k.2 = local;
         %tmp.146 = getv ? :line_y_offset_above;
         %tmp.148 = getv ? :screen_height;
@@ -662,29 +642,29 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_147_8_if_end:
         %tmp.157 = sub %tmp.154 %tmp.156;
         %tmp.158 = div %tmp.152 %tmp.157;
         lputv %k.2 %tmp.158;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 156 8 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_end" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 151 8 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_end" ]
         %i.3 = local;
         %tmp.159 = 0;
         lputv %i.3 %tmp.159;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_test:
         %tmp.161 = lgetv %i.3;
         %tmp.163 = getv ? :n_boxes;
         %tmp.164 = lt %tmp.161 %tmp.163;
-        bf %tmp.164 @C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 157 12 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_stop" ]
+        bf %tmp.164 @C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 152 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_stop" ]
         %box_hr.4 = local;
         %tmp.166 = getv ? :box_values;
         %tmp.168 = lgetv %i.3;
         %tmp.169 = agetv %tmp.166 %tmp.168;
         lputv %box_hr.4 %tmp.169;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 158 12 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 153 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_stop" ]
         %x_i.5 = local;
         %tmp.171 = lgetv %i.3;
         %tmp.173 = getv ? :box_width;
@@ -692,8 +672,8 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_start:
         %tmp.175 = add %tmp.173 %tmp.174;
         %tmp.176 = mul %tmp.171 %tmp.175;
         lputv %x_i.5 %tmp.176;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 159 12 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 154 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_stop" ]
         %y_i.6 = local;
         %tmp.178 = getv ? :screen_height;
         %tmp.180 = getv ? :line_y_offset_below;
@@ -709,270 +689,231 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_start:
         %tmp.194 = div %tmp.192 %tmp.193;
         %tmp.195 = sub %tmp.190 %tmp.194;
         lputv %y_i.6 %tmp.195;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 160 12 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 155 12 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_stop" ]
         %color.7 = local;
         %tmp.196 = self;
         %tmp.197 = getv function %tmp.196 :get_box_color;
         %tmp.199 = lgetv %box_hr.4;
         %tmp.200 = invoke %tmp.196 %tmp.197(%tmp.199);
         lputv %color.7 %tmp.200;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 162 12 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 157 12 ]
         %tmp.201 = self;
-        %tmp.202 = getv function %tmp.201 :draw_rounded_rect;
+        %tmp.202 = getv function %tmp.201 :draw_rect;
         %tmp.204 = lgetv %dc;
         %tmp.206 = lgetv %x_i.5;
         %tmp.208 = lgetv %y_i.6;
         %tmp.210 = getv ? :box_width;
         %tmp.212 = getv ? :box_height;
-        %tmp.213 = 1;
-        %tmp.215 = lgetv %color.7;
-        invoke %tmp.201 %tmp.202(%tmp.204, %tmp.206, %tmp.208, %tmp.210, %tmp.212, %tmp.213, %tmp.215);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_156_45_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 156 ]
-        %tmp.216 = lgetv %i.3;
-        %tmp.217 = 1;
-        %tmp.218 = add %tmp.216 %tmp.217;
-        lputv %i.3 %tmp.218;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_156_8_for_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 165 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_stop" ]
-        %x_i.8 = local;
-        %tmp.220 = getv ? :xmax;
-        lputv %x_i.8 %tmp.220;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 166 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_stop" ]
-        %y_i.9 = local;
-        %tmp.222 = getv ? :screen_height;
-        %tmp.224 = getv ? :line_y_offset_below;
-        %tmp.225 = sub %tmp.222 %tmp.224;
-        %tmp.227 = getv ? :hr_zone2_start;
-        %tmp.229 = getv ? :current_hr;
-        %tmp.230 = sub %tmp.227 %tmp.229;
-        %tmp.232 = lgetv %k.2;
-        %tmp.233 = mul %tmp.230 %tmp.232;
-        %tmp.234 = sub %tmp.225 %tmp.233;
-        %tmp.235 = 2;
-        %tmp.236 = sub %tmp.234 %tmp.235;
-        lputv %y_i.9 %tmp.236;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 167 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_stop" ]
-        %color.10 = local;
-        %tmp.237 = self;
-        %tmp.238 = getv function %tmp.237 :get_box_color;
-        %tmp.240 = getv ? :current_hr;
-        %tmp.241 = invoke %tmp.237 %tmp.238(%tmp.240);
-        lputv %color.10 %tmp.241;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 168 8 ]
-        %tmp.242 = self;
-        %tmp.243 = getv function %tmp.242 :draw_rect;
-        %tmp.245 = lgetv %dc;
-        %tmp.247 = lgetv %x_i.8;
-        %tmp.249 = lgetv %y_i.9;
-        %tmp.250 = 4;
-        %tmp.251 = 4;
-        %tmp.253 = lgetv %color.10;
-        invoke %tmp.242 %tmp.243(%tmp.245, %tmp.247, %tmp.249, %tmp.250, %tmp.251, %tmp.253);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_128_40_stop:
+        %tmp.214 = lgetv %color.7;
+        invoke %tmp.201 %tmp.202(%tmp.204, %tmp.206, %tmp.208, %tmp.210, %tmp.212, %tmp.214);
+C_Users_Wal_garmin_runThree_source_zone2View_mc_151_45_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 151 ]
+        %tmp.215 = lgetv %i.3;
+        %tmp.216 = 1;
+        %tmp.217 = add %tmp.215 %tmp.216;
+        lputv %i.3 %tmp.217;
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_151_8_for_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_124_40_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 171; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 162; ]
     function get_box_color(hr) {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_171_31_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 172 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_171_31_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_171_31_stop" ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_162_31_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 163 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_162_31_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_162_31_stop" ]
         %color.1 = local;
         %tmp.1 = getm $.Toybox.Graphics;
         %tmp.2 = getv %tmp.1 :COLOR_RED;
         lputv %color.1 %tmp.2;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 174 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_174_8_if_stmt:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 165 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_165_8_if_stmt:
         %tmp.4 = lgetv %hr;
         %tmp.6 = getv ? :hr_zone2_end;
         %tmp.7 = 1;
         %tmp.8 = add %tmp.6 %tmp.7;
         %tmp.9 = gt %tmp.4 %tmp.8;
-        bf %tmp.9 @C_Users_Wal_garmin_runThree_source_zone2View_mc_174_8_if_false;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_174_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_174_35_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 175 12 ]
+        bf %tmp.9 @C_Users_Wal_garmin_runThree_source_zone2View_mc_165_8_if_false;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_165_8_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_165_35_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 166 12 ]
         %tmp.10 = getm $.Toybox.Graphics;
         %tmp.11 = getv %tmp.10 :COLOR_RED;
         lputv %color.1 %tmp.11;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_174_35_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_174_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_174_8_if_false:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 176 15 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_176_15_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_165_35_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_165_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_165_8_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 167 15 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_167_15_if_stmt:
         %tmp.13 = lgetv %hr;
         %tmp.15 = getv ? :hr_zone2_end;
         %tmp.16 = 2;
         %tmp.17 = sub %tmp.15 %tmp.16;
         %tmp.18 = gt %tmp.13 %tmp.17;
-        bf %tmp.18 @C_Users_Wal_garmin_runThree_source_zone2View_mc_176_15_if_false;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_176_15_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_176_42_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 177 12 ]
+        bf %tmp.18 @C_Users_Wal_garmin_runThree_source_zone2View_mc_167_15_if_false;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_167_15_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_167_42_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 168 12 ]
         %tmp.19 = getm $.Toybox.Graphics;
         %tmp.20 = getv %tmp.19 :COLOR_ORANGE;
         lputv %color.1 %tmp.20;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_176_42_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_176_15_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_176_15_if_false:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 178 15 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_178_15_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_167_42_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_167_15_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_167_15_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 169 15 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_169_15_if_stmt:
         %tmp.22 = lgetv %hr;
         %tmp.24 = getv ? :hr_zone2_end;
         %tmp.25 = 4;
         %tmp.26 = sub %tmp.24 %tmp.25;
         %tmp.27 = gt %tmp.22 %tmp.26;
-        bf %tmp.27 @C_Users_Wal_garmin_runThree_source_zone2View_mc_178_15_if_false;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_178_15_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_178_42_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 179 12 ]
+        bf %tmp.27 @C_Users_Wal_garmin_runThree_source_zone2View_mc_169_15_if_false;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_169_15_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_169_42_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 170 12 ]
         %tmp.28 = getm $.Toybox.Graphics;
         %tmp.29 = getv %tmp.28 :COLOR_GREEN;
         lputv %color.1 %tmp.29;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_178_42_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_178_15_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_178_15_if_false:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 180 15 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_180_15_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_169_42_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_169_15_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_169_15_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 171 15 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_171_15_if_stmt:
         %tmp.31 = lgetv %hr;
         %tmp.33 = getv ? :hr_zone2_start;
         %tmp.34 = gte %tmp.31 %tmp.33;
-        bf %tmp.34 @C_Users_Wal_garmin_runThree_source_zone2View_mc_180_15_if_false;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_180_15_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_180_41_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 181 12 ]
+        bf %tmp.34 @C_Users_Wal_garmin_runThree_source_zone2View_mc_171_15_if_false;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_171_15_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_171_41_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 172 12 ]
         %tmp.35 = getm $.Toybox.Graphics;
         %tmp.36 = getv %tmp.35 :COLOR_DK_GREEN;
         lputv %color.1 %tmp.36;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_180_41_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_180_15_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_180_15_if_false:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 182 15 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_182_15_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_171_41_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_171_15_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_171_15_if_false:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 173 15 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_173_15_if_stmt:
         %tmp.38 = lgetv %hr;
         %tmp.40 = getv ? :hr_zone2_start;
         %tmp.41 = 3;
         %tmp.42 = sub %tmp.40 %tmp.41;
         %tmp.43 = gte %tmp.38 %tmp.42;
-        bf %tmp.43 @C_Users_Wal_garmin_runThree_source_zone2View_mc_182_15_if_false;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_182_15_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_182_45_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 183 12 ]
+        bf %tmp.43 @C_Users_Wal_garmin_runThree_source_zone2View_mc_173_15_if_false;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_173_15_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_173_45_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 174 12 ]
         %tmp.44 = getm $.Toybox.Graphics;
         %tmp.45 = getv %tmp.44 :COLOR_GREEN;
         lputv %color.1 %tmp.45;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_182_45_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_182_15_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_182_15_if_false:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_184_15_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 185 12 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_173_45_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_173_15_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_173_15_if_false:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_175_15_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 176 12 ]
         %tmp.46 = getm $.Toybox.Graphics;
         %tmp.47 = getv %tmp.46 :COLOR_RED;
         lputv %color.1 %tmp.47;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_184_15_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_182_15_if_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_180_15_if_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_178_15_if_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_176_15_if_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_174_8_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 188 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_175_15_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_173_15_if_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_171_15_if_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_169_15_if_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_167_15_if_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_165_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 179 8 ]
         %tmp.49 = lgetv %color.1;
         ret %tmp.49;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_171_31_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_162_31_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 191; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 182; ]
     function draw_dashed_line(dc, x, y, width, height, color) {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 192 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_stop" ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 183 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_stop" ]
         %dash_length.1 = local;
         %tmp.1 = 9;
         lputv %dash_length.1 %tmp.1;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 193 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 184 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_stop" ]
         %gap_length.2 = local;
         %tmp.2 = 3;
         lputv %gap_length.2 %tmp.2;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 195 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 186 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_stop" ]
         %line_dimension.3 = local;
         %tmp.3 = 0;
         lputv %line_dimension.3 %tmp.3;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 196 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 187 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_stop" ]
         %distance.4 = local;
         %tmp.5 = lgetv %width;
         lputv %distance.4 %tmp.5;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 197 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_197_8_if_stmt:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 188 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_188_8_if_stmt:
         %tmp.7 = lgetv %height;
         %tmp.9 = lgetv %width;
         %tmp.10 = gt %tmp.7 %tmp.9;
-        bf %tmp.10 @C_Users_Wal_garmin_runThree_source_zone2View_mc_197_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_197_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_197_28_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 198 12 ]
+        bf %tmp.10 @C_Users_Wal_garmin_runThree_source_zone2View_mc_188_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_188_8_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_188_28_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 189 12 ]
         %tmp.11 = 1;
         lputv %line_dimension.3 %tmp.11;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 199 12 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 190 12 ]
         %tmp.13 = lgetv %height;
         lputv %distance.4 %tmp.13;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_197_28_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_197_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_197_8_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 202 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_stop" ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_188_28_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_188_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_188_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 193 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_stop" ]
         %line_length_offset.5 = local;
         %tmp.14 = 0;
         lputv %line_length_offset.5 %tmp.14;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 203 8 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_end" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 194 8 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_end" ]
         %z.6 = local;
         %tmp.15 = 0;
         lputv %z.6 %tmp.15;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_test:
         %tmp.17 = lgetv %z.6;
         %tmp.19 = lgetv %distance.4;
         %tmp.20 = lt %tmp.17 %tmp.19;
-        bf %tmp.20 @C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_203_70_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 204 12 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_204_12_if_stmt:
+        bf %tmp.20 @C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_194_70_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 195 12 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_195_12_if_stmt:
         %tmp.22 = lgetv %z.6;
         %tmp.24 = lgetv %dash_length.1;
         %tmp.25 = add %tmp.22 %tmp.24;
         %tmp.27 = lgetv %distance.4;
         %tmp.28 = gt %tmp.25 %tmp.27;
-        bf %tmp.28 @C_Users_Wal_garmin_runThree_source_zone2View_mc_204_12_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_204_12_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_204_44_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 205 16 ]
+        bf %tmp.28 @C_Users_Wal_garmin_runThree_source_zone2View_mc_195_12_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_195_12_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_195_44_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 196 16 ]
         %tmp.30 = lgetv %z.6;
         %tmp.32 = lgetv %dash_length.1;
         %tmp.33 = add %tmp.30 %tmp.32;
         %tmp.35 = lgetv %distance.4;
         %tmp.36 = sub %tmp.33 %tmp.35;
         lputv %line_length_offset.5 %tmp.36;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_204_44_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_204_12_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_204_12_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 208 12 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_208_12_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_195_44_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_195_12_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_195_12_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 199 12 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_199_12_if_stmt:
         %tmp.38 = lgetv %line_dimension.3;
         %tmp.39 = 0;
         %tmp.40 = eq %tmp.38 %tmp.39;
-        bf %tmp.40 @C_Users_Wal_garmin_runThree_source_zone2View_mc_208_12_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_208_12_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_208_37_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 209 16 ]
+        bf %tmp.40 @C_Users_Wal_garmin_runThree_source_zone2View_mc_199_12_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_199_12_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_199_37_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 200 16 ]
         %tmp.41 = self;
         %tmp.42 = getv function %tmp.41 :draw_rect;
         %tmp.44 = lgetv %dc;
@@ -986,18 +927,18 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_208_37_start:
         %tmp.58 = lgetv %height;
         %tmp.60 = lgetv %color;
         invoke %tmp.41 %tmp.42(%tmp.44, %tmp.49, %tmp.51, %tmp.56, %tmp.58, %tmp.60);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_208_37_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_208_12_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_208_12_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 211 12 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_211_12_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_199_37_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_199_12_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_199_12_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 202 12 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_202_12_if_stmt:
         %tmp.62 = lgetv %line_dimension.3;
         %tmp.63 = 1;
         %tmp.64 = eq %tmp.62 %tmp.63;
-        bf %tmp.64 @C_Users_Wal_garmin_runThree_source_zone2View_mc_211_12_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_211_12_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_211_37_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 212 16 ]
+        bf %tmp.64 @C_Users_Wal_garmin_runThree_source_zone2View_mc_202_12_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_202_12_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_202_37_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 203 16 ]
         %tmp.65 = self;
         %tmp.66 = getv function %tmp.65 :draw_rect;
         %tmp.68 = lgetv %dc;
@@ -1011,32 +952,32 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_211_37_start:
         %tmp.82 = sub %tmp.79 %tmp.81;
         %tmp.84 = lgetv %color;
         invoke %tmp.65 %tmp.66(%tmp.68, %tmp.70, %tmp.75, %tmp.77, %tmp.82, %tmp.84);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_211_37_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_211_12_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_211_12_if_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_203_70_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 203 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_202_37_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_202_12_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_202_12_if_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_194_70_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 194 ]
         %tmp.85 = lgetv %z.6;
         %tmp.87 = lgetv %dash_length.1;
         %tmp.89 = lgetv %gap_length.2;
         %tmp.90 = add %tmp.87 %tmp.89;
         %tmp.91 = add %tmp.85 %tmp.90;
         lputv %z.6 %tmp.91;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_203_8_for_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_191_62_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_194_8_for_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_182_62_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 217; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 208; ]
     function draw_rect(dc, x, y, width, height, color) {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_217_55_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 218 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_208_55_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 209 8 ]
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :setColor;
         %tmp.4 = lgetv %color;
         %tmp.6 = getv ? :background_color;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 219 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 210 8 ]
         %tmp.7 = lgetv %dc;
         %tmp.8 = getv function %tmp.7 :fillRectangle;
         %tmp.10 = lgetv %x;
@@ -1044,24 +985,24 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_217_55_start:
         %tmp.14 = lgetv %width;
         %tmp.16 = lgetv %height;
         invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12, %tmp.14, %tmp.16);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 220 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 211 8 ]
         %tmp.17 = lgetv %dc;
         %tmp.18 = getv function %tmp.17 :setColor;
         %tmp.20 = getv ? :default_foreground;
         %tmp.22 = getv ? :background_color;
         invoke %tmp.17 %tmp.18(%tmp.20, %tmp.22);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_217_55_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_208_55_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 223; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 214; ]
     function draw_rounded_rect(dc, x, y, width, height, radius, color) {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_223_71_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 224 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_214_71_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 215 8 ]
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :setColor;
         %tmp.4 = lgetv %color;
         %tmp.6 = getv ? :background_color;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 225 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 216 8 ]
         %tmp.7 = lgetv %dc;
         %tmp.8 = getv function %tmp.7 :fillRoundedRectangle;
         %tmp.10 = lgetv %x;
@@ -1070,89 +1011,89 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_223_71_start:
         %tmp.16 = lgetv %height;
         %tmp.18 = lgetv %radius;
         invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12, %tmp.14, %tmp.16, %tmp.18);
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 226 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 217 8 ]
         %tmp.19 = lgetv %dc;
         %tmp.20 = getv function %tmp.19 :setColor;
         %tmp.22 = getv ? :default_foreground;
         %tmp.24 = getv ? :background_color;
         invoke %tmp.19 %tmp.20(%tmp.22, %tmp.24);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_223_71_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_214_71_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 229; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 220; ]
     function get_2d_array(x_dim, y_dim, fill_value) {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_229_52_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 231 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_229_52_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_229_52_stop" ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_220_52_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 222 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_220_52_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_220_52_stop" ]
         %array.1 = local;
         %tmp.3 = lgetv %x_dim;
         %tmp.1 = newa Array<Array> %tmp.3;
         lputv %array.1 %tmp.1;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 232 8 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_end" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 223 8 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_end" ]
         %i.2 = local;
         %tmp.4 = 0;
         lputv %i.2 %tmp.4;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_test:
         %tmp.6 = lgetv %i.2;
         %tmp.8 = lgetv %x_dim;
         %tmp.9 = lt %tmp.6 %tmp.8;
-        bf %tmp.9 @C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_232_43_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 233 12 ]
+        bf %tmp.9 @C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_223_43_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 224 12 ]
         %tmp.10 = lgetv %array.1;
         %tmp.13 = lgetv %y_dim;
         %tmp.11 = newa %tmp.13;
         %tmp.15 = lgetv %i.2;
         aputv %tmp.10 %tmp.15 %tmp.11;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_232_43_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 232 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_223_43_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 223 ]
         %tmp.16 = lgetv %i.2;
         %tmp.17 = 1;
         %tmp.18 = add %tmp.16 %tmp.17;
         lputv %i.2 %tmp.18;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_232_8_for_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 236 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_236_8_if_stmt:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_223_8_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 227 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_227_8_if_stmt:
         %tmp.20 = lgetv %fill_value;
         %tmp.21 = null;
         %tmp.22 = ne %tmp.20 %tmp.21;
-        bf %tmp.22 @C_Users_Wal_garmin_runThree_source_zone2View_mc_236_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_236_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_236_32_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 237 12 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_end" ]
+        bf %tmp.22 @C_Users_Wal_garmin_runThree_source_zone2View_mc_227_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_227_8_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_227_32_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 228 12 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_end" ]
         %i.3 = local;
         %tmp.23 = 0;
         lputv %i.3 %tmp.23;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_test:
         %tmp.25 = lgetv %i.3;
         %tmp.27 = lgetv %x_dim;
         %tmp.28 = lt %tmp.25 %tmp.27;
-        bf %tmp.28 @C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_237_47_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 238 16 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_end" ]
+        bf %tmp.28 @C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_228_47_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 229 16 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_end" ]
         %j.4 = local;
         %tmp.29 = 0;
         lputv %j.4 %tmp.29;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_test:
         %tmp.31 = lgetv %j.4;
         %tmp.33 = lgetv %y_dim;
         %tmp.34 = lt %tmp.31 %tmp.33;
-        bf %tmp.34 @C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_238_51_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 239 20 ]
+        bf %tmp.34 @C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_229_51_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 230 20 ]
         %tmp.35 = lgetv %array.1;
         %tmp.37 = lgetv %i.3;
         %tmp.38 = agetv %tmp.35 %tmp.37;
@@ -1160,114 +1101,114 @@ C_Users_Wal_garmin_runThree_source_zone2View_mc_238_51_start:
         %tmp.41 = as %tmp.40 { (!Null) };
         %tmp.43 = lgetv %j.4;
         aputv %tmp.38 %tmp.43 %tmp.41;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_238_51_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 238 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_229_51_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 229 ]
         %tmp.44 = lgetv %j.4;
         %tmp.45 = 1;
         %tmp.46 = add %tmp.44 %tmp.45;
         lputv %j.4 %tmp.46;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_238_16_for_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_237_47_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 237 ]
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_229_16_for_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_228_47_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 228 ]
         %tmp.47 = lgetv %i.3;
         %tmp.48 = 1;
         %tmp.49 = add %tmp.47 %tmp.48;
         lputv %i.3 %tmp.49;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_237_12_for_end:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_236_32_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_236_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_236_8_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 244 8 ]
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_228_12_for_end:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_227_32_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_227_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_227_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 235 8 ]
         %tmp.51 = lgetv %array.1;
         ret %tmp.51;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_229_52_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_220_52_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 247; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 238; ]
     function mean(array as Array) {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_247_34_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 248 8 ]
-C_Users_Wal_garmin_runThree_source_zone2View_mc_248_8_if_stmt:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_238_34_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 239 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_239_8_if_stmt:
         %tmp.1 = lgetv %array;
         %tmp.2 = getv function %tmp.1 :size;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = 0;
         %tmp.5 = eq %tmp.3 %tmp.4;
-        bf %tmp.5 @C_Users_Wal_garmin_runThree_source_zone2View_mc_248_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_248_8_if_true:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_248_31_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 249 12 ]
+        bf %tmp.5 @C_Users_Wal_garmin_runThree_source_zone2View_mc_239_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_239_8_if_true:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_239_31_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 240 12 ]
         %tmp.6 = null;
         ret %tmp.6;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_248_31_stop:
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_248_8_if_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_248_8_if_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 252 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_247_34_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_247_34_stop" ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_239_31_stop:
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_239_8_if_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_239_8_if_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 243 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_238_34_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_238_34_stop" ]
         %sum.1 = local;
         %tmp.7 = 0;
         lputv %sum.1 %tmp.7;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 253 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_247_34_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_247_34_stop" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 244 8 ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_238_34_start" "C_Users_Wal_garmin_runThree_source_zone2View_mc_238_34_stop" ]
         %avg.2 = local;
         %tmp.8 = 0;
         lputv %avg.2 %tmp.8;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 254 8 ]
-        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_init:
-        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_end" ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 245 8 ]
+        for @C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_test @C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_incr @C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_init:
+        [ "C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_begin" "C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_end" ]
         %i.3 = local;
         %tmp.9 = 0;
         lputv %i.3 %tmp.9;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_test:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_test:
         %tmp.11 = lgetv %i.3;
         %tmp.12 = lgetv %array;
         %tmp.13 = getv function %tmp.12 :size;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         %tmp.15 = lt %tmp.11 %tmp.14;
-        bf %tmp.15 @C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_end;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_begin:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_254_50_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 255 12 ]
+        bf %tmp.15 @C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_end;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_begin:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_245_50_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 246 12 ]
         %tmp.16 = lgetv %sum.1;
         %tmp.18 = lgetv %array;
         %tmp.20 = lgetv %i.3;
         %tmp.21 = agetv %tmp.18 %tmp.20;
         %tmp.22 = add %tmp.16 %tmp.21;
         lputv %sum.1 %tmp.22;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_254_50_stop:
-C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_incr:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 254 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_245_50_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_incr:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 245 ]
         %tmp.23 = lgetv %i.3;
         %tmp.24 = 1;
         %tmp.25 = add %tmp.23 %tmp.24;
         lputv %i.3 %tmp.25;
-        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_test;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_254_8_for_end:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 257 8 ]
+        goto @C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_test;
+C_Users_Wal_garmin_runThree_source_zone2View_mc_245_8_for_end:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 248 8 ]
         %tmp.27 = lgetv %sum.1;
         %tmp.28 = lgetv %array;
         %tmp.29 = getv function %tmp.28 :size;
         %tmp.30 = invoke %tmp.28 %tmp.29();
         %tmp.31 = div %tmp.27 %tmp.30;
         lputv %avg.2 %tmp.31;
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 258 8 ]
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 249 8 ]
         %tmp.33 = lgetv %avg.2;
         ret %tmp.33;
-C_Users_Wal_garmin_runThree_source_zone2View_mc_247_34_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_238_34_stop:
     }
-    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 261; ]
+    [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 252; ]
     function print(str) as Void {
-C_Users_Wal_garmin_runThree_source_zone2View_mc_261_32_start:
-[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 262 8 ]
+C_Users_Wal_garmin_runThree_source_zone2View_mc_252_32_start:
+[ "C:\Users\Wal\garmin\runThree\source\zone2View.mc" 253 8 ]
         %tmp.2 = getv ? :System;
         %tmp.3 = getv function %tmp.2 :println;
         %tmp.5 = lgetv %str;
         invoke %tmp.2 %tmp.3(%tmp.5);
-C_Users_Wal_garmin_runThree_source_zone2View_mc_261_32_stop:
+C_Users_Wal_garmin_runThree_source_zone2View_mc_252_32_stop:
     }
 }
 [ @file = "C:\Users\Wal\garmin\runThree\source\zone2View.mc"; @line = 1; ]

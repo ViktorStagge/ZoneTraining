@@ -1,1 +1,2 @@
+- v0.2: Enable multiple layouts, and sizes. Respect selected Background color
 - v0.1: First Release

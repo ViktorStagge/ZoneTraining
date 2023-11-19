@@ -46,8 +46,8 @@ class zone2View extends WatchUi.DataField {
         
         current_sport = UserProfile.getCurrentSport();
         hr_zones = UserProfile.getHeartRateZones(current_sport);
-        hr_zone2_start = hr_zones[2] - 4;
-        hr_zone2_end = hr_zones[3] + 1;
+        hr_zone2_start = hr_zones[2] - 5;
+        hr_zone2_end = hr_zones[3];
 
         foreground_color = Graphics.COLOR_PURPLE;
     }
@@ -72,11 +72,7 @@ class zone2View extends WatchUi.DataField {
         xmax = 0.7708 * screen_width;
         
         box_width = (xmax - xmin) / n_boxes - 1;
-        //box_height = 0.100 * screen_height;
-        box_height = 1.1 * box_width;
-        if (box_height > 0.125 * screen_height) {
-            box_height = 0.125 * screen_height;
-        }
+        box_height = 0.125 * screen_height;
 
         line_y_offset_above = 0.25 * screen_height;
         line_y_offset_below = 0.229167 * screen_height;
@@ -139,7 +135,6 @@ class zone2View extends WatchUi.DataField {
 
         dc.setColor(Graphics.COLOR_WHITE, background_color);  // foreground, background
         View.onUpdate(dc);
-        //dc.clear();
 
         draw_dashed_line(dc, 0, line_y_offset_above, xmax, 1, default_foreground);
         draw_dashed_line(dc, 0, screen_height - line_y_offset_below, xmax, 1, default_foreground);
@@ -158,14 +153,10 @@ class zone2View extends WatchUi.DataField {
             var x_i = i * (box_width + 1);
             var y_i = screen_height - line_y_offset_below - (hr_zone2_start - box_hr)*k - box_height / 2;
             var color = get_box_color(box_hr);
-
-            draw_rounded_rect(dc, x_i, y_i, box_width, box_height, 1, color);
+    
+            draw_rect(dc, x_i, y_i, box_width, box_height, color);
         }
 
-        var x_i = xmax;
-        var y_i = screen_height - line_y_offset_below - (hr_zone2_start - current_hr)*k - 2;
-        var color = get_box_color(current_hr);
-        draw_rect(dc, x_i, y_i, 4, 4, color);
     }
 
     function get_box_color(hr) {
