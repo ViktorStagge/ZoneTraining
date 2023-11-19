@@ -15,7 +15,7 @@ class Background extends WatchUi.Drawable{
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 7; @position = 15; ]
     protected
-    var mColor as ColorValue;
+    var background_color as ColorValue;
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 9; ]
     function initialize() as Void {
 C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_start:
@@ -35,17 +35,16 @@ C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_start:
         invoke %tmp.8 %tmp.9(%tmp.11);
 [ "C:\Users\Wal\garmin\runThree\source\zone2Background.mc" 16 8 ]
         %tmp.12 = getm $.Toybox.Graphics;
-        %tmp.13 = getv %tmp.12 :COLOR_PURPLE;
-        putv self :mColor %tmp.13;
+        %tmp.13 = getv %tmp.12 :COLOR_WHITE;
+        putv self :background_color %tmp.13;
 C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_stop:
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 19; ]
     function setColor(color as ColorValue) as Void {
 C_Users_Wal_garmin_runThree_source_zone2Background_mc_19_51_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2Background.mc" 20 8 ]
-        %tmp.1 = getm $.Toybox.Graphics;
-        %tmp.2 = getv %tmp.1 :COLOR_PURPLE;
-        putv self :mColor %tmp.2;
+        %tmp.2 = lgetv %color;
+        putv self :background_color %tmp.2;
 C_Users_Wal_garmin_runThree_source_zone2Background_mc_19_51_stop:
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 23; ]
@@ -56,8 +55,7 @@ C_Users_Wal_garmin_runThree_source_zone2Background_mc_23_36_start:
         %tmp.2 = getv function %tmp.1 :setColor;
         %tmp.3 = getm $.Toybox.Graphics;
         %tmp.4 = getv %tmp.3 :COLOR_TRANSPARENT;
-        %tmp.5 = getm $.Toybox.Graphics;
-        %tmp.6 = getv %tmp.5 :COLOR_WHITE;
+        %tmp.6 = getv ? :background_color;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
 [ "C:\Users\Wal\garmin\runThree\source\zone2Background.mc" 25 8 ]
         %tmp.7 = lgetv %dc;

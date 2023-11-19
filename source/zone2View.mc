@@ -4,7 +4,6 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.UserProfile;
 
-var default_background = Graphics.COLOR_WHITE;
 var default_foreground = Graphics.COLOR_PURPLE;
 
 
@@ -28,20 +27,29 @@ class zone2View extends WatchUi.DataField {
     var hr_zone2_end as Number;
     var screen_width;
     var screen_height;
+    var hr_text_size;
+    var hr_text_x_offset;
+    var line_text_size;
+    var line_text_visible;
+    var background_color;
+    var foreground_color;
+    var hr_text_color;
 
     function initialize() {
         DataField.initialize();
         current_hr = 42.0f;
         n_boxes = 7;
         seconds_per_box = 7;
-        box_values = [150, 151, 154, 154, 154, 152, 151, 0];
+        box_values = [0, 0, 0, 0, 0, 0, 0, 0];
         heart_rates = [0, 0, 0, 0, 0, 0, 0];
         current_count = 0;
         
         current_sport = UserProfile.getCurrentSport();
         hr_zones = UserProfile.getHeartRateZones(current_sport);
-        hr_zone2_start = hr_zones[2] - 4;
-        hr_zone2_end = hr_zones[3] + 1;
+        hr_zone2_start = hr_zones[2] - 5;
+        hr_zone2_end = hr_zones[3];
+
+        foreground_color = Graphics.COLOR_PURPLE;
     }
 
     // Set your layout here. Anytime the size of obscurity of
@@ -68,6 +76,22 @@ class zone2View extends WatchUi.DataField {
 
         line_y_offset_above = 0.25 * screen_height;
         line_y_offset_below = 0.229167 * screen_height;
+
+        hr_text_size = Graphics.FONT_MEDIUM;
+        hr_text_x_offset = 25;
+        line_text_size = Graphics.FONT_XTINY;
+        line_text_visible = true;
+        if (screen_height < 120) {
+            hr_text_size = Graphics.FONT_SMALL;
+            line_text_visible = false;
+        }
+        if (screen_width < 190) {
+            hr_text_size = Graphics.FONT_XTINY;
+            hr_text_x_offset = 15;
+            line_text_visible = false;
+        }
+
+        background_color = getBackgroundColor();
     }
 
     function compute(info as Activity.Info) as Void {
@@ -98,26 +122,29 @@ class zone2View extends WatchUi.DataField {
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
     function onUpdate(dc as Dc) as Void {
+        background_color = getBackgroundColor();
+        hr_text_color = (background_color == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
 
         // Set the background color
-        (View.findDrawableById("Background") as Text).setColor(getBackgroundColor());
+        (View.findDrawableById("Background") as Text).setColor(background_color);
 
         var value = View.findDrawableById("value") as Text;
         value.setColor(default_foreground);
         value.setText("");
 
 
-        dc.setColor(Graphics.COLOR_WHITE, default_background);  // foreground, background
+        dc.setColor(Graphics.COLOR_WHITE, background_color);  // foreground, background
         View.onUpdate(dc);
-        //dc.clear();
 
         draw_dashed_line(dc, 0, line_y_offset_above, xmax, 1, default_foreground);
         draw_dashed_line(dc, 0, screen_height - line_y_offset_below, xmax, 1, default_foreground);
 
-        dc.drawText(xmax + 3, line_y_offset_above - 10, Graphics.FONT_XTINY, hr_zone2_end.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
-        dc.drawText(xmax + 3, screen_height - line_y_offset_below - 10, Graphics.FONT_XTINY, hr_zone2_start.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
-        dc.setColor(Graphics.COLOR_BLACK, default_background);
-        dc.drawText(xmax + 25, screen_height/2 - 15, Graphics.FONT_MEDIUM, current_hr.format("%.0f"), Graphics.TEXT_JUSTIFY_CENTER);
+        if (line_text_visible) {
+            dc.drawText(xmax + 3, line_y_offset_above - 10, line_text_size, hr_zone2_end.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
+            dc.drawText(xmax + 3, screen_height - line_y_offset_below - 10, line_text_size, hr_zone2_start.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
+        }
+        dc.setColor(hr_text_color, background_color);
+        dc.drawText(xmax + hr_text_x_offset, screen_height/2 - 15, hr_text_size, current_hr.format("%.0f"), Graphics.TEXT_JUSTIFY_CENTER);
 
         var k = (line_y_offset_above - (screen_height - line_y_offset_below)) / (hr_zone2_end - hr_zone2_start);
 
@@ -126,9 +153,10 @@ class zone2View extends WatchUi.DataField {
             var x_i = i * (box_width + 1);
             var y_i = screen_height - line_y_offset_below - (hr_zone2_start - box_hr)*k - box_height / 2;
             var color = get_box_color(box_hr);
-
+    
             draw_rect(dc, x_i, y_i, box_width, box_height, color);
         }
+
     }
 
     function get_box_color(hr) {
@@ -178,9 +206,15 @@ class zone2View extends WatchUi.DataField {
     }
 
     function draw_rect(dc, x, y, width, height, color) {
-        dc.setColor(color, default_background);
+        dc.setColor(color, background_color);
         dc.fillRectangle(x, y, width, height);
-        dc.setColor(default_foreground, default_background);
+        dc.setColor(default_foreground, background_color);
+    }
+
+    function draw_rounded_rect(dc, x, y, width, height, radius, color) {
+        dc.setColor(color, background_color);
+        dc.fillRoundedRectangle(x, y, width, height, radius);
+        dc.setColor(default_foreground, background_color);
     }
 
     function get_2d_array(x_dim, y_dim, fill_value) {
