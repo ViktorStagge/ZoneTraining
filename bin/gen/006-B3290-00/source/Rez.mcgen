@@ -45,53 +45,53 @@ module Rez {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
             var rez_cmp_local_var_dc_getWidth = dc.getWidth();
 
-            var rez_cmp_local_custom_drawable_31208252319004136011 = new Background();
+            var rez_cmp_local_custom_drawable_21432240282033648826 = new Background();
 
             var rez_cmp_local_text_label = new WatchUi.Text({:identifier=>"label", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>((dc.getHeight() - dc.getFontHeight(Graphics.FONT_TINY)) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
 
             var rez_cmp_local_text_value = new WatchUi.Text({:identifier=>"value", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>140, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
 
-            return [rez_cmp_local_custom_drawable_31208252319004136011, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_21432240282033648826, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
         }
 
         function TopLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_16815357265413618292 = new Background();
+            var rez_cmp_local_custom_drawable_18707918713502204501 = new Background();
 
             var rez_cmp_local_text_label = new WatchUi.Text({:identifier=>"label", :color=>Graphics.COLOR_LT_GRAY, :locX=>95, :locY=>75, :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>Graphics.FONT_TINY});
 
             var rez_cmp_local_text_value = new WatchUi.Text({:identifier=>"value", :color=>Graphics.COLOR_WHITE, :locX=>95, :locY=>42, :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>Graphics.FONT_LARGE});
 
-            return [rez_cmp_local_custom_drawable_16815357265413618292, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_18707918713502204501, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
         }
 
         function TopRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_69891804020091375996 = new Background();
+            var rez_cmp_local_custom_drawable_14538521814078593811 = new Background();
 
             var rez_cmp_local_text_label = new WatchUi.Text({:identifier=>"label", :color=>Graphics.COLOR_LT_GRAY, :locX=>14, :locY=>75, :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>Graphics.FONT_TINY});
 
             var rez_cmp_local_text_value = new WatchUi.Text({:identifier=>"value", :color=>Graphics.COLOR_WHITE, :locX=>14, :locY=>42, :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>Graphics.FONT_LARGE});
 
-            return [rez_cmp_local_custom_drawable_69891804020091375996, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_14538521814078593811, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
         }
 
         function BottomLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_10202048838962198331 = new Background();
+            var rez_cmp_local_custom_drawable_20875866871526976611 = new Background();
 
             var rez_cmp_local_text_label = new WatchUi.Text({:identifier=>"label", :color=>Graphics.COLOR_LT_GRAY, :locX=>95, :locY=>10, :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>Graphics.FONT_TINY});
 
             var rez_cmp_local_text_value = new WatchUi.Text({:identifier=>"value", :color=>Graphics.COLOR_WHITE, :locX=>95, :locY=>27, :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>Graphics.FONT_LARGE});
 
-            return [rez_cmp_local_custom_drawable_10202048838962198331, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_20875866871526976611, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
         }
 
         function BottomRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_55999776911440218611 = new Background();
+            var rez_cmp_local_custom_drawable_56440127129207258747 = new Background();
 
             var rez_cmp_local_text_label = new WatchUi.Text({:identifier=>"label", :color=>Graphics.COLOR_LT_GRAY, :locX=>14, :locY=>10, :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>Graphics.FONT_TINY});
 
             var rez_cmp_local_text_value = new WatchUi.Text({:identifier=>"value", :color=>Graphics.COLOR_WHITE, :locX=>14, :locY=>27, :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>Graphics.FONT_LARGE});
 
-            return [rez_cmp_local_custom_drawable_55999776911440218611, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_56440127129207258747, rez_cmp_local_text_label, rez_cmp_local_text_value] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
@@ -115,7 +115,7 @@ module Rez {
 
         module system_loc__hint_button_left_bottom {
             const x as Number = 10;
-            const y as Number = 173;
+            const y as Number = 172;
         } // system_loc__hint_button_left_bottom
 
         module prompt_font_enhanced_readability__body_no_title {
@@ -128,14 +128,14 @@ module Rez {
         } // prompt_loc__body_no_title
 
         module system_icon_dark__about {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__about.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__about.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__about
 
         module system_icon_light__question {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__question.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__question.svg";
             const dithering as String = "none";
         } // system_icon_light__question
 
@@ -149,7 +149,7 @@ module Rez {
         } // prompt_font__title
 
         module system_icon_dark__discard {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__discard.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__discard.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -166,18 +166,18 @@ module Rez {
         } // system_color_dark__text
 
         module system_icon_destructive__discard {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_destructive__discard.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_destructive__discard.svg";
             const dithering as String = "none";
         } // system_icon_destructive__discard
 
         module system_icon_dark__hint_action_menu {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_action_menu
 
         module prompt_size__title {
             const width as Number = 208;
-            const height as Number = 48;
+            const height as Number = 39;
         } // prompt_size__title
 
         module confirmation_font__body {
@@ -224,18 +224,18 @@ module Rez {
         } // prompt_color_dark__background
 
         module system_loc__hint_action_menu {
-            const x as Number = 227;
-            const y as Number = 53;
+            const x as Number = 225;
+            const y as Number = 48;
         } // system_loc__hint_action_menu
 
         module confirmation_icon__hint_confirm {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_completion.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\confirmation_icon__hint_completion.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_confirm
 
         module system_loc__hint_button_left_middle {
-            const x as Number = 1;
-            const y as Number = 109;
+            const x as Number = 3;
+            const y as Number = 108;
         } // system_loc__hint_button_left_middle
 
         module prompt_size__body_no_title {
@@ -244,7 +244,7 @@ module Rez {
         } // prompt_size__body_no_title
 
         module system_icon_light__hint_button_left_top {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_left_top.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__hint_button_left_top.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_button_left_top
 
@@ -258,7 +258,7 @@ module Rez {
         } // confirmation_input__delete
 
         module system_icon_dark__hint_button_left_top {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_left_top.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__hint_button_left_top.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_button_left_top
 
@@ -267,7 +267,7 @@ module Rez {
         } // system_input__action_menu
 
         module system_icon_light__save {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__save.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__save.svg";
             const dithering as String = "none";
         } // system_icon_light__save
 
@@ -281,7 +281,7 @@ module Rez {
         } // system_loc__subwindow
 
         module system_icon_light__warning {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__warning.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__warning.svg";
             const dithering as String = "none";
         } // system_icon_light__warning
 
@@ -318,8 +318,8 @@ module Rez {
         } // system_icon_destructive__hint_button_right_top
 
         module confirmation_loc__hint_confirm {
-            const x as Number = 205;
-            const y as Number = 50;
+            const x as Number = 210;
+            const y as Number = 48;
         } // confirmation_loc__hint_confirm
 
         module activity_color_dark__text {
@@ -337,7 +337,7 @@ module Rez {
         } // prompt_loc__body_with_title
 
         module system_icon_dark__search {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__search.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__search.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -349,12 +349,12 @@ module Rez {
         } // activity_color_light__text
 
         module confirmation_icon__hint_keep {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_keep.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\confirmation_icon__hint_keep.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_keep
 
         module system_icon_dark__save {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__save.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__save.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -365,12 +365,12 @@ module Rez {
         } // system_icon_destructive__hint_button_left_middle
 
         module system_icon_light__search {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__search.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__search.svg";
             const dithering as String = "none";
         } // system_icon_light__search
 
         module system_icon_dark__hint_button_left_bottom {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_left_bottom.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__hint_button_left_bottom.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_button_left_bottom
 
@@ -379,7 +379,7 @@ module Rez {
         } // system_icon_positive__hint_button_left_top
 
         module system_loc__hint_button_right_bottom {
-            const x as Number = 224;
+            const x as Number = 225;
             const y as Number = 172;
         } // system_loc__hint_button_right_bottom
 
@@ -394,12 +394,12 @@ module Rez {
         } // prompt_color_dark__title
 
         module system_icon_destructive__cancel {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_destructive__cancel.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_destructive__cancel.svg";
             const dithering as String = "none";
         } // system_icon_destructive__cancel
 
         module system_icon_light__hint_button_right_bottom {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_right_bottom.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__hint_button_right_bottom.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_button_right_bottom
 
@@ -418,28 +418,28 @@ module Rez {
         } // prompt_color_light__title
 
         module system_icon_dark__hint_button_right_top {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_button_right_top
 
         module system_icon_dark__hint_button_left_middle {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_left_middle.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__hint_button_left_middle.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_button_left_middle
 
         module system_icon_light__cancel {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__cancel.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__cancel.svg";
             const dithering as String = "none";
         } // system_icon_light__cancel
 
         module system_icon_light__about {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__about.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__about.svg";
             const dithering as String = "none";
         } // system_icon_light__about
 
         module system_size__toast_icon {
-            const scaleX as Number = 21;
-            const scaleY as Number = 21;
+            const scaleX as Number = 40;
+            const scaleY as Number = 40;
             const scaleRelativeTo as String = "screen";
         } // system_size__toast_icon
 
@@ -448,12 +448,12 @@ module Rez {
         } // system_icon_dark__hint_button_right_middle
 
         module confirmation_icon__hint_reject {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_reject.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\confirmation_icon__hint_reject.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_reject
 
         module system_icon_light__hint_action_menu {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_action_menu
 
@@ -466,8 +466,8 @@ module Rez {
         } // system_icon_destructive__hint_button_right_middle
 
         module confirmation_loc__hint_reject {
-            const x as Number = 13;
-            const y as Number = 174;
+            const x as Number = 10;
+            const y as Number = 172;
             const horizontalJustification as String = "left";
         } // confirmation_loc__hint_reject
 
@@ -477,7 +477,7 @@ module Rez {
         } // activity_color_dark__background
 
         module system_icon_light__hint_button_left_bottom {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_left_bottom.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__hint_button_left_bottom.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_button_left_bottom
 
@@ -492,7 +492,7 @@ module Rez {
         } // system_size__menu_icon
 
         module system_icon_destructive__warning {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_destructive__warning.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_destructive__warning.svg";
             const dithering as String = "none";
         } // system_icon_destructive__warning
 
@@ -501,7 +501,7 @@ module Rez {
         } // system_loc__hint_button_right_middle
 
         module system_icon_dark__cancel {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__cancel.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__cancel.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -513,8 +513,8 @@ module Rez {
         } // prompt_size__body_with_title
 
         module system_loc__hint_button_right_top {
-            const x as Number = 224;
-            const y as Number = 50;
+            const x as Number = 225;
+            const y as Number = 48;
         } // system_loc__hint_button_right_top
 
         module system_color_light__text {
@@ -523,7 +523,7 @@ module Rez {
         } // system_color_light__text
 
         module system_icon_light__check {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__check.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__check.svg";
             const dithering as String = "none";
         } // system_icon_light__check
 
@@ -532,7 +532,7 @@ module Rez {
         } // confirmation_input__reject
 
         module system_icon_light__revert {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__revert.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__revert.svg";
             const dithering as String = "none";
         } // system_icon_light__revert
 
@@ -545,21 +545,21 @@ module Rez {
         } // system_icon_positive__hint_button_left_bottom
 
         module system_icon_dark__check {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__check.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__check.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__check
 
         module confirmation_loc__hint_keep {
-            const x as Number = 13;
-            const y as Number = 174;
+            const x as Number = 10;
+            const y as Number = 172;
             const horizontalJustification as String = "left";
         } // confirmation_loc__hint_keep
 
         module confirmation_loc__hint_delete {
-            const x as Number = 208;
-            const y as Number = 50;
+            const x as Number = 210;
+            const y as Number = 48;
         } // confirmation_loc__hint_delete
 
         module system_icon_positive__hint_button_right_middle {
@@ -567,12 +567,12 @@ module Rez {
         } // system_icon_positive__hint_button_right_middle
 
         module system_icon_light__hint_button_left_middle {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_left_middle.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__hint_button_left_middle.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_button_left_middle
 
         module system_icon_dark__hint_button_right_bottom {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_right_bottom.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__hint_button_right_bottom.svg";
             const dithering as String = "none";
         } // system_icon_dark__hint_button_right_bottom
 
@@ -581,21 +581,21 @@ module Rez {
         } // system_icon_positive__hint_button_right_bottom
 
         module system_icon_dark__revert {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__revert.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__revert.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__revert
 
         module system_icon_dark__question {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__question.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__question.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
         } // system_icon_dark__question
 
         module system_icon_light__discard {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__discard.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__discard.svg";
             const dithering as String = "none";
         } // system_icon_light__discard
 
@@ -604,7 +604,7 @@ module Rez {
             const screenShape = Toybox.System.SCREEN_SHAPE_ROUND;
             const hasNightMode as Boolean = false;
             const screenHeight as Number = 260;
-            const hasTouchScreen as Boolean = true;
+            const hasTouchScreen as Boolean = false;
             const hasEnhancedReadabilityMode as Boolean = false;
         } // device_info
 
@@ -614,12 +614,12 @@ module Rez {
         } // prompt_font__body_no_title
 
         module prompt_size__title_icon {
-            const scaleX as Float = 0.1539;
+            const scaleX as Float = 0.15;
             const scaleRelativeTo as String = "screen";
         } // prompt_size__title_icon
 
         module system_icon_dark__warning {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__warning.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_dark__warning.svg";
             const compress as String = "true";
             const dithering as String = "none";
             const automaticPalette as String = "true";
@@ -642,12 +642,12 @@ module Rez {
         } // prompt_color_dark__body
 
         module confirmation_icon__hint_delete {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_delete.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\confirmation_icon__hint_delete.svg";
             const dithering as String = "none";
         } // confirmation_icon__hint_delete
 
         module system_icon_light__hint_button_right_top {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_right_top.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_light__hint_button_right_top.svg";
             const dithering as String = "none";
         } // system_icon_light__hint_button_right_top
 
@@ -657,7 +657,7 @@ module Rez {
         } // confirmation_size__body
 
         module system_icon_positive__check {
-            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_positive__check.svg";
+            const filename as String = "C:\\Users\\Wal\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6pro\\system_icon_positive__check.svg";
             const dithering as String = "none";
         } // system_icon_positive__check
     } // Styles

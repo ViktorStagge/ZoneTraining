@@ -156,49 +156,49 @@
 <entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="154" parent="globals/zone2View" pc="268438497" symbol="onUpdate"/>
 <entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="155" parent="globals/zone2View" pc="268438546" symbol="onUpdate"/>
 <entry filename="C:\\Users\\Wal\\garmin\\runThree\\source\\zone2View.mc" id="22" lineNum="157" parent="globals/zone2View" pc="268438561" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="23" lineNum="7" parent="globals/Rez" pc="268438611" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="24" lineNum="11" parent="globals/Rez/Drawables/shapes" pc="268438635" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="13" parent="globals/Rez/Drawables/shapes" pc="268438654" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="25" lineNum="14" parent="globals/Rez/Drawables/shapes" pc="268438656" symbol="initialize"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="17" parent="globals/Rez/Drawables/shapes" pc="268438681" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="18" parent="globals/Rez/Drawables/shapes" pc="268438683" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="19" parent="globals/Rez/Drawables/shapes" pc="268438694" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="20" parent="globals/Rez/Drawables/shapes" pc="268438706" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Drawables/shapes" pc="268438713" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="25" parent="globals/Rez/Drawables/shapes" pc="268438735" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="26" parent="globals/Rez/Drawables/shapes" pc="268438791" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="28" parent="globals/Rez/Drawables/shapes" pc="268438813" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="29" parent="globals/Rez/Drawables/shapes" pc="268438835" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="30" parent="globals/Rez/Drawables/shapes" pc="268438867" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="31" parent="globals/Rez/Drawables/shapes" pc="268438889" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="32" parent="globals/Rez/Drawables/shapes" pc="268438921" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="26" lineNum="33" parent="globals/Rez/Drawables/shapes" pc="268438943" symbol="draw"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="87" parent="globals/Rez/Layouts" pc="268438976" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="88" parent="globals/Rez/Layouts" pc="268438988" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="90" parent="globals/Rez/Layouts" pc="268439016" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="92" parent="globals/Rez/Layouts" pc="268439128" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="27" lineNum="94" parent="globals/Rez/Layouts" pc="268439240" symbol="BottomRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="67" parent="globals/Rez/Layouts" pc="268439277" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="68" parent="globals/Rez/Layouts" pc="268439289" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="70" parent="globals/Rez/Layouts" pc="268439317" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="72" parent="globals/Rez/Layouts" pc="268439429" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="28" lineNum="74" parent="globals/Rez/Layouts" pc="268439541" symbol="TopRightLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="77" parent="globals/Rez/Layouts" pc="268439578" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="78" parent="globals/Rez/Layouts" pc="268439590" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="80" parent="globals/Rez/Layouts" pc="268439618" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="82" parent="globals/Rez/Layouts" pc="268439730" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="29" lineNum="84" parent="globals/Rez/Layouts" pc="268439842" symbol="BottomLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="57" parent="globals/Rez/Layouts" pc="268439879" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="58" parent="globals/Rez/Layouts" pc="268439891" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="60" parent="globals/Rez/Layouts" pc="268439919" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="62" parent="globals/Rez/Layouts" pc="268440031" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="30" lineNum="64" parent="globals/Rez/Layouts" pc="268440143" symbol="TopLeftLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="45" parent="globals/Rez/Layouts" pc="268440180" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="46" parent="globals/Rez/Layouts" pc="268440192" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="48" parent="globals/Rez/Layouts" pc="268440205" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="50" parent="globals/Rez/Layouts" pc="268440233" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="52" parent="globals/Rez/Layouts" pc="268440377" symbol="MainLayout"/>
-<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3077-00\\source\\Rez.mcgen" id="31" lineNum="54" parent="globals/Rez/Layouts" pc="268440492" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="23" lineNum="7" parent="globals/Rez" pc="268438611" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="24" lineNum="11" parent="globals/Rez/Drawables/shapes" pc="268438635" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="25" lineNum="13" parent="globals/Rez/Drawables/shapes" pc="268438654" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="25" lineNum="14" parent="globals/Rez/Drawables/shapes" pc="268438656" symbol="initialize"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="17" parent="globals/Rez/Drawables/shapes" pc="268438681" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="18" parent="globals/Rez/Drawables/shapes" pc="268438683" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="19" parent="globals/Rez/Drawables/shapes" pc="268438694" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="20" parent="globals/Rez/Drawables/shapes" pc="268438706" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Drawables/shapes" pc="268438713" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="25" parent="globals/Rez/Drawables/shapes" pc="268438735" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="26" parent="globals/Rez/Drawables/shapes" pc="268438791" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="28" parent="globals/Rez/Drawables/shapes" pc="268438813" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="29" parent="globals/Rez/Drawables/shapes" pc="268438835" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="30" parent="globals/Rez/Drawables/shapes" pc="268438867" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="31" parent="globals/Rez/Drawables/shapes" pc="268438889" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="32" parent="globals/Rez/Drawables/shapes" pc="268438921" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="26" lineNum="33" parent="globals/Rez/Drawables/shapes" pc="268438943" symbol="draw"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="27" lineNum="87" parent="globals/Rez/Layouts" pc="268438976" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="27" lineNum="88" parent="globals/Rez/Layouts" pc="268438988" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="27" lineNum="90" parent="globals/Rez/Layouts" pc="268439016" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="27" lineNum="92" parent="globals/Rez/Layouts" pc="268439128" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="27" lineNum="94" parent="globals/Rez/Layouts" pc="268439240" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="28" lineNum="67" parent="globals/Rez/Layouts" pc="268439277" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="28" lineNum="68" parent="globals/Rez/Layouts" pc="268439289" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="28" lineNum="70" parent="globals/Rez/Layouts" pc="268439317" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="28" lineNum="72" parent="globals/Rez/Layouts" pc="268439429" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="28" lineNum="74" parent="globals/Rez/Layouts" pc="268439541" symbol="TopRightLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="29" lineNum="77" parent="globals/Rez/Layouts" pc="268439578" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="29" lineNum="78" parent="globals/Rez/Layouts" pc="268439590" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="29" lineNum="80" parent="globals/Rez/Layouts" pc="268439618" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="29" lineNum="82" parent="globals/Rez/Layouts" pc="268439730" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="29" lineNum="84" parent="globals/Rez/Layouts" pc="268439842" symbol="BottomLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="30" lineNum="57" parent="globals/Rez/Layouts" pc="268439879" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="30" lineNum="58" parent="globals/Rez/Layouts" pc="268439891" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="30" lineNum="60" parent="globals/Rez/Layouts" pc="268439919" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="30" lineNum="62" parent="globals/Rez/Layouts" pc="268440031" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="30" lineNum="64" parent="globals/Rez/Layouts" pc="268440143" symbol="TopLeftLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="31" lineNum="45" parent="globals/Rez/Layouts" pc="268440180" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="31" lineNum="46" parent="globals/Rez/Layouts" pc="268440192" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="31" lineNum="48" parent="globals/Rez/Layouts" pc="268440205" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="31" lineNum="50" parent="globals/Rez/Layouts" pc="268440233" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="31" lineNum="52" parent="globals/Rez/Layouts" pc="268440377" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Wal\\garmin\\runThree\\bin\\gen\\006-B3224-00\\source\\Rez.mcgen" id="31" lineNum="54" parent="globals/Rez/Layouts" pc="268440492" symbol="MainLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry field="true" id="39" symbol="seconds_per_box"/>
@@ -348,24 +348,24 @@
 <entry endPc="268438596" name="color" stackId="8" startPc="268438465"/>
 <entry arg="true" endPc="268438975" name="dc" stackId="1" startPc="268438681"/>
 <entry arg="true" endPc="268439276" name="dc" stackId="1" startPc="268438976"/>
-<entry endPc="268439276" name="rez_cmp_local_custom_drawable_13095259731840917745" stackId="2" startPc="268438988"/>
+<entry endPc="268439276" name="rez_cmp_local_custom_drawable_10525962032667601721" stackId="2" startPc="268438988"/>
 <entry endPc="268439276" name="rez_cmp_local_text_label" stackId="3" startPc="268438988"/>
 <entry endPc="268439276" name="rez_cmp_local_text_value" stackId="4" startPc="268438988"/>
 <entry arg="true" endPc="268439577" name="dc" stackId="1" startPc="268439277"/>
-<entry endPc="268439577" name="rez_cmp_local_custom_drawable_10275779247310685751" stackId="2" startPc="268439289"/>
+<entry endPc="268439577" name="rez_cmp_local_custom_drawable_66221695176387175834" stackId="2" startPc="268439289"/>
 <entry endPc="268439577" name="rez_cmp_local_text_label" stackId="3" startPc="268439289"/>
 <entry endPc="268439577" name="rez_cmp_local_text_value" stackId="4" startPc="268439289"/>
 <entry arg="true" endPc="268439878" name="dc" stackId="1" startPc="268439578"/>
-<entry endPc="268439878" name="rez_cmp_local_custom_drawable_17679915072420866701" stackId="2" startPc="268439590"/>
+<entry endPc="268439878" name="rez_cmp_local_custom_drawable_17338341691538589547" stackId="2" startPc="268439590"/>
 <entry endPc="268439878" name="rez_cmp_local_text_label" stackId="3" startPc="268439590"/>
 <entry endPc="268439878" name="rez_cmp_local_text_value" stackId="4" startPc="268439590"/>
 <entry arg="true" endPc="268440179" name="dc" stackId="1" startPc="268439879"/>
-<entry endPc="268440179" name="rez_cmp_local_custom_drawable_33518256614769891011" stackId="2" startPc="268439891"/>
+<entry endPc="268440179" name="rez_cmp_local_custom_drawable_10161703885969437341" stackId="2" startPc="268439891"/>
 <entry endPc="268440179" name="rez_cmp_local_text_label" stackId="3" startPc="268439891"/>
 <entry endPc="268440179" name="rez_cmp_local_text_value" stackId="4" startPc="268439891"/>
 <entry arg="true" endPc="268440528" name="dc" stackId="1" startPc="268440180"/>
 <entry endPc="268440528" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268440192"/>
-<entry endPc="268440528" name="rez_cmp_local_custom_drawable_10468382026704508917" stackId="3" startPc="268440192"/>
+<entry endPc="268440528" name="rez_cmp_local_custom_drawable_10843246212336337548" stackId="3" startPc="268440192"/>
 <entry endPc="268440528" name="rez_cmp_local_text_label" stackId="4" startPc="268440192"/>
 <entry endPc="268440528" name="rez_cmp_local_text_value" stackId="5" startPc="268440192"/>
 </localVars>
