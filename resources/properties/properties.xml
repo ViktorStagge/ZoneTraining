@@ -1,0 +1,10 @@
+<properties>
+
+    <property id="HrTextSize" type="number">1</property>
+    <property id="LineTextSize" type="number">0</property>
+    <property id="SecondsPerBox" type="number">7</property>
+    <property id="NumberOfBoxes" type="number">7</property>
+    <property id="BoxHeight" type="float">0.125</property>
+    <property id="RoundedBoxes" type="boolean">false</property>
+    
+</properties>

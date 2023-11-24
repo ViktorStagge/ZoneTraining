@@ -2,4 +2,12 @@
     <string id="AppName">Zone-2 Training</string>
 
     <string id="label"></string>
+    
+    <string id="HrTextSize">Heart Rate Font Size</string>
+    <string id="LabelTextSize">Zone Label Font Size</string>
+    <string id="SecondsPerBox">Seconds per Box (default: 7)</string>
+    <string id="NumberOfBoxes">Number of Boxes (default: 7)</string>
+    <string id="BoxHeight">Box Height (default: 0.125)</string>
+    <string id="RoundedBoxes">Rounded Corners on Boxes</string>
+
 </strings>

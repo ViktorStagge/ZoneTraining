@@ -1,0 +1,34 @@
+<settings>
+
+    <setting propertyKey="@Properties.HrTextSize" title="@Strings.HrTextSize">
+        <settingConfig type="list">
+            <listEntry value="0">Smaller</listEntry>
+            <listEntry value="1">Normal</listEntry>
+            <listEntry value="2">Larger</listEntry>
+        </settingConfig>
+    </setting>
+    
+    <setting propertyKey="@Properties.LineTextSize" title="@Strings.LabelTextSize">
+        <settingConfig type="list">
+            <listEntry value="0">Normal</listEntry>
+            <listEntry value="1">Larger</listEntry>
+        </settingConfig>
+    </setting>
+    
+    <setting propertyKey="@Properties.SecondsPerBox" title="@Strings.SecondsPerBox">
+        <settingConfig type="numeric" required="true" />
+    </setting>
+    
+    <setting propertyKey="@Properties.NumberOfBoxes" title="@Strings.NumberOfBoxes">
+        <settingConfig type="numeric" required="true" />
+    </setting>
+    
+    <setting propertyKey="@Properties.BoxHeight" title="@Strings.BoxHeight">
+        <settingConfig type="numeric" required="true" />
+    </setting>
+    
+    <setting propertyKey="@Properties.RoundedBoxes" title="@Strings.RoundedBoxes">
+        <settingConfig type="boolean" required="true" />
+    </setting>
+
+</settings>
