@@ -3,6 +3,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.UserProfile;
+import Toybox.Application;
 
 var default_foreground = Graphics.COLOR_PURPLE;
 
@@ -29,18 +30,20 @@ class zone2View extends WatchUi.DataField {
     var screen_height;
     var hr_text_size;
     var hr_text_x_offset;
+    var hr_text_color;
+    var hr_text_visible;
     var line_text_size;
     var line_text_visible;
     var background_color;
     var foreground_color;
-    var hr_text_color;
+    var use_rounded_boxes;
 
     function initialize() {
         DataField.initialize();
         current_hr = 42.0f;
         n_boxes = 7;
         seconds_per_box = 7;
-        box_values = [0, 0, 0, 0, 0, 0, 0, 0];
+        box_values = [0, 0, 0, 0, 0, 0, 0];
         heart_rates = [0, 0, 0, 0, 0, 0, 0];
         current_count = 0;
         
@@ -55,47 +58,44 @@ class zone2View extends WatchUi.DataField {
     // Set your layout here. Anytime the size of obscurity of
     // the draw context is changed this will be called.
     function onLayout(dc as Dc) as Void {
-        //var obscurityFlags = DataField.getObscurityFlags();
+        var obscurity_flags = DataField.getObscurityFlags();
+        seconds_per_box = Properties.getValue("SecondsPerBox");
+        n_boxes = Properties.getValue("NumberOfBoxes");
+        use_rounded_boxes = Properties.getValue("RoundedBoxes");
+        
+        if (heart_rates.size() != seconds_per_box) {
+            heart_rates = new [seconds_per_box];
+            for (var i = 0; i < seconds_per_box; i += 1) {
+                heart_rates[i] = 0;
+            }
+        }
+        if (box_values.size() != n_boxes) {
+            box_values = new [n_boxes];
+            for (var i = 0; i < n_boxes; i += 1) {
+                box_values[i] = 0;
+            }
+        }
 
         View.setLayout(Rez.Layouts.MainLayout(dc));
-        var labelView = View.findDrawableById("label") as Text;
-        labelView.locY = labelView.locY - 16;
-        var valueView = View.findDrawableById("value") as Text;
-        valueView.locY = valueView.locY + 7;
-
-        (View.findDrawableById("label") as Text).setText(Rez.Strings.label);
 
         screen_width = dc.getWidth();
         screen_height = dc.getHeight();
         
-        xmin = 0;
-        xmax = 0.7708 * screen_width;
-        
-        box_width = (xmax - xmin) / n_boxes - 1;
-        box_height = 0.125 * screen_height;
-
+        hr_text_size = get_hr_text_size(screen_width, screen_height);
+        line_text_size = get_line_text_size(screen_width, screen_height);
+        hr_text_x_offset = get_hr_text_offset(screen_width, screen_height);
         line_y_offset_above = 0.25 * screen_height;
         line_y_offset_below = 0.229167 * screen_height;
 
-        hr_text_size = Graphics.FONT_MEDIUM;
-        hr_text_x_offset = 25;
-        line_text_size = Graphics.FONT_XTINY;
-        line_text_visible = true;
-        if (screen_height < 120) {
-            hr_text_size = Graphics.FONT_SMALL;
-            line_text_visible = false;
-        }
-        if (screen_width < 190) {
-            hr_text_size = Graphics.FONT_XTINY;
-            hr_text_x_offset = 15;
-            line_text_visible = false;
-        }
-
-        background_color = getBackgroundColor();
+        xmin = 0;
+        xmax = get_xmax(screen_width, screen_height, obscurity_flags);
+        
+        box_width = get_box_width(xmin, xmax, n_boxes);
+        box_height = get_box_height(screen_height);
     }
 
     function compute(info as Activity.Info) as Void {
-        // See Activity.Info in the documentation for available information.
+
         if(info has :currentHeartRate){
             if(info.currentHeartRate != null){
                 current_hr = info.currentHeartRate as Number;
@@ -124,25 +124,19 @@ class zone2View extends WatchUi.DataField {
     function onUpdate(dc as Dc) as Void {
         background_color = getBackgroundColor();
         hr_text_color = (background_color == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
+        var background = View.findDrawableById("Background") as Background;
+        background.setColor(background_color);
 
-        // Set the background color
-        (View.findDrawableById("Background") as Text).setColor(background_color);
-
-        var value = View.findDrawableById("value") as Text;
-        value.setColor(default_foreground);
-        value.setText("");
-
-
-        dc.setColor(Graphics.COLOR_WHITE, background_color);  // foreground, background
+        dc.setColor(Graphics.COLOR_WHITE, background_color);
         View.onUpdate(dc);
 
-        draw_dashed_line(dc, 0, line_y_offset_above, xmax, 1, default_foreground);
-        draw_dashed_line(dc, 0, screen_height - line_y_offset_below, xmax, 1, default_foreground);
-
+        draw_dashed_line(dc, 0, line_y_offset_above, xmax, 1, foreground_color);
+        draw_dashed_line(dc, 0, screen_height - line_y_offset_below, xmax, 1, foreground_color);
         if (line_text_visible) {
             dc.drawText(xmax + 3, line_y_offset_above - 10, line_text_size, hr_zone2_end.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
             dc.drawText(xmax + 3, screen_height - line_y_offset_below - 10, line_text_size, hr_zone2_start.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
         }
+
         dc.setColor(hr_text_color, background_color);
         dc.drawText(xmax + hr_text_x_offset, screen_height/2 - 15, hr_text_size, current_hr.format("%.0f"), Graphics.TEXT_JUSTIFY_CENTER);
 
@@ -153,10 +147,13 @@ class zone2View extends WatchUi.DataField {
             var x_i = i * (box_width + 1);
             var y_i = screen_height - line_y_offset_below - (hr_zone2_start - box_hr)*k - box_height / 2;
             var color = get_box_color(box_hr);
-    
-            draw_rect(dc, x_i, y_i, box_width, box_height, color);
+            
+            if (use_rounded_boxes) {
+                draw_rounded_rect(dc, x_i, y_i, box_width, box_height, 1, color);
+            } else {
+                draw_rect(dc, x_i, y_i, box_width, box_height, color);
+            }
         }
-
     }
 
     function get_box_color(hr) {
@@ -247,6 +244,71 @@ class zone2View extends WatchUi.DataField {
         }
         avg = sum / array.size();
         return avg;
+    }
+
+    function get_hr_text_size(screen_width, screen_height) as Graphics.FontType {
+        var hr_text_size_enum = Properties.getValue("HrTextSize");
+        var hr_text_size = Graphics.FONT_MEDIUM;
+
+        if (hr_text_size_enum == 0) {  // "Smaller"
+            hr_text_size = Graphics.FONT_SMALL;
+        } else if (hr_text_size_enum == 2) {  // "Larger"
+            hr_text_size =  Graphics.FONT_LARGE;
+        }
+
+        if (screen_height < 120) {
+            hr_text_size = Graphics.FONT_SMALL;
+        }
+        if (screen_width < 190) {
+            hr_text_size = Graphics.FONT_XTINY;
+        }
+
+        return hr_text_size;
+    }
+
+    function get_line_text_size(screen_width, screen_height) as Graphics.FontType {
+        var line_text_size_enum = Properties.getValue("LineTextSize");
+        var line_text_size = Graphics.FONT_XTINY;
+        if (line_text_size_enum == "Larger") {
+            line_text_size = Graphics.FONT_SMALL;
+        }
+
+        line_text_visible = true;
+        if (screen_height < 120) {
+            line_text_visible = false;
+        }
+        if (screen_width < 190) {
+            line_text_visible = false;
+        }
+
+        return line_text_size;
+    }
+
+    function get_hr_text_offset(screen_width, screen_height) {
+        var hr_text_x_offset = 25;
+        if (screen_width < 190) {
+            hr_text_x_offset = 15;
+        }
+
+        return hr_text_x_offset;
+    }
+
+    function get_xmax(screen_width, screen_height, obscurity_flags) {
+        var xmax = 0.7708 * screen_width;
+        if (screen_height < 120) {
+            if (obscurity_flags == (OBSCURE_TOP | OBSCURE_LEFT | OBSCURE_RIGHT) or obscurity_flags == (OBSCURE_BOTTOM | OBSCURE_LEFT | OBSCURE_RIGHT)) {
+                xmax = 0.6708 * screen_width;
+            }
+        }
+        return xmax;
+    }
+
+    function get_box_width(xmin, xmax, n_boxes) {
+        return (xmax - xmin) / n_boxes - 1;
+    }
+
+    function get_box_height(screen_height) {
+        return Properties.getValue("BoxHeight") * screen_height;
     }
 
     function print(str) as Void {
