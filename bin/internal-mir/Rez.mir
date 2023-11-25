@@ -241,10 +241,10 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_45_74_start:
             lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 48 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_45_74_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_45_74_stop" ]
-            %rez_cmp_local_custom_drawable_10366032702010337202.2 = local;
+            %rez_cmp_local_custom_drawable_81638509815646646501.2 = local;
             %tmp.7 = getv ? :Background;
             %tmp.4 = newc %tmp.7 ();
-            lputv %rez_cmp_local_custom_drawable_10366032702010337202.2 %tmp.4;
+            lputv %rez_cmp_local_custom_drawable_81638509815646646501.2 %tmp.4;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 50 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_45_74_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_45_74_stop" ]
             %rez_cmp_local_text_label.3 = local;
@@ -331,7 +331,7 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_45_74_start:
             lputv %rez_cmp_local_text_value.4 %tmp.59;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 54 12 ]
             %tmp.100 = newa Array<WatchUi.Drawable> 3;
-            %tmp.102 = lgetv %rez_cmp_local_custom_drawable_10366032702010337202.2;
+            %tmp.102 = lgetv %rez_cmp_local_custom_drawable_81638509815646646501.2;
             %tmp.103 = dup %tmp.100;
             %tmp.104 = aputv %tmp.103 0 %tmp.102;
             %tmp.106 = lgetv %rez_cmp_local_text_label.3;
@@ -348,10 +348,10 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_45_74_stop:
 C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_57_77_start:
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 58 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_57_77_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_57_77_stop" ]
-            %rez_cmp_local_custom_drawable_19591546924644345614.1 = local;
+            %rez_cmp_local_custom_drawable_12677599482290577051.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_19591546924644345614.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_12677599482290577051.1 %tmp.1;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 60 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_57_77_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_57_77_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -424,7 +424,7 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_57_77_start:
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 64 12 ]
             %tmp.81 = newa Array<WatchUi.Drawable> 3;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_19591546924644345614.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_12677599482290577051.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;
@@ -441,10 +441,10 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_57_77_stop:
 C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_67_78_start:
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 68 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_67_78_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_67_78_stop" ]
-            %rez_cmp_local_custom_drawable_12216414342058171944.1 = local;
+            %rez_cmp_local_custom_drawable_89979607017074118661.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_12216414342058171944.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_89979607017074118661.1 %tmp.1;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 70 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_67_78_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_67_78_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -517,7 +517,7 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_67_78_start:
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 74 12 ]
             %tmp.81 = newa Array<WatchUi.Drawable> 3;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_12216414342058171944.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_89979607017074118661.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;
@@ -534,10 +534,10 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_67_78_stop:
 C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_77_80_start:
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 78 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_77_80_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_77_80_stop" ]
-            %rez_cmp_local_custom_drawable_10532591543874901216.1 = local;
+            %rez_cmp_local_custom_drawable_49229725599623320740.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_10532591543874901216.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_49229725599623320740.1 %tmp.1;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 80 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_77_80_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_77_80_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -610,7 +610,7 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_77_80_start:
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 84 12 ]
             %tmp.81 = newa Array<WatchUi.Drawable> 3;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_10532591543874901216.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_49229725599623320740.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;
@@ -627,10 +627,10 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_77_80_stop:
 C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_87_81_start:
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 88 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_87_81_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_87_81_stop" ]
-            %rez_cmp_local_custom_drawable_21503632419491130371.1 = local;
+            %rez_cmp_local_custom_drawable_13185377711419407922.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_21503632419491130371.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_13185377711419407922.1 %tmp.1;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 90 12 ]
             [ "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_87_81_start" "C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_87_81_stop" ]
             %rez_cmp_local_text_label.2 = local;
@@ -703,7 +703,7 @@ C_Users_Wal_garmin_runThree_bin_gen_006_B3077_00_source_Rez_mcgen_87_81_start:
             lputv %rez_cmp_local_text_value.3 %tmp.43;
 [ "C:\Users\Wal\garmin\runThree\bin\gen\006-B3077-00\source\Rez.mcgen" 94 12 ]
             %tmp.81 = newa Array<WatchUi.Drawable> 3;
-            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_21503632419491130371.1;
+            %tmp.83 = lgetv %rez_cmp_local_custom_drawable_13185377711419407922.1;
             %tmp.84 = dup %tmp.81;
             %tmp.85 = aputv %tmp.84 0 %tmp.83;
             %tmp.87 = lgetv %rez_cmp_local_text_label.2;

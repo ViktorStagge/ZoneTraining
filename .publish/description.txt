@@ -6,6 +6,7 @@ Use it for the long, easy runs, or for the long, easy bike rides.
 Features:
 - One minute history of the heart-rate
 - Colors indicating how well within bounds you are
+- Settings in Connect-IQ Phone app to customize the Data Field
 
 What is Zone 2 Training
 - Zone 2 Training, or "low heart rate training", is a way to build up fitness, without being at a too strenuous pulse. It can be used as a great compliment to more intense training, and also in general for general fitness.
