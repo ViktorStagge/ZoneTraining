@@ -3,7 +3,7 @@
     <setting propertyKey="@Properties.ZoneNumber" title="@Strings.ZoneNumber">
         <settingConfig type="list">
             <listEntry value="2">Zone-2: Aerobic, Easy</listEntry>
-            <listEntry value="3">Zone-3: Aerobic, Steady</listEntry>
+            <listEntry value="3">Zone-3: Aerobic</listEntry>
             <listEntry value="4">Zone-4: Anaerobic, Threshold</listEntry>
         </settingConfig>
     </setting>
@@ -41,7 +41,7 @@
         </setting>
     </group>
 
-    <group id="alertGroup" title="@Strings.AlertGroupTitle" description="@Strings.AlertGroupDescription">
+    <group id="alertGroup" title="@Strings.AlertGroupTitle" description="">
         <setting propertyKey="@Properties.AlertAbove" title="@Strings.AlertAbove">
             <settingConfig type="boolean" required="true" />
         </setting>

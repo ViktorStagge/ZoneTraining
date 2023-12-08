@@ -1,7 +1,10 @@
-A Zone 2 Training app for Garmin Watches.
+A Zone Training app for Garmin Watches.
 
-Keep your heart-rate within the bounds, and you'll stay in your Zone 2.
+Keep your heart-rate within the bounds, and you'll stay in your selected Zone.
 Use it for the long, easy runs, or for the long, easy bike rides.
+
+Zone-2: aerobic, low effort (long easy runs, recovery runs)
+Zone-3: aerobic, medium effort (general aerobic training)
 
 Features:
 - One minute history of the heart-rate
@@ -13,4 +16,4 @@ What is Zone 2 Training
 - Zone 2 Training, or "low heart rate training", is a way to build up fitness, without being at a too strenuous pulse. It can be used as a great compliment to more intense training, and also in general for general fitness.
 
 Where do I customize the Data Field?
-- In the Connet-IQ App on your Mobile Device, navigate to Zone-2 Training and click "Settings"
+- In the Connet-IQ App on your Mobile Device, navigate to Zone Training and click "Settings"

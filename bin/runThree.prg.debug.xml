@@ -256,7 +256,6 @@
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry id="7" module="true" symbol="globals/Rez/Menus"/>
 <entry field="true" id="15" symbol="box_width"/>
-<entry field="true" id="66" symbol="AlertGroupDescription"/>
 <entry id="8391212" method="true" symbol="mean"/>
 <entry id="25" method="true" symbol="get_box_height"/>
 <entry id="61" method="true" symbol="MainLayout"/>
@@ -265,17 +264,17 @@
 <entry id="28" method="true" symbol="get_hr_text_size"/>
 <entry field="true" id="51" symbol="vibrate_above"/>
 <entry id="29" method="true" symbol="get_line_text_size"/>
-<entry field="true" id="67" symbol="AlertGroupTitle"/>
+<entry field="true" id="66" symbol="AlertGroupTitle"/>
 <entry id="20" method="true" symbol="draw_dashed_line"/>
 <entry id="8388647" module="true" symbol="UserProfile"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="72" symbol="NumberOfBoxes"/>
+<entry field="true" id="71" symbol="NumberOfBoxes"/>
 <entry id="47" method="true" symbol="should_vibrate"/>
 <entry field="true" id="50" symbol="use_rounded_boxes"/>
 <entry id="24" method="true" symbol="get_box_color"/>
 <entry field="true" id="36" symbol="hr_zone_start"/>
-<entry field="true" id="75" symbol="StylingGroupTitle"/>
-<entry field="true" id="68" symbol="AppName"/>
+<entry field="true" id="74" symbol="StylingGroupTitle"/>
+<entry field="true" id="67" symbol="AppName"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry field="true" id="35" symbol="hr_zone_end"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
@@ -284,7 +283,6 @@
 <entry id="8388631" module="true" symbol="Activity"/>
 <entry field="true" id="37" symbol="hr_zones"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
-<entry field="true" id="8389138" symbol="label"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
 <entry field="true" id="18" symbol="current_sport"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
@@ -297,7 +295,7 @@
 <entry field="true" id="45" symbol="screen_width"/>
 <entry id="8389348" symbol="font"/>
 <entry field="true" id="31" symbol="heart_rates"/>
-<entry field="true" id="71" symbol="LabelTextSize"/>
+<entry field="true" id="70" symbol="LabelTextSize"/>
 <entry id="56" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
@@ -317,7 +315,7 @@
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
 <entry id="30" method="true" symbol="get_xmax"/>
-<entry field="true" id="69" symbol="BoxHeight"/>
+<entry field="true" id="68" symbol="BoxHeight"/>
 <entry id="62" method="true" symbol="TopLeftLayout"/>
 <entry field="true" id="32" symbol="hr_text_color"/>
 <entry field="true" id="23" symbol="foreground_color"/>
@@ -328,7 +326,7 @@
 <entry id="59" method="true" symbol="BottomLeftLayout"/>
 <entry field="true" id="39" symbol="line_text_visible"/>
 <entry id="11" object="true" symbol="zone2View"/>
-<entry field="true" id="70" symbol="HrTextSize"/>
+<entry field="true" id="69" symbol="HrTextSize"/>
 <entry id="60" method="true" symbol="BottomRightLayout"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry field="true" id="33" symbol="hr_text_size"/>
@@ -344,7 +342,7 @@
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="10" object="true" symbol="zone2App"/>
 <entry field="true" id="8388747" symbol="currentHeartRate"/>
-<entry field="true" id="76" symbol="ZoneNumber"/>
+<entry field="true" id="75" symbol="ZoneNumber"/>
 <entry field="true" id="12" symbol="background_color"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="27" method="true" symbol="get_hr_text_offset"/>
@@ -355,12 +353,12 @@
 <entry id="55" module="true" symbol="Layouts"/>
 <entry field="true" id="44" symbol="screen_height"/>
 <entry id="8388636" module="true" symbol="Attention"/>
-<entry field="true" id="73" symbol="RoundedBoxes"/>
+<entry field="true" id="72" symbol="RoundedBoxes"/>
 <entry id="49" method="true" symbol="update_settings_from_properties"/>
 <entry field="true" id="14" symbol="box_values"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
 <entry field="true" id="42" symbol="n_boxes"/>
-<entry field="true" id="74" symbol="SecondsPerBox"/>
+<entry field="true" id="73" symbol="SecondsPerBox"/>
 <entry id="8388635" module="true" symbol="Application"/>
 <entry id="63" method="true" symbol="TopRightLayout"/>
 </symbolTable>
@@ -436,24 +434,24 @@
 <entry endPc="268439482" name="color" stackId="8" startPc="268439296"/>
 <entry arg="true" endPc="268439932" name="dc" stackId="1" startPc="268439638"/>
 <entry arg="true" endPc="268440233" name="dc" stackId="1" startPc="268439933"/>
-<entry endPc="268440233" name="rez_cmp_local_custom_drawable_40881837815511853561" stackId="2" startPc="268439945"/>
+<entry endPc="268440233" name="rez_cmp_local_custom_drawable_11963388821194204176" stackId="2" startPc="268439945"/>
 <entry endPc="268440233" name="rez_cmp_local_text_label" stackId="3" startPc="268439945"/>
 <entry endPc="268440233" name="rez_cmp_local_text_value" stackId="4" startPc="268439945"/>
 <entry arg="true" endPc="268440534" name="dc" stackId="1" startPc="268440234"/>
-<entry endPc="268440534" name="rez_cmp_local_custom_drawable_12628620612722937041" stackId="2" startPc="268440246"/>
+<entry endPc="268440534" name="rez_cmp_local_custom_drawable_75899441013080464851" stackId="2" startPc="268440246"/>
 <entry endPc="268440534" name="rez_cmp_local_text_label" stackId="3" startPc="268440246"/>
 <entry endPc="268440534" name="rez_cmp_local_text_value" stackId="4" startPc="268440246"/>
 <entry arg="true" endPc="268440835" name="dc" stackId="1" startPc="268440535"/>
-<entry endPc="268440835" name="rez_cmp_local_custom_drawable_14002630771185496184" stackId="2" startPc="268440547"/>
+<entry endPc="268440835" name="rez_cmp_local_custom_drawable_22743045288344144035" stackId="2" startPc="268440547"/>
 <entry endPc="268440835" name="rez_cmp_local_text_label" stackId="3" startPc="268440547"/>
 <entry endPc="268440835" name="rez_cmp_local_text_value" stackId="4" startPc="268440547"/>
 <entry arg="true" endPc="268441136" name="dc" stackId="1" startPc="268440836"/>
-<entry endPc="268441136" name="rez_cmp_local_custom_drawable_69230413511060929887" stackId="2" startPc="268440848"/>
+<entry endPc="268441136" name="rez_cmp_local_custom_drawable_12430429827408465622" stackId="2" startPc="268440848"/>
 <entry endPc="268441136" name="rez_cmp_local_text_label" stackId="3" startPc="268440848"/>
 <entry endPc="268441136" name="rez_cmp_local_text_value" stackId="4" startPc="268440848"/>
 <entry arg="true" endPc="268441485" name="dc" stackId="1" startPc="268441137"/>
 <entry endPc="268441485" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268441149"/>
-<entry endPc="268441485" name="rez_cmp_local_custom_drawable_12575572631863644171" stackId="3" startPc="268441149"/>
+<entry endPc="268441485" name="rez_cmp_local_custom_drawable_13763092261439523586" stackId="3" startPc="268441149"/>
 <entry endPc="268441485" name="rez_cmp_local_text_label" stackId="4" startPc="268441149"/>
 <entry endPc="268441485" name="rez_cmp_local_text_value" stackId="5" startPc="268441149"/>
 </localVars>
@@ -467,12 +465,10 @@
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HrTextSize"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AlertFrequency"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ZoneNumber"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AlertGroupDescription"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BoxHeight"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LabelTextSize"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AlertAbove"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StylingGroupTitle"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="label"/>
 </annotations>
 <dataEntryOffsetMappings>
 <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
@@ -485,8 +481,8 @@
 <dataEntry label="globals/Rez/Menus" offset="952" parentId="Rez" symbolId="Menus" type="module"/>
 <dataEntry label="globals/Rez/Fonts" offset="983" parentId="Rez" symbolId="Fonts" type="module"/>
 <dataEntry label="globals/Rez/Strings" offset="1014" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="1157" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry label="globals/Rez/Drawables/shapes" offset="1188" parentId="Drawables" symbolId="shapes" type="class"/>
+<dataEntry label="globals/Rez/JsonData" offset="1141" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Drawables/shapes" offset="1172" parentId="Drawables" symbolId="shapes" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">

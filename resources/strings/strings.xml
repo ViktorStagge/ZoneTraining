@@ -1,18 +1,15 @@
 <strings>
-    <string id="AppName">Zone-2 Training</string>
+    <string id="AppName">Zone Training</string>
 
-    <string id="label"></string>
-    
     <string id="HrTextSize">Heart Rate Font Size</string>
     <string id="LabelTextSize">Zone Label Font Size</string>
     <string id="SecondsPerBox">Seconds per Box (default: 7)</string>
     <string id="NumberOfBoxes">Number of Boxes (default: 7)</string>
     <string id="BoxHeight">Box Height in % of Screen Size (default: 0.125)</string>
     <string id="RoundedBoxes">Rounded Corners on Boxes</string>
-    <string id="ZoneNumber">Displayed Zone. Use Zone-2 or Zone-3 for aerobic training.</string>
+    <string id="ZoneNumber">Displayed Zone (default: Zone-3)</string>
     <string id="StylingGroupTitle">Layout Settings</string>
     <string id="AlertGroupTitle">Alert Settings</string>
-    <string id="AlertGroupDescription"></string>
     <string id="AlertAbove">Vibrate when leaving the Zone (above)</string>
     <string id="AlertFrequency">Minimum time between vibrations (seconds)</string>
 </strings>
