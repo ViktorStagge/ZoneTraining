@@ -30,5 +30,25 @@
     <setting propertyKey="@Properties.RoundedBoxes" title="@Strings.RoundedBoxes">
         <settingConfig type="boolean" required="true" />
     </setting>
+    
+    <setting propertyKey="@Properties.ZoneNumber" title="@Strings.ZoneNumber">
+        <settingConfig type="list">
+            <listEntry value="2">Zone-2: Aerobic, Easy</listEntry>
+            <listEntry value="3">Zone-3: Aerobic, Steady</listEntry>
+            <listEntry value="4">Zone-4: Anaerobic, Threshold</listEntry>
+        </settingConfig>
+    </setting>
+
+    <group id="alertGroup" title="@Strings.AlertGroupTitle" description="@Strings.AlertGroupDescription">
+        <setting propertyKey="@Properties.AlertAbove" title="@Strings.AlertAbove">
+            <settingConfig type="boolean" required="true" />
+        </setting>
+        <setting propertyKey="@Properties.AlertBelow" title="@Strings.AlertBelow">
+            <settingConfig type="boolean" required="true" />
+        </setting>
+        <setting propertyKey="@Properties.AlertFrequency" title="@Strings.AlertFrequency">
+            <settingConfig type="numeric" min="0" max="120" required="true" />
+        </setting>
+    </group>
 
 </settings>

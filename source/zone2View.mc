@@ -23,9 +23,10 @@ class zone2View extends WatchUi.DataField {
     var heart_rates as Array<Number>;
     var current_count as Number;
     var current_sport as UserProfile.SportHrZone;
+    var current_zone;
     var hr_zones as Array<Number>;
-    var hr_zone2_start as Number;
-    var hr_zone2_end as Number;
+    var hr_zone2_start;
+    var hr_zone2_end;
     var screen_width;
     var screen_height;
     var hr_text_size;
@@ -37,6 +38,7 @@ class zone2View extends WatchUi.DataField {
     var background_color;
     var foreground_color;
     var use_rounded_boxes;
+    var obscurity_flags;
 
     function initialize() {
         DataField.initialize();
@@ -49,19 +51,31 @@ class zone2View extends WatchUi.DataField {
         
         current_sport = UserProfile.getCurrentSport();
         hr_zones = UserProfile.getHeartRateZones(current_sport);
-        hr_zone2_start = hr_zones[2] - 5;
-        hr_zone2_end = hr_zones[3];
 
         foreground_color = Graphics.COLOR_PURPLE;
+    }
+
+    function update_settings_from_properties() {
+        obscurity_flags = DataField.getObscurityFlags();
+        seconds_per_box = Properties.getValue("SecondsPerBox");
+        n_boxes = Properties.getValue("NumberOfBoxes");
+        use_rounded_boxes = Properties.getValue("RoundedBoxes");
+        current_zone = Properties.getValue("ZoneNumber");
+
+
+        var hr_zone_start_offset = 5;
+        var hr_zone_end_offset = 0;
+        if (current_zone != 3) {
+            hr_zone_start_offset = 3;
+            hr_zone_end_offset = 1;
+        }
+        hr_zone2_start = hr_zones[current_zone - 1] - hr_zone_start_offset;
+        hr_zone2_end = hr_zones[current_zone] - hr_zone_end_offset;
     }
 
     // Set your layout here. Anytime the size of obscurity of
     // the draw context is changed this will be called.
     function onLayout(dc as Dc) as Void {
-        var obscurity_flags = DataField.getObscurityFlags();
-        seconds_per_box = Properties.getValue("SecondsPerBox");
-        n_boxes = Properties.getValue("NumberOfBoxes");
-        use_rounded_boxes = Properties.getValue("RoundedBoxes");
         
         if (heart_rates.size() != seconds_per_box) {
             heart_rates = new [seconds_per_box];
@@ -88,7 +102,7 @@ class zone2View extends WatchUi.DataField {
         line_y_offset_below = 0.229167 * screen_height;
 
         xmin = 0;
-        xmax = get_xmax(screen_width, screen_height, obscurity_flags);
+        xmax = get_xmax(screen_width, screen_height);
         
         box_width = get_box_width(xmin, xmax, n_boxes);
         box_height = get_box_height(screen_height);
@@ -122,6 +136,7 @@ class zone2View extends WatchUi.DataField {
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
     function onUpdate(dc as Dc) as Void {
+        update_settings_from_properties();
         background_color = getBackgroundColor();
         hr_text_color = (background_color == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
         var background = View.findDrawableById("Background") as Background;
@@ -293,7 +308,7 @@ class zone2View extends WatchUi.DataField {
         return hr_text_x_offset;
     }
 
-    function get_xmax(screen_width, screen_height, obscurity_flags) {
+    function get_xmax(screen_width, screen_height) {
         var xmax = 0.7708 * screen_width;
         if (screen_height < 120) {
             if (obscurity_flags == (OBSCURE_TOP | OBSCURE_LEFT | OBSCURE_RIGHT) or obscurity_flags == (OBSCURE_BOTTOM | OBSCURE_LEFT | OBSCURE_RIGHT)) {
