@@ -1,35 +1,4 @@
 <settings>
-
-    <setting propertyKey="@Properties.HrTextSize" title="@Strings.HrTextSize">
-        <settingConfig type="list">
-            <listEntry value="0">Smaller</listEntry>
-            <listEntry value="1">Normal</listEntry>
-            <listEntry value="2">Larger</listEntry>
-        </settingConfig>
-    </setting>
-    
-    <setting propertyKey="@Properties.LineTextSize" title="@Strings.LabelTextSize">
-        <settingConfig type="list">
-            <listEntry value="0">Normal</listEntry>
-            <listEntry value="1">Larger</listEntry>
-        </settingConfig>
-    </setting>
-    
-    <setting propertyKey="@Properties.SecondsPerBox" title="@Strings.SecondsPerBox">
-        <settingConfig type="numeric" min="1" max="240" required="true" />
-    </setting>
-    
-    <setting propertyKey="@Properties.NumberOfBoxes" title="@Strings.NumberOfBoxes">
-        <settingConfig type="numeric" min="1" max="50" required="true" />
-    </setting>
-    
-    <setting propertyKey="@Properties.BoxHeight" title="@Strings.BoxHeight">
-        <settingConfig type="numeric" min="0.01" max="0.25" required="true" />
-    </setting>
-    
-    <setting propertyKey="@Properties.RoundedBoxes" title="@Strings.RoundedBoxes">
-        <settingConfig type="boolean" required="true" />
-    </setting>
     
     <setting propertyKey="@Properties.ZoneNumber" title="@Strings.ZoneNumber">
         <settingConfig type="list">
@@ -39,11 +8,41 @@
         </settingConfig>
     </setting>
 
-    <group id="alertGroup" title="@Strings.AlertGroupTitle" description="@Strings.AlertGroupDescription">
-        <setting propertyKey="@Properties.AlertAbove" title="@Strings.AlertAbove">
+    <group id="stylingGroup" title="@Strings.StylingGroupTitle" description="">
+        <setting propertyKey="@Properties.HrTextSize" title="@Strings.HrTextSize">
+            <settingConfig type="list">
+                <listEntry value="0">Smaller</listEntry>
+                <listEntry value="1">Normal</listEntry>
+                <listEntry value="2">Larger</listEntry>
+            </settingConfig>
+        </setting>
+        
+        <setting propertyKey="@Properties.LineTextSize" title="@Strings.LabelTextSize">
+            <settingConfig type="list">
+                <listEntry value="0">Normal</listEntry>
+                <listEntry value="1">Larger</listEntry>
+            </settingConfig>
+        </setting>
+        
+        <setting propertyKey="@Properties.SecondsPerBox" title="@Strings.SecondsPerBox">
+            <settingConfig type="numeric" min="1" max="240" required="true" />
+        </setting>
+        
+        <setting propertyKey="@Properties.NumberOfBoxes" title="@Strings.NumberOfBoxes">
+            <settingConfig type="numeric" min="1" max="50" required="true" />
+        </setting>
+        
+        <setting propertyKey="@Properties.BoxHeight" title="@Strings.BoxHeight">
+            <settingConfig type="numeric" min="0.01" max="0.25" required="true" />
+        </setting>
+        
+        <setting propertyKey="@Properties.RoundedBoxes" title="@Strings.RoundedBoxes">
             <settingConfig type="boolean" required="true" />
         </setting>
-        <setting propertyKey="@Properties.AlertBelow" title="@Strings.AlertBelow">
+    </group>
+
+    <group id="alertGroup" title="@Strings.AlertGroupTitle" description="@Strings.AlertGroupDescription">
+        <setting propertyKey="@Properties.AlertAbove" title="@Strings.AlertAbove">
             <settingConfig type="boolean" required="true" />
         </setting>
         <setting propertyKey="@Properties.AlertFrequency" title="@Strings.AlertFrequency">

@@ -8,7 +8,6 @@
     <property id="RoundedBoxes" type="boolean">false</property>
     <property id="ZoneNumber" type="number">3</property>
     <property id="AlertAbove" type="boolean">false</property>
-    <property id="AlertBelow" type="boolean">false</property>
     <property id="AlertFrequency" type="number">30</property>
     
 </properties>

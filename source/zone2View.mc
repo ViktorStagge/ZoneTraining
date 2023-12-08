@@ -4,6 +4,7 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.UserProfile;
 import Toybox.Application;
+import Toybox.Attention;
 
 var default_foreground = Graphics.COLOR_PURPLE;
 
@@ -25,20 +26,22 @@ class zone2View extends WatchUi.DataField {
     var current_sport as UserProfile.SportHrZone;
     var current_zone;
     var hr_zones as Array<Number>;
-    var hr_zone2_start;
-    var hr_zone2_end;
+    var hr_zone_start;
+    var hr_zone_end;
     var screen_width;
     var screen_height;
     var hr_text_size;
     var hr_text_x_offset;
     var hr_text_color;
-    var hr_text_visible;
     var line_text_size;
     var line_text_visible;
     var background_color;
     var foreground_color;
     var use_rounded_boxes;
     var obscurity_flags;
+    var time_since_last_vibration;
+    var vibrate_above;
+    var vibration_frequency;
 
     function initialize() {
         DataField.initialize();
@@ -53,6 +56,7 @@ class zone2View extends WatchUi.DataField {
         hr_zones = UserProfile.getHeartRateZones(current_sport);
 
         foreground_color = Graphics.COLOR_PURPLE;
+        time_since_last_vibration = 120;
     }
 
     function update_settings_from_properties() {
@@ -61,21 +65,20 @@ class zone2View extends WatchUi.DataField {
         n_boxes = Properties.getValue("NumberOfBoxes");
         use_rounded_boxes = Properties.getValue("RoundedBoxes");
         current_zone = Properties.getValue("ZoneNumber");
+        vibrate_above = Properties.getValue("AlertAbove");
+        vibration_frequency = Properties.getValue("AlertFrequency");
 
 
-        var hr_zone_start_offset = 5;
-        var hr_zone_end_offset = 0;
-        if (current_zone != 3) {
-            hr_zone_start_offset = 3;
-            hr_zone_end_offset = 1;
-        }
-        hr_zone2_start = hr_zones[current_zone - 1] - hr_zone_start_offset;
-        hr_zone2_end = hr_zones[current_zone] - hr_zone_end_offset;
+        var hr_zone_start_offset = (current_zone == 3) ? 5 : 3;
+        hr_zone_start = hr_zones[current_zone - 1] - hr_zone_start_offset;
+        hr_zone_end = hr_zones[current_zone];
     }
 
     // Set your layout here. Anytime the size of obscurity of
     // the draw context is changed this will be called.
     function onLayout(dc as Dc) as Void {
+
+        update_settings_from_properties();
         
         if (heart_rates.size() != seconds_per_box) {
             heart_rates = new [seconds_per_box];
@@ -136,7 +139,6 @@ class zone2View extends WatchUi.DataField {
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
     function onUpdate(dc as Dc) as Void {
-        update_settings_from_properties();
         background_color = getBackgroundColor();
         hr_text_color = (background_color == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
         var background = View.findDrawableById("Background") as Background;
@@ -148,19 +150,19 @@ class zone2View extends WatchUi.DataField {
         draw_dashed_line(dc, 0, line_y_offset_above, xmax, 1, foreground_color);
         draw_dashed_line(dc, 0, screen_height - line_y_offset_below, xmax, 1, foreground_color);
         if (line_text_visible) {
-            dc.drawText(xmax + 3, line_y_offset_above - 10, line_text_size, hr_zone2_end.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
-            dc.drawText(xmax + 3, screen_height - line_y_offset_below - 10, line_text_size, hr_zone2_start.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
+            dc.drawText(xmax + 3, line_y_offset_above - 10, line_text_size, hr_zone_end.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
+            dc.drawText(xmax + 3, screen_height - line_y_offset_below - 10, line_text_size, hr_zone_start.format("%d"), Graphics.TEXT_JUSTIFY_LEFT);
         }
 
         dc.setColor(hr_text_color, background_color);
         dc.drawText(xmax + hr_text_x_offset, screen_height/2 - 15, hr_text_size, current_hr.format("%.0f"), Graphics.TEXT_JUSTIFY_CENTER);
 
-        var k = (line_y_offset_above - (screen_height - line_y_offset_below)) / (hr_zone2_end - hr_zone2_start);
+        var k = (line_y_offset_above - (screen_height - line_y_offset_below)) / (hr_zone_end - hr_zone_start);
 
         for (var i = 0; i < n_boxes; i += 1) {
             var box_hr = box_values[i];
             var x_i = i * (box_width + 1);
-            var y_i = screen_height - line_y_offset_below - (hr_zone2_start - box_hr)*k - box_height / 2;
+            var y_i = screen_height - line_y_offset_below - (hr_zone_start - box_hr)*k - box_height / 2;
             var color = get_box_color(box_hr);
             
             if (use_rounded_boxes) {
@@ -169,20 +171,52 @@ class zone2View extends WatchUi.DataField {
                 draw_rect(dc, x_i, y_i, box_width, box_height, color);
             }
         }
+
+        if (should_vibrate()) {
+            vibrate();
+        }
+        if (time_since_last_vibration < vibration_frequency) {
+            time_since_last_vibration += 1;
+        }
+    }
+
+    function should_vibrate() {
+
+        if (vibrate_above) {
+            if (box_values[box_values.size()-1] >= hr_zone_end and time_since_last_vibration >= vibration_frequency) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    function vibrate() {
+        if (Attention has :vibrate) {
+            var vibrations = [
+                new Attention.VibeProfile(80, 150),
+                new Attention.VibeProfile(0, 75),
+                new Attention.VibeProfile(75, 75),
+                new Attention.VibeProfile(0, 75),
+                new Attention.VibeProfile(75, 75),
+            ];
+            Attention.vibrate(vibrations);
+            time_since_last_vibration = 0;
+        }
     }
 
     function get_box_color(hr) {
         var color = Graphics.COLOR_RED;
             
-        if (hr > hr_zone2_end + 1) {
+        if (hr > hr_zone_end + 1) {
             color = Graphics.COLOR_RED;
-        } else if (hr > hr_zone2_end - 2) {
+        } else if (hr > hr_zone_end - 2) {
             color = Graphics.COLOR_ORANGE; // "0xff781f"; // orange
-        } else if (hr > hr_zone2_end - 4) {
+        } else if (hr > hr_zone_end - 4) {
             color = Graphics.COLOR_GREEN; // lime
-        } else if (hr >= hr_zone2_start) {
+        } else if (hr >= hr_zone_start) {
             color = Graphics.COLOR_DK_GREEN;
-        } else if (hr >= hr_zone2_start - 3) {
+        } else if (hr >= hr_zone_start - 3) {
             color = Graphics.COLOR_GREEN; // "0xaef359"; // lime
         } else {
             color = Graphics.COLOR_RED;
@@ -227,24 +261,6 @@ class zone2View extends WatchUi.DataField {
         dc.setColor(color, background_color);
         dc.fillRoundedRectangle(x, y, width, height, radius);
         dc.setColor(default_foreground, background_color);
-    }
-
-    function get_2d_array(x_dim, y_dim, fill_value) {
-        
-        var array = new Array<Array>[x_dim];
-        for (var i = 0; i < x_dim; i += 1) {
-            array[i] = new [y_dim];
-        }
-
-        if (fill_value != null) {
-            for (var i = 0; i < x_dim; i += 1) {
-                for (var j = 0; j < y_dim; j += 1) {
-                    array[i][j] = fill_value;
-                }
-            }
-        }
-
-        return array;
     }
 
     function mean(array as Array) {
