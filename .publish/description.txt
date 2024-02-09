@@ -11,9 +11,13 @@ Features:
 - Colors indicating how well within bounds you are
 - Targeted Zone is selectable (Zone-2, Zone-3 or even the Zone-4/Threshold)
 - Additional Settings in Connect-IQ Phone app to customize the Data Field
+- Option to enable alerts
 
 What is Zone 2 Training
 - Zone 2 Training, or "low heart rate training", is a way to build up fitness, without being at a too strenuous pulse. It can be used as a great compliment to more intense training, and also in general for general fitness.
 
 Where do I customize the Data Field?
 - In the Connet-IQ App on your Mobile Device, navigate to Zone Training and click "Settings"
+
+How do I install this Data Field?
+- Full installation instructions are available at: https://github.com/ViktorStagge/ZoneTraining

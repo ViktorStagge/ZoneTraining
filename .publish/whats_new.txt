@@ -1,4 +1,4 @@
-- v0.4: Enable selectable zone, and vibrations (as per request).
+- v0.4: Enable selectable zone, and vibrations.
 - v0.3: Enable settings! Seconds shown in history, number of boxes, and font sizes.
 - v0.2: Enable multiple layouts, and sizes. Respect selected Background color
 - v0.1: First Release

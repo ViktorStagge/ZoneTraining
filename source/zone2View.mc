@@ -346,5 +346,3 @@ class zone2View extends WatchUi.DataField {
         System.println(str);
     }
 }
-
-
