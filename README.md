@@ -38,7 +38,9 @@ Zone-3: aerobic, medium effort (general aerobic training)
 9. Select ConnectIQ Fields
 10. Select Zone Training
 
-[![Available on Garmin Connect IQ](https://github.com/ViktorStagge/ZoneTraining/blob/main/.publish/available-connect-iq-badge.svg 'Available on Garmin Connect IQ')](https://apps.garmin.com/en-US/apps/f6f3f163-7e53-40f0-8201-b4b1b2eb8cf9)
+<p align="center">
+  <a href="https://apps.garmin.com/en-US/apps/f6f3f163-7e53-40f0-8201-b4b1b2eb8cf9"><img src="https://github.com/ViktorStagge/ZoneTraining/blob/main/.publish/available-connect-iq-badge.svg" height=70 alt="Available on Connect IQ" title="Connect IQ: ZoneTraining"></a>
+</p>
 
 ## What's New
 - v0.4: Enable selectable zone, and vibrations.
