@@ -1,7 +1,8 @@
 # ZoneTraining
 
-<p style="text-align: center;">![ZoneTraining](https://github.com/ViktorStagge/ZoneTraining/blob/main/.publish/zone2-hero-image-icon.PNG)</p>
-
+<p align="center">
+  <img src="https://github.com/ViktorStagge/ZoneTraining/blob/main/.publish/zone2-hero-image-icon.PNG" alt="ZoneTraining example image" title="ZoneTraining">
+</p>
 
 A Zone Training app for Garmin Watches.
 
