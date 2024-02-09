@@ -1,5 +1,8 @@
 # ZoneTraining
 
+<p style="text-align: center;">![ZoneTraining](https://github.com/ViktorStagge/ZoneTraining/blob/main/.publish/zone2-hero-image-icon.PNG)</p>
+
+
 A Zone Training app for Garmin Watches.
 
 Keep your heart-rate within the bounds, and you'll stay in your selected Zone.
@@ -14,6 +17,7 @@ Zone-3: aerobic, medium effort (general aerobic training)
 - Targeted Zone is selectable (Zone-2, Zone-3 or even the Zone-4/Threshold)
 - Additional Settings in Connect-IQ Phone app to customize the Data Field
 - Option to enable alerts
+
 
 **What is Zone 2 Training?**
 - Zone 2 Training, or "low heart rate training", is a way to build up fitness, without being at a too strenuous pulse. It can be used as a great compliment to more intense training, and also in general for general fitness.
