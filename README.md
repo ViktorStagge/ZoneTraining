@@ -15,13 +15,13 @@ Zone-3: aerobic, medium effort (general aerobic training)
 - Additional Settings in Connect-IQ Phone app to customize the Data Field
 - Option to enable alerts
 
-What is Zone 2 Training?
+**What is Zone 2 Training?**
 - Zone 2 Training, or "low heart rate training", is a way to build up fitness, without being at a too strenuous pulse. It can be used as a great compliment to more intense training, and also in general for general fitness.
 
-Where do I customize the Data Field?
+**Where do I customize the Data Field?**
 - In the Connet-IQ App on your Mobile Device, navigate to Zone Training and click "Settings"
 
-How do I install/use this field?
+**How do I install/use this field?**
 1. Install the Data Field from the Connect IQ app
 2. Select an activity on your watch. (In detail: click on the top right button, choose an activity in the list, and click the top right button again).
 3. Hold the button on the middle-left side until Settings open
