@@ -17,8 +17,8 @@ class zone2App extends Application.AppBase {
     }
 
     //! Return the initial view of your application here
-    function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new zone2View() ] as Array<Views or InputDelegates>;
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+        return [ new zone2View() ] ;
     }
 
 }
