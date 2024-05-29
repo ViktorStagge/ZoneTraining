@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Run App",
             "stopAtLaunch": false,
-            "device": "fr245m"
+            "device": "venu2s"
         },
         {
             "type": "monkeyc",

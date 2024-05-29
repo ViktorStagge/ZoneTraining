@@ -18,9 +18,9 @@ class Background extends WatchUi.Drawable{
     var background_color as ColorValue;
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 9; ]
     function initialize() as Void {
-C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_start:
+C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_17_4_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2Background.mc" 10 8 ]
-        [ "C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_start" "C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_stop" ]
+        [ "C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_17_4_start" "C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_17_4_stop" ]
         %dictionary.1 = local;
         %tmp.1 = newd 1;
         %tmp.3 = const :identifier;
@@ -37,19 +37,19 @@ C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_start:
         %tmp.12 = getm $.Toybox.Graphics;
         %tmp.13 = getv %tmp.12 :COLOR_WHITE;
         putv self :background_color %tmp.13;
-C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_stop:
+C_Users_Wal_garmin_runThree_source_zone2Background_mc_9_26_17_4_stop:
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 19; ]
     function setColor(color as ColorValue) as Void {
-C_Users_Wal_garmin_runThree_source_zone2Background_mc_19_51_start:
+C_Users_Wal_garmin_runThree_source_zone2Background_mc_19_51_21_4_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2Background.mc" 20 8 ]
         %tmp.2 = lgetv %color;
         putv self :background_color %tmp.2;
-C_Users_Wal_garmin_runThree_source_zone2Background_mc_19_51_stop:
+C_Users_Wal_garmin_runThree_source_zone2Background_mc_19_51_21_4_stop:
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 23; ]
     function draw(dc as Dc) as Void {
-C_Users_Wal_garmin_runThree_source_zone2Background_mc_23_36_start:
+C_Users_Wal_garmin_runThree_source_zone2Background_mc_23_36_26_4_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2Background.mc" 24 8 ]
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :setColor;
@@ -61,7 +61,7 @@ C_Users_Wal_garmin_runThree_source_zone2Background_mc_23_36_start:
         %tmp.7 = lgetv %dc;
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-C_Users_Wal_garmin_runThree_source_zone2Background_mc_23_36_stop:
+C_Users_Wal_garmin_runThree_source_zone2Background_mc_23_36_26_4_stop:
     }
 }
 [ @file = "C:\Users\Wal\garmin\runThree\source\zone2Background.mc"; @line = 1; ]

@@ -15,12 +15,12 @@ class zone2App extends Application.AppBase{
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2App.mc"; @line = 7; ]
     function initialize() as Void {
-C_Users_Wal_garmin_runThree_source_zone2App_mc_7_26_start:
+C_Users_Wal_garmin_runThree_source_zone2App_mc_7_26_9_4_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2App.mc" 8 8 ]
         %tmp.2 = getv ? :AppBase;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_Wal_garmin_runThree_source_zone2App_mc_7_26_stop:
+C_Users_Wal_garmin_runThree_source_zone2App_mc_7_26_9_4_stop:
     }
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2App.mc"; @line = 12; ]
     function onStart(state as Dictionary or Null) as Void {
@@ -30,28 +30,28 @@ C_Users_Wal_garmin_runThree_source_zone2App_mc_7_26_stop:
     }
     //! Return the initial view of your application here
     [ @file = "C:\Users\Wal\garmin\runThree\source\zone2App.mc"; @line = 20; ]
-    function getInitialView() as Array<Views or InputDelegates> or Null {
-C_Users_Wal_garmin_runThree_source_zone2App_mc_20_65_start:
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+C_Users_Wal_garmin_runThree_source_zone2App_mc_20_68_22_4_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2App.mc" 21 8 ]
-        %tmp.1 = newa Array<Views or InputDelegates> 1;
+        %tmp.1 = newa 1;
         %tmp.5 = getv ? :zone2View;
         %tmp.2 = newc %tmp.5 ();
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
         ret %tmp.7;
-C_Users_Wal_garmin_runThree_source_zone2App_mc_20_65_stop:
+C_Users_Wal_garmin_runThree_source_zone2App_mc_20_68_22_4_stop:
     }
 }
 [ @file = "C:\Users\Wal\garmin\runThree\source\zone2App.mc"; @line = 26; ]
 function getApp() as zone2App {
-C_Users_Wal_garmin_runThree_source_zone2App_mc_26_30_start:
+C_Users_Wal_garmin_runThree_source_zone2App_mc_26_30_28_0_start:
 [ "C:\Users\Wal\garmin\runThree\source\zone2App.mc" 27 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 zone2App;
     ret %tmp.4;
-C_Users_Wal_garmin_runThree_source_zone2App_mc_26_30_stop:
+C_Users_Wal_garmin_runThree_source_zone2App_mc_26_30_28_0_stop:
 }
 [ @file = "C:\Users\Wal\garmin\runThree\source\zone2App.mc"; @line = 1; ]
 <init> {

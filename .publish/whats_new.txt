@@ -1,4 +1,5 @@
-- v0.4: Enable selectable zone, and vibrations.
-- v0.3: Enable settings! Seconds shown in history, number of boxes, and font sizes.
-- v0.2: Enable multiple layouts, and sizes. Respect selected Background color
+- v0.4.1: Added support for FR165, FR165m, FR945, FR965, VENU, VENU2, VENU2s
+- v0.4: Enabled selectable zone, and vibrations.
+- v0.3: Enabled settings! Seconds shown in history, number of boxes, and font sizes.
+- v0.2: Enabled multiple layouts, and sizes. Respect selected Background color
 - v0.1: First Release
