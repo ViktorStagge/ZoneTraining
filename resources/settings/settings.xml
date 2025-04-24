@@ -8,6 +8,10 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.DisableOffset" title="@Strings.DisableOffset">
+        <settingConfig type="boolean" required="true" />
+    </setting>
+
     <group id="stylingGroup" title="@Strings.StylingGroupTitle" description="">
         <setting propertyKey="@Properties.HrTextSize" title="@Strings.HrTextSize">
             <settingConfig type="list">
@@ -43,6 +47,9 @@
 
     <group id="alertGroup" title="@Strings.AlertGroupTitle" description="">
         <setting propertyKey="@Properties.AlertAbove" title="@Strings.AlertAbove">
+            <settingConfig type="boolean" required="true" />
+        </setting>
+        <setting propertyKey="@Properties.AlertBelow" title="@Strings.AlertBelow">
             <settingConfig type="boolean" required="true" />
         </setting>
         <setting propertyKey="@Properties.AlertFrequency" title="@Strings.AlertFrequency">

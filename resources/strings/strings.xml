@@ -8,8 +8,10 @@
     <string id="BoxHeight">Box Height in % of Screen Size (default: 0.125)</string>
     <string id="RoundedBoxes">Rounded Corners on Boxes</string>
     <string id="ZoneNumber">Displayed Zone (default: Zone-3)</string>
+    <string id="DisableOffset">Disable slightly lowered lower heart rate boundary</string>
     <string id="StylingGroupTitle">Layout Settings</string>
     <string id="AlertGroupTitle">Alert Settings</string>
     <string id="AlertAbove">Vibrate when leaving the Zone (above)</string>
+    <string id="AlertBelow">Vibrate when leaving the Zone (below)</string>
     <string id="AlertFrequency">Minimum time between vibrations (seconds)</string>
 </strings>

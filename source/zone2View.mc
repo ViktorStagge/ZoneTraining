@@ -41,6 +41,7 @@ class zone2View extends WatchUi.DataField {
     var obscurity_flags;
     var time_since_last_vibration;
     var vibrate_above;
+    var vibrate_below;
     var vibration_frequency;
 
     function initialize() {
@@ -66,10 +67,14 @@ class zone2View extends WatchUi.DataField {
         use_rounded_boxes = Properties.getValue("RoundedBoxes");
         current_zone = Properties.getValue("ZoneNumber");
         vibrate_above = Properties.getValue("AlertAbove");
+        vibrate_below = Properties.getValue("AlertBelow");
         vibration_frequency = Properties.getValue("AlertFrequency");
 
 
         var hr_zone_start_offset = (current_zone == 3) ? 5 : 3;
+        if (Properties.getValue("DisableOffset")) {
+            hr_zone_start_offset = 0;
+        }
         hr_zone_start = hr_zones[current_zone - 1] - hr_zone_start_offset;
         hr_zone_end = hr_zones[current_zone];
     }
@@ -181,9 +186,13 @@ class zone2View extends WatchUi.DataField {
     }
 
     function should_vibrate() {
-
         if (vibrate_above) {
             if (box_values[box_values.size()-1] >= hr_zone_end and time_since_last_vibration >= vibration_frequency) {
+                return true;
+            }
+        }
+        if (vibrate_below) {
+            if (box_values[box_values.size()-1] <= hr_zone_start and time_since_last_vibration >= vibration_frequency) {
                 return true;
             }
         }

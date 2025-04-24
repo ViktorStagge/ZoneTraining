@@ -9,14 +9,14 @@
             "request": "launch",
             "name": "Run App",
             "stopAtLaunch": false,
-            "device": "venu2s"
+            "device": "${command:GetTargetDevice}"
         },
         {
             "type": "monkeyc",
             "request": "launch",
             "name": "Run Tests",
             "runTests": true,
-            "device": "fr245m"
+            "device": "${command:GetTargetDevice}"
         },
         {
             "type": "monkeyc",
@@ -25,7 +25,7 @@
             "stopAtLaunch": false,
             "complicationSubscriberFolder": "${command:GetComplicationSubscriberFolder}",
             "complicationPublisherFolder": "${command:GetComplicationPublisherFolder}",
-            "device": "fr245m"
+            "device": "${command:GetTargetDevice}"
         }
     ]
 }

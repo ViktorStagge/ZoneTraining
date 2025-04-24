@@ -7,7 +7,9 @@
     <property id="BoxHeight" type="float">0.125</property>
     <property id="RoundedBoxes" type="boolean">false</property>
     <property id="ZoneNumber" type="number">3</property>
+    <property id="DisableOffset" type="boolean">false</property>
     <property id="AlertAbove" type="boolean">false</property>
+    <property id="AlertBelow" type="boolean">false</property>
     <property id="AlertFrequency" type="number">30</property>
     
 </properties>
